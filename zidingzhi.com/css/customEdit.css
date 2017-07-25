@@ -1,0 +1,50 @@
+/*头部str*/
+header{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background: #984B99;
+}
+.header{
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: space-around;
+	justify-content: space-around;
+	color: #fff;
+	font-family: "楷体";
+}
+/*尾部str*/
+footer{
+	background: #fff;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	color: #984B99;
+	width: 100%;
+	height: 67px;
+	line-height: 67px;
+}
+.footer{
+	margin: 0 auto;
+	justify-content: space-between;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+	align-content: center;
+	border-top: 1px solid #E8D5E8;
+	font-size: 15px;
+}
+.footer div{
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+	align-content: center;
+	padding: 0 10px;
+}

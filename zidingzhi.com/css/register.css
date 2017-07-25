@@ -1,0 +1,87 @@
+body,html{
+	height: 100%;
+}
+.content{
+	height: 100%;
+}
+.shareBg{
+	width: 100%;
+	height: 100%;
+	background: url(../images/guide/bgIcon.png) no-repeat;
+	background-size: 100% 100%;
+}
+.logo{
+	margin-left: 25px;
+	display: -webkit-flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	align-items: flex-end;
+	display: -webkit-flex;
+	width: 100%;
+}
+.logo p{
+	height: 38px;
+	font-size: 16px;
+	font-weight: 700;
+}
+.registerBox{
+	width: 90%;
+	margin: 0 auto;
+	border: 1px solid #000000;
+	box-shadow: 1px 1px 2px #AAAAAA;
+	display: -webkit-flex;
+}
+.registerForm{
+	margin: 50px auto 0;  
+}
+.registerCon{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+}
+.registerCon input[type="text"],.registerCon input[type="number"]{
+	width: 216px;
+	border: 1px solid #333;
+	height: 25px;
+	line-height: 25px;
+	margin-top:15px;
+	margin-left: 10px;
+}
+
+.registerItem{
+	line-height: 30px;
+	display: -webkit-flex;
+	flex-direction: column;
+}
+.registerItem label{
+	margin-top: 12px;
+}
+.checkBox{
+	margin-top: 15px;
+	display: -webkit-flex;
+	align-content: center;
+	align-items: center;
+}
+.checkBox input{
+	width: 18px;
+	height: 18px;
+	background: none;
+}
+.checkedLaber{
+ margin-left: 5px;
+}
+.registerBtn{
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 25px;
+	margin-bottom: 35px;
+}
+.registerBtn button{
+	border: none;
+	outline: none;
+	background: #984B99;
+	color: #FFF;
+	font-size: 25px;
+	padding: 5px 15px;
+	border-radius: 3px;
+}

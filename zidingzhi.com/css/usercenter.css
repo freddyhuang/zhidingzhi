@@ -1,0 +1,66 @@
+html{font-family: "youyuan";height: 100%;}
+.headPicBg{
+	width: 100%;
+	height:200px;
+	background: url(../images/userCenter/userCenterBg.png) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+.activeBg{
+	background: #DDC3DE;
+}
+/*尾部str*/
+.footer{
+	width: 100%;
+	border-top: 2px solid #DDCBDD;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: #fff;
+	color: #984B99;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+}
+.footerIcon{
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	align-items: center;
+}
+/*尾部end*/
+.headIcon{
+	background: #fff;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: 32px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	position: relative;
+}
+.headIcon img{
+	position: absolute;
+	left: 50%;
+	top: 10px;
+	-webkit-transform: translateX(-50%);
+}
+/*内容*/
+.con{
+	margin-left: 30px;
+	font-size: 20px;
+	color: #984B99;
+	font-family: "youyuan";
+}
+.item{
+	margin-bottom: 10px;
+}
+.item span{
+	display: inline-block;
+	line-height: 43px;
+	margin-left: 30px;
+}

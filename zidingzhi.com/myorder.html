@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>我的订单</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/myOrder.css"/>
+	</head>
+	<body>
+		<header>
+			<div class="arrow">
+				<img src="images/addAdress/arrow.png" width="15px" height="15px"/>
+			</div>
+			<div class="addressTxt">我的订单</div>
+		</header>
+		<nav>
+			<ul class="topTab">
+				<li class="active">全部</li>
+				<li >待支付</li>
+				<li >待发货</li>
+				<li>已完成</li>
+			</ul>
+		</nav>
+		<div style="height: 65px;"></div>
+		<!--订单对应的内容-->
+		<div class="orderCon">
+			<!--已完成的-->
+			<div class="orderComplete" style="display: none;">
+					<section class="order">
+						<div class="orderBox">
+							<div class="orderItem">
+								<div class="orderTop">
+									<div class="orderLeft">
+										<div class="orderImg">
+											<img src="images/wxpay/wine_03.png"  width="48px" height="75px"/>
+										</div>
+										<div class="orderDes">
+											<p>回真</p>
+											<p>颜色：沙漠金</p>
+											<p>个性（友情）</p>
+										</div>
+									</div>	
+									<div class="orderPrice">
+										<p>￥333</p>
+										<p>￥388</p>
+										<p>x1</p>
+									</div>
+								</div>
+							</div>
+							<div class="orderBottom">
+								<p>订单号：12345468552254</p>
+								<p>共1件商口   合计 <strong>￥333</strong></p>
+							</div>
+						</div>
+					</section>
+					<section class="order">
+						<div class="orderBox">
+							<div class="orderItem">
+								<div class="orderTop">
+									<div class="orderLeft">
+										<div class="orderImg">
+											<img src="images/wxpay/wine_03.png"  width="48px" height="75px"/>
+										</div>
+										<div class="orderDes">
+											<p>回真</p>
+											<p>颜色：沙漠金</p>
+											<p>个性（友情）</p>
+										</div>
+									</div>	
+									<div class="orderPrice">
+										<p>￥333</p>
+										<p>￥388</p>
+										<p>x1</p>
+									</div>
+								</div>
+								<div class="orderItem">
+								<div class="orderTop">
+									<div class="orderLeft">
+										<div class="orderImg">
+											<img src="images/wxpay/wine_03.png"  width="48px" height="75px"/>
+										</div>
+										<div class="orderDes">
+											<p>回真</p>
+											<p>颜色：沙漠金</p>
+											<p>个性（友情）</p>
+										</div>
+									</div>	
+									<div class="orderPrice">
+										<p>￥333</p>
+										<p>￥388</p>
+										<p>x1</p>
+									</div>
+								</div>
+							</div>
+							<div class="orderBottom">
+								<p>订单号：12345468552254</p>
+								<p>共1件商口   合计 <strong>￥333</strong></p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<!--待发货-->
+			<div class="orderWaitDelivery" style="display: none;">
+				<section class="order">
+						<div class="orderBox">
+							<div class="orderItem">
+								<div class="orderTop">
+									<div class="orderLeft">
+										<div class="orderImg">
+											<img src="images/wxpay/wine_03.png"  width="48px" height="75px"/>
+										</div>
+										<div class="orderDes">
+											<p>回真</p>
+											<p>颜色：沙漠金</p>
+											<p>个性（友情）</p>
+										</div>
+									</div>	
+									<div class="orderPrice">
+										<p>￥333</p>
+										<p>￥388</p>
+										<p>x1</p>
+									</div>
+								</div>
+							</div>
+							<div class="orderBottom">
+								<p>订单号：12345468552254</p>
+								<p>共1件商口   合计 <strong>￥333</strong></p>
+							</div>
+							<div class="checkBtn">
+								<button id="seeBtn">查看物流</button>
+							</div>
+						</div>
+					</section>
+					<section class="order">
+						<div class="orderBox">
+							<div class="orderItem">
+								<div class="orderTop">
+									<div class="orderLeft">
+										<div class="orderImg">
+											<img src="images/wxpay/wine_03.png"  width="48px" height="75px"/>
+										</div>
+										<div class="orderDes">
+											<p>回真</p>
+											<p>颜色：沙漠金</p>
+											<p>个性（友情）</p>
+										</div>
+									</div>	
+									<div class="orderPrice">
+										<p>￥333</p>
+										<p>￥388</p>
+										<p>x1</p>
+									</div>
+								</div>
+								<div class="orderItem">
+								<div class="orderTop">
+									<div class="orderLeft">
+										<div class="orderImg">
+											<img src="images/wxpay/wine_03.png"  width="48px" height="75px"/>
+										</div>
+										<div class="orderDes">
+											<p>回真</p>
+											<p>颜色：沙漠金</p>
+											<p>个性（友情）</p>
+										</div>
+									</div>	
+									<div class="orderPrice">
+										<p>￥333</p>
+										<p>￥388</p>
+										<p>x2</p>
+									</div>
+								</div>
+							</div>
+							<div class="orderBottom">
+								<p>订单号：12345468552254</p>
+								<p>共2件商口   合计 <strong>￥333</strong></p>
+							</div>
+							<div class="checkBtn">
+								<button id="seeBtn">查看物流</button>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<!--待支付-->
+			<div class="orderWaitPay" style="display: none;">
+				<section class="order">
+						<div class="orderBox">
+							<div class="orderItem">
+								<div class="orderTop">
+									<div class="Ischeck">
+										<div class="check_n"></div>
+										<div class="check_s" style="display: none;">
+											<img src="images/myorder/checked.png" />
+										</div>
+									</div>
+									<div class="orderLeft">
+										<div class="orderImg">
+											<img src="images/wxpay/wine_03.png"  width="48px" height="75px"/>
+										</div>
+										<div class="orderDes">
+											<p>回真</p>
+											<p>颜色：沙漠金</p>
+											<p>个性（友情）</p>
+										</div>
+									</div>	
+									<div class="orderPrice">
+										<p>￥333</p>
+										
+									</div>
+								</div>
+							</div>
+							<div class="orderBottom">
+								<p>订单号：12345468552254</p>
+								<p>共1件商品  合计 <strong>￥333</strong></p>
+							</div>
+							<div class="checkBtn">
+								<button id="closeOrderBtn">取消订单</button>
+								<button id="payOrderBtn">付款</button>
+							</div>
+						</div>
+					</section>
+					<section class="order">
+						<div class="orderBox orderwaitPayBox">
+							<div class="Ischeck orderwaitPayIscheck">
+								<div class="check_n" style="display: none;"></div>
+								<div class="check_s">
+									<img src="images/myorder/checked.png" width="20px" height="20px" />
+								</div>
+							</div>
+							<div class="orderItem">
+								<div class="orderTop">
+									<div class="orderLeft">
+										<div class="orderImg">
+											<img src="images/wxpay/wine_03.png"  width="48px" height="75px"/>
+										</div>
+										<div class="orderDes">
+											<p>回真</p>
+											<p>颜色：沙漠金</p>
+											<p>个性（友情）</p>
+										</div>
+									</div>	
+									<div class="orderPrice">
+										<p>￥333</p>
+									</div>
+								</div>
+								<div class="orderItem">
+								<div class="orderTop">
+									<div class="orderLeft">
+										<div class="orderImg">
+											<img src="images/wxpay/wine_03.png"  width="48px" height="75px"/>
+										</div>
+										<div class="orderDes">
+											<p>回真</p>
+											<p>颜色：沙漠金</p>
+											<p>个性（友情）</p>
+										</div>
+									</div>	
+									<div class="orderPrice">
+										<p>￥333</p>
+									</div>
+								</div>
+							</div>
+							<div class="orderBottom">
+								<p>订单号：12345468552254</p>
+								<p>共2件商品  合计 <strong>￥666</strong></p>
+							</div>
+							<div class="checkBtn">
+								<button id="closeOrderBtn">取消订单</button>
+								<button id="payOrderBtn">付款</button>
+							</div>
+						</div>
+					</div>
+				</section>
+				<div class="orderwaitPayBottom">
+					<div class="Ischeck orderwaitPayB">
+						<div class="check_n"></div>
+						<div class="check_s" style="display: none;">
+							<img src="images/myorder/checked.png" width="20px" height="20px" align="absmiddle"/>
+						</div>
+						<p> &nbsp;全选</p>
+					</div>
+					<div class="tatoalPrice">合计：￥964</div>
+					<div class="tatoalPay">合并支付</div>
+				</div>
+			</div>
+			<!--全部-->
+			<div class="orderAll">
+				<!--已支付-->
+				<section class="order">
+						<div class="orderBox">
+							<div class="orderItem">
+								<div class="orderTop">
+									<div class="orderLeft">
+										<div class="orderImg">
+											<img src="images/wxpay/wine_03.png"  width="48px" height="75px"/>
+										</div>
+										<div class="orderDes">
+											<p>回真</p>
+											<p>颜色：沙漠金</p>
+											<p>个性（友情）</p>
+										</div>
+									</div>	
+									<div class="orderPrice">
+										<p>￥333</p>
+										<p class="productNum">x1</p>
+									</div>
+								</div>
+							</div>
+							<div class="orderBottom">
+								<p>订单号：12345468552254</p>
+								<p class="orderPayState">已支付</p>
+								<p class="orderNum">共1件商品  合计 <strong>￥333</strong></p>
+							</div>
+							<div class="checkBtn">
+								<button id="closeOrderBtn">删除订单</button>
+								<button id="payOrderBtn">分享</button>
+							</div>
+						</div>
+					</section>
+					<!--未支付-->
+					<section class="order">
+						<div class="orderBox">
+							<div class="orderItem">
+								<div class="orderTop">
+									<div class="orderLeft">
+										<div class="orderImg">
+											<img src="images/wxpay/wine_03.png"  width="48px" height="75px"/>
+										</div>
+										<div class="orderDes">
+											<p>回真</p>
+											<p>颜色：沙漠金</p>
+											<p>个性（友情）</p>
+										</div>
+									</div>	
+									<div class="orderPrice">
+										<p>￥333</p>
+										<p class="productNum">x1</p>
+									</div>
+								</div>
+							</div>
+							<div class="orderBottom">
+								<p>订单号：12345468552254</p>
+								<p class="orderPayState">未支付</p>
+								<p class="orderNum">共1件商品  合计 <strong>￥333</strong></p>
+							</div>
+							<div class="checkBtn">
+								<button id="closeOrderBtn">分享</button>
+								<button id="payOrderBtn">付款</button>
+							</div>
+						</div>
+					</section>
+					<section class="order">
+						<div class="orderBox">
+							<div class="orderItem">
+								<div class="orderTop">
+									<div class="orderLeft">
+										<div class="orderImg">
+											<img src="images/wxpay/wine_03.png"  width="48px" height="75px"/>
+										</div>
+										<div class="orderDes">
+											<p>回真</p>
+											<p>颜色：沙漠金</p>
+											<p>个性（友情）</p>
+										</div>
+									</div>	
+									<div class="orderPrice">
+										<p>￥333</p>
+										<p class="productNum">x1</p>
+									</div>
+								</div>
+								<div class="orderItem">
+								<div class="orderTop">
+									<div class="orderLeft">
+										<div class="orderImg">
+											<img src="images/wxpay/wine_03.png"  width="48px" height="75px"/>
+										</div>
+										<div class="orderDes">
+											<p>回真</p>
+											<p>颜色：沙漠金</p>
+											<p>个性（友情）</p>
+										</div>
+									</div>	
+									<div class="orderPrice">
+										<p>￥288</p>
+										<p class="productNum">x2</p>
+									</div>
+								</div>
+							</div>
+							<div class="orderBottom">
+								<p>订单号：12345468552254</p>
+								<p class="orderPayState">未支付</p>
+								<p>共2件商品  合计 <strong>￥666</strong></p>
+							</div>
+							<div class="checkBtn">
+								<button id="closeOrderBtn">分享</button>
+								<button id="payOrderBtn">付款</button>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+		<div style="height: 85px;"></div>
+		<footer>
+			<div class="footer clearfix">
+				<div class="footerIcon fl">
+					<img src="images/userCenter/edit.png" width="28px" height="28px" />
+					<p>点我定制</p>
+				</div>
+				<div class="footerIcon fl">
+					<img src="images/userCenter/survey.png" width="28px" height="28px" />
+					<p>定制稿</p>
+				</div>
+				<div class="footerIcon fl">
+					<img src="images/userCenter/cart.png" width="28px" height="28px" />
+					<p>购物车</p>
+				</div>
+				<div class="footerIcon fl activeBg">
+					<img src="images/userCenter/account.png" width="28px" height="28px" />
+					<p>用户中心</p>
+				</div>
+				<div class="footerIcon fl">
+					<img src="images/userCenter/vip.png" width="28px" height="28px"/>
+					<p>我的分销</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

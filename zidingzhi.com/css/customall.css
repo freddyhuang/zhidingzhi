@@ -1,0 +1,161 @@
+/*头部str*/
+header{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background: #984B99;
+}
+.header{
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: space-around;
+	justify-content: space-around;
+	color: #fff;
+	font-family: "楷体";
+}
+/*尾部str*/
+.firstFloor{
+	width: 100%;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+}
+footer{
+	width: 100%;
+	background: #fff;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	color: #984B99;
+}
+.fixed{
+	justify-content: space-between;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex: 1;
+	-webkit-align-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+	align-content: center;
+	border-top: 3px solid #E8D5E8;
+	font-size: 15px;
+}
+.active{
+	background-color: #DCC4DE!important;
+}
+.firstFloor .footerImg{
+	display: -webkit-flex;
+	align-items: center;
+	flex: 1;
+	padding: 0px 10px;
+	height: 40px;
+	line-height: 40px;
+}
+
+.borderW{
+	display: -webkit-flex;
+	-webkit-justify-content: space-around;
+}
+
+.uploadimg{
+	width: 110px;
+	font-size: 12px;
+}
+.imgUl{
+	width: 100%;
+	height: 100px;
+	overflow: hidden;
+	overflow-x:scroll;
+	white-space: nowrap;
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: nowrap;
+}
+.footerImg span{
+	font-size: 18px;
+	text-align: center;
+}
+
+.borderB,.borderW,.borderJ{
+	border-top: 2px solid #E8D5E8;
+	border-bottom: 2px solid #E8D5E8;
+	display: -webkit-flex;
+	justify-content: space-between;
+}
+.borderJ{
+	justify-content: initial;
+}
+.borderB .footerImg{
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+.borderW .footerImg{
+	height: 30px;
+  	line-height: 30px;
+	text-align: center;
+}
+
+.borderJ .footerImg{
+	 width: 75px;
+	height: 30px;
+  	line-height: 30px;
+	text-align: center;
+}
+
+.imgList ul li img{
+	margin-right: 5px;
+}
+.ThirdFloor{
+	width: 100%;
+	height: 100%;
+}
+.TextAreaBox{
+	width: 98%;
+	height: 50px;
+}
+.TextArea{
+	width: 100%;
+	height: 50px;
+	padding: 10px;
+	border: none;
+	outline: none;
+}
+.TextArea::-webkit-input-placeholder{
+	font-size: 16px;
+}
+.bottle1 li{
+	display: -webkit-flex;
+	align-items: center;
+	height: 100%;
+	width: 100px;
+	background:#fff;
+	-webkit-justify-content: center;
+}
+.bottle1 li  p{
+	font-size: 16px;
+	font-weight: 700;
+}
+.bottle2 li,.bottle3 li{
+	display: -webkit-flex;
+	align-items: center;
+	background:#fff;
+	-webkit-justify-content: center;
+}
+.wineBottle{
+	flex: 1;
+}
+.whiteBottlePrice{
+	flex: 2;
+	-webkit-justify-content: flex-end!important;
+	justify-content: flex-end!important;
+	justify-content: flex-end;
+	margin-right: 15px;
+}
+.bottle2 li  p,.bottle3 li p{
+	font-size: 16px;
+	font-weight: 700;
+}

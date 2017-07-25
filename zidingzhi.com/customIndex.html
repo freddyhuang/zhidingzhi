@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>自定制</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/customIndex.css" />	
+	</head>
+	
+	<body>
+		<!--首页banner-->
+		<div class="temp">
+			<div class="lunbo">
+				<div class="swiper-container">
+				    <div class="swiper-wrapper">
+				        <div class="swiper-slide">
+				        	<img src="images/customIndex/banner1.jpg"/>
+				        </div>
+				        <div class="swiper-slide">
+				        	<img src="images/customIndex/banner2.jpg"/>
+				        </div>
+				        <div class="swiper-slide">
+				        	<img src="images/customIndex/banner3.jpg"/>
+				        </div>
+				        <div class="swiper-slide">
+				        	<img src="images/customIndex/banner4.jpg"/>
+				        </div>
+				        <div class="swiper-slide">
+				        	<img src="images/customIndex/banner5.jpg"/>
+				        </div>
+				         <div class="swiper-slide">
+				        	<img src="images/customIndex/banner6.jpg"/>
+				        </div>
+					</div>
+					    <!-- 如果需要分页器 -->
+					    <div class="swiper-pagination"></div>
+			    </div>
+			</div>
+		</div>
+		<footer>
+			<div class="customerBottom">
+				<img src="images/customIndex/customBtn.png" >
+			</div>
+		</footer>
+		<script src="js/jquery-3.1.0.min.js"></script>
+		<script src="js/swiper.jquery.min.js"></script>
+		<script>
+			console.log($)
+			setTimeout(function(){
+				var swiper = new Swiper('.lunbo .swiper-container', {
+					direction:"horizontal",/*横向滑动*/  
+			        loop:true,/*形成环路（即：可以从最后一张图跳转到第一张图*/  
+			        pagination:".swiper-pagination",/*分页器*/  
+			        autoplay:3000/*每隔3秒自动播放*/  
+				});
+			},1000)
+			
+		</script>
+	</body>
+</html>

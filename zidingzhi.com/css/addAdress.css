@@ -1,0 +1,82 @@
+body{
+	background: rgb(240,240,240);
+}
+header{
+	height: 30px;
+	width: 100%;
+	line-height: 30px;
+	background: #984B99;
+	display: flex;
+	display: -webkit-flex;
+}
+.arrow{
+	margin-left: 15px;
+	margin-top: 5px;
+}
+.addressTxt{
+	color: #fff;
+	font-size: 15px;
+	font-family: "youyuan";
+	margin: 0 auto;
+}
+
+/*头部end*/
+section{
+	background: #fff;
+}
+.addressItem{
+	margin: 0 15px;
+}
+.addressTop,.addressBottom{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	margin-top: 15px;
+}
+.addressTop{
+	padding-top: 10px;
+}
+.addressTop .right{
+	font-weight: 700;
+	font-family: 'youyuan';
+}
+.addressName{
+	font-size: 18px;
+	color: #000000;
+	font-weight: 700;
+}
+.nickNameAdress{
+	font-size: 15px;
+	color: #969696;
+}
+.addressBottom{
+	padding-bottom: 10px;
+}
+.addressBottom .left{
+	color: #969696;
+}
+#editAdressBtn,#delAdressBtn{
+	border: none;
+	outline: none;
+	border: 1px solid #984B99;
+	color: #984B99;
+	background: none;
+	padding: 5px 25px;
+	border-radius: 4px;
+}
+#delAdressBtn{
+	margin-left: 8px;
+}
+footer{
+	width: 100%;
+	background: #984B99;
+	height: 35px;
+	line-height: 35px;
+	color: #fff;
+	font-size: 15px;
+	font-family: "youyuan";
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
