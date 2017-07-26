@@ -1,0 +1,25 @@
+@charset "utf-8";
+footer{
+	width: 100%;
+	background: #333;
+}
+.footerTop{
+	width: 95%;
+	margin: 0 auto;
+	min-width: 1290px;
+}
+.footerTop a{
+	display: inline-block;
+	font-size: 16px;
+	color: #fff;
+	margin: 65px 80px 30px 110px;
+}
+.footerCenter,.footerBottm{
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	padding-bottom: 15px;
+}
+.footerBottm{
+	margin-top: 35px;
+}

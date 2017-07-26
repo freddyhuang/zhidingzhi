@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>我的订单</title>
+		<link rel="stylesheet" type="text/css" href="common/css/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="common/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="common/css/myOrder.css"/>
+	</head>
+	<body>
+		<div class="mui-content">
+		    <div class="mui-slider">
+		    <div class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+		        <a class="mui-control-item mui-active" href="#item1">全部订单</a>
+		        <a class="mui-control-item" href="#item2">待支付</a> 
+		        <a class="mui-control-item" href="#item3">在定制</a>
+		        <a class="mui-control-item" href="#item4">已发货</a>
+		    </div>
+		    <div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-3"></div>
+		    <div class="mui-slider-group">
+		        <div id="item1" class="mui-slider-item mui-control-content mui-active">
+		            <!--<ul class="mui-table-view">
+		                <li class="mui-table-view-cell clearfix">
+		                	<p class="fl">订单号：  752336563336</p>
+		                	<p class="color852 fr">待支付</p>
+		                	<div class="orderImg">
+		                		<img src="common/images/myOrder/orderImg.png"/>
+		                		<img src="common/images/myOrder/orderImg.png"/>
+		                		<img src="common/images/myOrder/orderImg.png"/>
+		                	</div>
+		                </li>
+		                <li class="mui-table-view-cell">
+		                	共<i>300</i>件&nbsp;&nbsp;总计<span class="toalPice">￥300</span>
+		                	<span class="fr immediatelyPay">立即支付</span>
+		                	<span class="fr cannelPay">取消支付</span>
+		                </li>
+		            </ul>
+		            <ul class="mui-table-view">
+		                <li class="mui-table-view-cell clearfix">
+		                	<p class="fl">订单号：  752336563336</p>
+		                	<p class="fr">待发货</p>
+		                	<div class="orderImg">
+		                		<img src="common/images/myOrder/orderImg.png"/>
+		                		<img src="common/images/myOrder/orderImg.png"/>
+		                		<img src="common/images/myOrder/orderImg.png"/>
+		                	</div>
+		                </li>
+		                <li class="mui-table-view-cell">
+		                	共<i>300</i>件&nbsp;&nbsp;总计<span class="toalPice">￥300</span>
+		                	
+		                	<span class="fr cannelPay">查看订单</span>
+		                </li>
+		            </ul>
+		            <ul class="mui-table-view">
+		                <li class="mui-table-view-cell clearfix">
+		                	<p class="fl">订单号：  752336563336</p>
+		                	<p class=" fr">已完成</p>
+		                	<div class="orderImg">
+		                		<img src="common/images/myOrder/orderImg.png"/>
+		                		<img src="common/images/myOrder/orderImg.png"/>
+		                		<img src="common/images/myOrder/orderImg.png"/>
+		                	</div>
+		                </li>
+		                <li class="mui-table-view-cell">
+		                	共<i>300</i>件&nbsp;&nbsp;总计<span class="toalPice">￥300</span>
+		                	<span class="fr cannelPay">查看订单</span>
+		                </li>
+		            </ul>
+		            <ul class="mui-table-view">
+		                <li class="mui-table-view-cell clearfix">
+		                	<p class="fl">订单号：  752336563336</p>
+		                	<p class=" fr">已取消</p>
+		                	<div class="orderImg">
+		                		<img src="common/images/myOrder/orderImg.png"/>
+		                		<img src="common/images/myOrder/orderImg.png"/>
+		                		<img src="common/images/myOrder/orderImg.png"/>
+		                	</div>
+		                </li>
+		                <li class="mui-table-view-cell">
+		                	共<i>300</i>件&nbsp;&nbsp;总计<span class="toalPice">￥300</span>
+		                	<span class="fr immediatelyPay">重新定制</span>
+		                </li>
+		            </ul>-->
+		        </div>
+		        <div id="item2" class="mui-slider-item mui-control-content">
+		             <!--<ul class="mui-table-view">
+		                <li class="mui-table-view-cell clearfix">
+		                	<p class="fl">订单号：  752336563336</p>
+		                	<p class="color852 fr">待支付</p>
+		                	<div class="orderImg">
+		                		<img src="common/images/myOrder/orderImg.png"/>
+		                		<img src="common/images/myOrder/orderImg.png"/>
+		                		<img src="common/images/myOrder/orderImg.png"/>
+		                	</div>
+		                </li>
+		                <li class="mui-table-view-cell">
+		                	共<i>300</i>件&nbsp;&nbsp;总计<span class="toalPice">￥300</span>
+		                	<span class="fr immediatelyPay">立即支付</span>
+		                	<span class="fr cannelPay">取消支付</span>
+		                </li>
+		            </ul>
+		             <ul class="mui-table-view">
+		                <li class="mui-table-view-cell clearfix">
+		                	<p class="fl">订单号：  752336563336</p>
+		                	<p class="color852 fr">待支付</p>
+		                	<div class="orderImg">
+		                		<img src="common/images/myOrder/orderImg.png"/>
+		                		<img src="common/images/myOrder/orderImg.png"/>
+		                		<img src="common/images/myOrder/orderImg.png"/>
+		                	</div>
+		                </li>
+		                <li class="mui-table-view-cell">
+		                	共<i>300</i>件&nbsp;&nbsp;总计<span class="toalPice">￥300</span>
+		                	<span class="fr immediatelyPay">立即支付</span>
+		                	<span class="fr cannelPay">取消支付</span>
+		                </li>
+		            </ul>
+		             <ul class="mui-table-view">
+		                <li class="mui-table-view-cell clearfix">
+		                	<p class="fl">订单号：  752336563336</p>
+		                	<p class="color852 fr">待支付</p>
+		                	<div class="orderImg">
+		                		<img src="common/images/myOrder/orderImg.png"/>
+		                		<img src="common/images/myOrder/orderImg.png"/>
+		                		<img src="common/images/myOrder/orderImg.png"/>
+		                	</div>
+		                </li>
+		                <li class="mui-table-view-cell">
+		                	共<i>300</i>件&nbsp;&nbsp;总计<span class="toalPice">￥300</span>
+		                	<span class="fr immediatelyPay">立即支付</span>
+		                	<span class="fr cannelPay">取消支付</span>
+		                </li>
+		            </ul>-->
+		        </div>
+		        <div id="item3" class="mui-slider-item mui-control-content">
+		            <!--<ul class="mui-table-view">
+		                <li class="mui-table-view-cell clearfix">
+		                	<p class="fl">订单号：  752336563336</p>
+		                	<p class="fr">在定制</p>
+		                	<div class="orderImg">
+		                		<img src="common/images/myOrder/orderImg.png"/>
+		                		<img src="common/images/myOrder/orderImg.png"/>
+		                		<img src="common/images/myOrder/orderImg.png"/>
+		                	</div>
+		                </li>
+		                <li class="mui-table-view-cell">
+		                	共<i>300</i>件&nbsp;&nbsp;总计<span class="toalPice">￥300</span>
+		                	
+		                	<span class="fr cannelPay">查看订单</span>
+		                </li>
+		            </ul>
+		            <ul class="mui-table-view">
+		                <li class="mui-table-view-cell clearfix">
+		                	<p class="fl">订单号：  752336563336</p>
+		                	<p class="fr">在定制</p>
+		                	<div class="orderImg">
+		                		<img src="common/images/myOrder/orderImg.png"/>
+		                		<img src="common/images/myOrder/orderImg.png"/>
+		                		<img src="common/images/myOrder/orderImg.png"/>
+		                	</div>
+		                </li>
+		                <li class="mui-table-view-cell">
+		                	共<i>300</i>件&nbsp;&nbsp;总计<span class="toalPice">￥300</span>
+		                	
+		                	<span class="fr cannelPay">查看订单</span>
+		                </li>
+		            </ul>
+		            <ul class="mui-table-view">
+		                <li class="mui-table-view-cell clearfix">
+		                	<p class="fl">订单号：  752336563336</p>
+		                	<p class="fr">在定制</p>
+		                	<div class="orderImg">
+		                		<img src="common/images/myOrder/orderImg.png"/>
+		                		<img src="common/images/myOrder/orderImg.png"/>
+		                		<img src="common/images/myOrder/orderImg.png"/>
+		                	</div>
+		                </li>
+		                <li class="mui-table-view-cell">
+		                	共<i>300</i>件&nbsp;&nbsp;总计<span class="toalPice">￥300</span>
+		                	
+		                	<span class="fr cannelPay">查看订单</span>
+		                </li>
+		            </ul>-->
+		        </div>
+		        <div id="item4" class="mui-slider-item mui-control-content">
+		           <!--<ul class="mui-table-view">
+		                <li class="mui-table-view-cell clearfix">
+		                	<p class="fl">订单号：  752336563336</p>
+		                	<p class=" fr">已完成</p>
+		                	<div class="orderImg">
+		                		<img src="common/images/myOrder/orderImg.png"/>
+		                		<img src="common/images/myOrder/orderImg.png"/>
+		                		<img src="common/images/myOrder/orderImg.png"/>
+		                	</div>
+		                </li>
+		                <li class="mui-table-view-cell">
+		                	共<i>300</i>件&nbsp;&nbsp;总计<span class="toalPice">￥300</span>
+		                	<span class="fr cannelPay">查看订单</span>
+		                </li>
+		           </ul>-->
+		            <!--<ul class="mui-table-view">
+		                <li class="mui-table-view-cell clearfix">
+		                	<p class="fl">订单号：  752336563336</p>
+		                	<p class=" fr">已完成</p>
+		                	<div class="orderImg">
+		                		<img src="common/images/myOrder/orderImg.png"/>
+		                		<img src="common/images/myOrder/orderImg.png"/>
+		                		<img src="common/images/myOrder/orderImg.png"/>
+		                	</div>
+		                </li>
+		                <li class="mui-table-view-cell">
+		                	共<i>300</i>件&nbsp;&nbsp;总计<span class="toalPice">￥300</span>
+		                	<span class="fr cannelPay">查看订单</span>
+		                </li>
+		            </ul>-->
+		        </div>
+		    </div>
+		</div>
+		</div>
+	
+		<script type="text/javascript" src="common/js/mui.min.js" ></script>
+		<script src="common/js/base.js"></script>
+		<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+		</script>
+		<script>
+			//订单列表查询
+			getListorder();
+			function getListorder(){
+				var openId = getQueryString("openId")
+				mui.ajax("http://www.zdz1.com/web/order/list",{
+					dataType:'json',//服务器返回json格式数据
+					type:'get',//HTTP请求类型
+					timeout:100000,//超时时间设置为100秒；
+					data:{
+						openId:decodeURIComponent(openId),
+						orderStatus:"",
+						pageNo:1,
+						pageSize:100
+					},
+					success:function(data){
+						//服务器返回响应，根据响应结果
+						console.log(data)
+						var result = data.result;
+						
+						$.each(result, function(index,item) {
+							var orderStatus =item.orderStatus;
+							switch (orderStatus){
+								case "S":
+									var ul =' <ul class="mui-table-view">'
+							               		+' <li class="mui-table-view-cell clearfix">'
+							                	+'<p class="fl">订单号：  '+item.orderJnId+'</p>'
+							                	+'<p class=" fr">已完成</p>'
+							                	+'<div class="orderImg">'
+							                		+'<img src="common/images/myOrder/orderImg.png"/>'
+							                		+'<img src="common/images/myOrder/orderImg.png"/>'
+							                		+'<img src="common/images/myOrder/orderImg.png"/>'
+							                	+'</div>'
+							                +'</li>'
+							               +'<li class="mui-table-view-cell">'
+							                	+'共<i>'+item.amount+'</i>件&nbsp;&nbsp;总计<span class="toalPice">￥'+item.payAmount+'</span>'
+							                	+'<span class="fr cannelPay" orderJnId="'+item.orderJnId+'">查看订单</span>'
+							                +'</li>'
+							           +'</ul>'	
+									$("#item4").append(ul);
+									
+									break;
+									case "C1":
+									var ul =' <ul class="mui-table-view">'
+							                +'<li class="mui-table-view-cell clearfix">'
+							                	+'<p class="fl">订单号：   '+item.orderJnId+'</p>'
+							                	+'<p class="color852 fr">待支付</p>'
+							                	+'<div class="orderImg">'
+							                		+'<img src="common/images/myOrder/orderImg.png"/>'
+							                		+'<img src="common/images/myOrder/orderImg.png"/>'
+							                		+'<img src="common/images/myOrder/orderImg.png"/>'
+							                	+'</div>'
+							                +'</li>'
+							                +'<li class="mui-table-view-cell">'
+							                	+'共<i>'+item.amount+'</i>件&nbsp;&nbsp;总计<span class="toalPice">￥'+item.payAmount+'</span>'
+							                	+'<span class="fr immediatelyPay">立即支付</span>'
+							                	+'<span class="fr cannelPay">取消支付</span>'
+							                +'</li>'
+							            +'</ul>'	
+									$("#item2").append(ul);
+									break;
+									case "W":
+									var ul =' <ul class="mui-table-view">'
+							                +'<li class="mui-table-view-cell clearfix">'
+							                	+'<p class="fl">订单号：   '+item.orderJnId+'</p>'
+							                	+'<p class="color852 fr">待支付</p>'
+							                	+'<div class="orderImg">'
+							                		+'<img src="common/images/myOrder/orderImg.png"/>'
+							                		+'<img src="common/images/myOrder/orderImg.png"/>'
+							                		+'<img src="common/images/myOrder/orderImg.png"/>'
+							                	+'</div>'
+							                +'</li>'
+							                +'<li class="mui-table-view-cell">'
+							                	+'共<i>'+item.amount+'</i>件&nbsp;&nbsp;总计<span class="toalPice">￥'+item.payAmount+'</span>'
+							                	+'<span class="fr immediatelyPay">立即支付</span>'
+							                	+'<span class="fr cannelPay">取消支付</span>'
+							                +'</li>'
+							            +'</ul>'	
+									$("#item2").append(ul);
+									break;
+									case "C2":
+									var ul =' <ul class="mui-table-view">'
+							                +'<li class="mui-table-view-cell clearfix">'
+							                	+'<p class="fl">订单号：   '+item.orderJnId+'</p>'
+							                	+'<p class="color852 fr">待支付</p>'
+							                	+'<div class="orderImg">'
+							                		+'<img src="common/images/myOrder/orderImg.png"/>'
+							                		+'<img src="common/images/myOrder/orderImg.png"/>'
+							                		+'<img src="common/images/myOrder/orderImg.png"/>'
+							                	+'</div>'
+							                +'</li>'
+							                +'<li class="mui-table-view-cell">'
+							                	+'共<i>'+item.amount+'</i>件&nbsp;&nbsp;总计<span class="toalPice">￥'+item.payAmount+'</span>'
+							                	+'<span class="fr immediatelyPay">立即支付</span>'
+							                	+'<span class="fr cannelPay">取消支付</span>'
+							                +'</li>'
+							            +'</ul>'	
+									$("#item3").append(ul);
+									break;
+									case "D":
+									var ul =' <ul class="mui-table-view">'
+							               		+' <li class="mui-table-view-cell clearfix">'
+							                	+'<p class="fl">订单号：  '+item.orderJnId+'</p>'
+							                	+'<p class=" fr">已完成</p>'
+							                	+'<div class="orderImg">'
+							                		+'<img src="common/images/myOrder/orderImg.png"/>'
+							                		+'<img src="common/images/myOrder/orderImg.png"/>'
+							                		+'<img src="common/images/myOrder/orderImg.png"/>'
+							                	+'</div>'
+							                +'</li>'
+							               +'<li class="mui-table-view-cell">'
+							                	+'共<i>'+item.amount+'</i>件&nbsp;&nbsp;总计<span class="toalPice">￥'+item.payAmount+'</span>'
+							                	+'<span class="fr cannelPay" orderJnId="'+item.orderJnId+'">查看订单</span>'
+							                +'</li>'
+							           +'</ul>'	
+									$("#item4").append(ul);
+									break;
+								default:
+									break;
+							}
+						});
+						
+						$.each(result, function(index,item) {
+							var orderStatus =item.orderStatus;
+							switch (orderStatus){
+								case "S":
+									var ul =' <ul class="mui-table-view">'
+							               		+' <li class="mui-table-view-cell clearfix">'
+							                	+'<p class="fl">订单号：  '+item.orderJnId+'</p>'
+							                	+'<p class=" fr">已完成</p>'
+							                	+'<div class="orderImg">'
+							                		+'<img src="common/images/myOrder/orderImg.png"/>'
+							                		+'<img src="common/images/myOrder/orderImg.png"/>'
+							                		+'<img src="common/images/myOrder/orderImg.png"/>'
+							                	+'</div>'
+							                +'</li>'
+							               +'<li class="mui-table-view-cell">'
+							                	+'共<i>'+item.amount+'</i>件&nbsp;&nbsp;总计<span class="toalPice">￥'+item.payAmount+'</span>'
+							                	+'<span class="fr cannelPay" orderJnId="'+item.orderJnId+'">查看订单</span>'
+							                +'</li>'
+							           +'</ul>'	
+									$("#item1").append(ul);
+									
+									break;
+									case "C1":
+									var ul =' <ul class="mui-table-view">'
+							                +'<li class="mui-table-view-cell clearfix">'
+							                	+'<p class="fl">订单号：   '+item.orderJnId+'</p>'
+							                	+'<p class="color852 fr">待支付</p>'
+							                	+'<div class="orderImg">'
+							                		+'<img src="common/images/myOrder/orderImg.png"/>'
+							                		+'<img src="common/images/myOrder/orderImg.png"/>'
+							                		+'<img src="common/images/myOrder/orderImg.png"/>'
+							                	+'</div>'
+							                +'</li>'
+							                +'<li class="mui-table-view-cell">'
+							                	+'共<i>'+item.amount+'</i>件&nbsp;&nbsp;总计<span class="toalPice">￥'+item.payAmount+'</span>'
+							                	+'<span class="fr immediatelyPay">立即支付</span>'
+							                	+'<span class="fr cannelPay">取消支付</span>'
+							                +'</li>'
+							            +'</ul>'	
+									$("#item1").append(ul);
+									break;
+									case "W":
+									var ul =' <ul class="mui-table-view">'
+							                +'<li class="mui-table-view-cell clearfix">'
+							                	+'<p class="fl">订单号：   '+item.orderJnId+'</p>'
+							                	+'<p class="color852 fr">待支付</p>'
+							                	+'<div class="orderImg">'
+							                		+'<img src="common/images/myOrder/orderImg.png"/>'
+							                		+'<img src="common/images/myOrder/orderImg.png"/>'
+							                		+'<img src="common/images/myOrder/orderImg.png"/>'
+							                	+'</div>'
+							                +'</li>'
+							                +'<li class="mui-table-view-cell">'
+							                	+'共<i>'+item.amount+'</i>件&nbsp;&nbsp;总计<span class="toalPice">￥'+item.payAmount+'</span>'
+							                	+'<span class="fr immediatelyPay">立即支付</span>'
+							                	+'<span class="fr cannelPay">取消支付</span>'
+							                +'</li>'
+							            +'</ul>'	
+									$("#item1").append(ul);
+									break;
+									case "C2":
+									var ul =' <ul class="mui-table-view">'
+							                +'<li class="mui-table-view-cell clearfix">'
+							                	+'<p class="fl">订单号：   '+item.orderJnId+'</p>'
+							                	+'<p class="color852 fr">待支付</p>'
+							                	+'<div class="orderImg">'
+							                		+'<img src="common/images/myOrder/orderImg.png"/>'
+							                		+'<img src="common/images/myOrder/orderImg.png"/>'
+							                		+'<img src="common/images/myOrder/orderImg.png"/>'
+							                	+'</div>'
+							                +'</li>'
+							                +'<li class="mui-table-view-cell">'
+							                	+'共<i>'+item.amount+'</i>件&nbsp;&nbsp;总计<span class="toalPice">￥'+item.payAmount+'</span>'
+							                	+'<span class="fr immediatelyPay">立即支付</span>'
+							                	+'<span class="fr cannelPay">取消支付</span>'
+							                +'</li>'
+							            +'</ul>'	
+									$("#item1").append(ul);
+									break;
+									case "D":
+									var ul =' <ul class="mui-table-view">'
+							               		+' <li class="mui-table-view-cell clearfix">'
+							                	+'<p class="fl">订单号：  '+item.orderJnId+'</p>'
+							                	+'<p class=" fr">已完成</p>'
+							                	+'<div class="orderImg">'
+							                		+'<img src="common/images/myOrder/orderImg.png"/>'
+							                		+'<img src="common/images/myOrder/orderImg.png"/>'
+							                		+'<img src="common/images/myOrder/orderImg.png"/>'
+							                	+'</div>'
+							                +'</li>'
+							               +'<li class="mui-table-view-cell">'
+							                	+'共<i>'+item.amount+'</i>件&nbsp;&nbsp;总计<span class="toalPice">￥'+item.payAmount+'</span>'
+							                	+'<span class="fr cannelPay" orderJnId="'+item.orderJnId+'">查看订单</span>'
+							                +'</li>'
+							           +'</ul>'	
+									$("#item1").append(ul);
+									break;
+								default:
+									break;
+							}
+						});
+						
+					},
+					error:function(xhr,type,errorThrown){
+						//异常处理；
+						console.log(type);
+						alert(errorThrown);
+					}
+				});
+			}
+		</script>
+	</body>
+</html>

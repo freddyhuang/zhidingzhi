@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+/*html{ font-size:625%;}*/
+body{background-color: #fff; font-size: 12px;}
+div,input{ box-sizing:border-box;}
+*{ padding:0; margin:0;/*line-height:1em;写成line-height:100%也可以;*/ font-family:"微软雅黑";}
+a{color:#000; text-decoration:none; outline: none;}
+ul,ol{list-style:none;}
+h1,h2,h3,h4,h5,h6{font-size:12px; font-weight:normal;}
+b,strong{font-weight:normal;}
+i,em{font-style:normal;}
+img{display:block; max-width: 100%;border: 0;}
+.clearfix:after{clear:both; display:block; content:"";}
+.clearfix{zoom:1}
+input {list-style:none; border:0px;}
+button{list-style:none; border:0px;}
+.border-none{border:0;}
+.fl{float:left;}
+.fr{float:right;}
+.z-index4{z-index:4; position:relative;}
+.transpar-envy{opacity:0.5;filter:alpha(opacity:50);}
+.img-top{vertical-align:top;/*针对图片有下边框的第二种解决方法*/}
+.img-display{display:block;/*针对图片有下边框的第1种解决方法*/}
+/*表格*/
+table{ width:400px; border-collapse:collapse;}
+th, td{border:1px solid #eee; padding:0px;}
+/*表格*/
+
+
+/*在480 和767 像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width: 480px) and (max-width: 767px) {
+	
+}
+/*在小于480 像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width: 479px) {
+	
+	
+}

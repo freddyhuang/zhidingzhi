@@ -1,0 +1,33 @@
+body,html,ul,li,p,h1{margin: 0;padding: 0;}
+body{font-family: "微软雅黑";font-family: "microsoft yahei";font-family: "microsoft sans serif";}
+.fL{float: left;}
+.fR{float: right;}
+.clearfix:after{clear:both; display:block; content:"";}
+.clearfix{zoom:1}
+input {list-style:none; border:0px;}
+button{list-style:none; border:0px;}
+.border-none{border:0;}
+.dIB{display: inline-block;}
+li{list-style: none;}
+a{text-decoration: none;color: #000;}
+.color-666{color: #666;}
+.color-c40{color: #C40000;}
+.fsize40{font-size: 40px;}
+.pR{position: relative;}
+.pAL{position: absolute;left: 0;}
+.Ca4a4a4{color:#a4a4a4;}
+.marF{margin-left: 5px;}
+.marR{margin-right: 5px;}
+/*公共样式*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary{ margin:0; padding:0;}
+body{ font-family:Helvetica,Tahoma,Arial,sans-serif; color:#333; font-size:16px; background-color:#fff;}
+input, select, textarea{ font-family:Helvetica,Tahoma,Arial,sans-serif; background:#fff; margin:0; padding:0; outline:none;}
+textarea{ resize:none;}
+img{ border:none;}
+i, em{ font-style:normal;}
+ul li{ list-style-type:none;}
+a{ color:#06f; text-decoration:none;}
+/*全局样式*/
+.g-fl{ float:left;}
+.g-fr{ float:right;}
+.g-c{ clear:both;}

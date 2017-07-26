@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>自定义</title>
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_7t4q6pnbbmv1v2t9.css"/>
+		<link rel="stylesheet" type="text/css" href="common/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="common/css/mui.min.css"/>
+		
+		<link rel="stylesheet" type="text/css" href="common/css/custom2.css"/>
+		
+	</head>
+	<body>
+		<header>
+			<div class="headerImg">
+				<img src="common/images/custom/bg02.png" width="100%" height="320px"/>
+				<div class="bottle_area">
+					<img class="zdz_ping" src="common/images/custom/ping2.jpg"  width="148px"/>
+				</div>
+				<div class="zd_area">
+					<textarea id="editTxt" placeholder="输入表达内容"></textarea>
+					<img src="http://ooga6zvey.bkt.clouddn.com/personal/8.jpg" />
+				</div>
+				
+			</div>
+			
+		</header>
+		<div class="custom_btn">
+			<button type="button" class="mui-btn  mui-btn-royal mui-btn-outlined" id="se">
+		        <img src="common/images/custom/se.jpg" height="35px" width="35px" align="absmiddle" style="margin-right: 15px;" />颜色
+		     </button>
+		     <button type="button" class="mui-btn  mui-btn-royal mui-btn-outlined" id="TxtBtn">
+		            <span class="iconfont coloricon icon-22 fontSize25"></span>字体
+		     </button>
+		     <button type="button" class="mui-btn  mui-btn-royal mui-btn-outlined" id="sizeTxt">
+		            <span class=" iconfont coloricon fontSize25 icon-xiao"></span>字号
+		     </button>
+		</div>
+		<!--背景选项-->
+		<div class="mui-content">
+		    
+			    <div class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+			        <!--<a class="mui-control-item mui-active" href="#item1">个性风格</a>
+			        <a class="mui-control-item" href="#item2">婚庆专场</a> 
+			        <a class="mui-control-item" href="#item3">企业定制</a>-->
+			    </div>
+		   		 <div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-4"></div>
+			    <div class="mui-slider-group">
+			        <div id="item1" class="mui-slider-item mui-control-content mui-active">
+						<div class="temp">
+							<!--<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/addimg.jpg"  />-->
+						</div>
+			        </div>
+			        <div id="item2" class="mui-slider-item mui-control-content">
+			            <div class="temp">
+							<!--<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/addimg.jpg"  />-->
+						</div>
+			        </div>
+			        <div id="item3" class="mui-slider-item mui-control-content">
+			          	<div class="temp">
+							<!--<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/bg02.png"  />
+							<img src="common/images/custom/addimg.jpg"  />-->
+						</div>
+			        </div>
+			        
+				</div>
+			
+		</div>
+		<footer>
+			<div class="custom_save bglg_s">
+				保存
+			</div>
+		</footer>
+		<script type="text/javascript" src="common/js/mui.min.js" ></script>
+		<script src="common/js/base.js"></script>
+		<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript">
+				mui.init();
+				var i =0;
+				//改色
+				$("#se").click(function(){
+					i++;
+					switch (i){
+						case 1:
+							$("#editTxt").css({"color":"#006666"}).addClass("active1").removeClass("active4");
+							
+							break;
+						case 2:
+							$("#editTxt").css({"color":"#0033FF"}).addClass("active2").removeClass("active1");
+							break;
+						case 3:
+							$("#editTxt").css({"color":"#000"}).addClass("active3").removeClass("active2");
+							break;
+						default:
+							$("#editTxt").css({"color":"#cc0000"}).addClass("active4").removeClass("active3");
+							break;
+					}	
+					if (i>=4) {
+						i=0;
+					}
+					
+				})
+				
+				//改字体
+//				华文黑体:STHeiti
+//华文宋体：
+//华文彩云：STCaiyun 
+//华文行楷：STXingkai 
+//华文新魏：STXinwei 
+				$("#TxtBtn").click(function(){
+					i++;
+					switch (i){
+						case 1:
+							$("#editTxt").css({"font-family":"STHeiti"}).addClass("text1").removeClass("text4");
+							
+							break;
+						case 2:
+							$("#editTxt").css({"font-family":"STSong"}).addClass("text2").removeClass("text1");
+							break;
+						case 3:
+							$("#editTxt").css({"font-family":"STCaiyun "}).addClass("text3").removeClass("text2");
+							break;
+						default:
+							$("#editTxt").css({"font-family":"STXingkai"}).addClass("text4").removeClass("text3");
+							break;
+					}	
+					if (i>=4) {
+						i=0;
+					}
+					
+				})
+				//改字号
+				$("#sizeTxt").click(function(){
+					i++;
+					switch (i){
+						case 1:
+							$("#editTxt").css({"font-size":"15px"}).addClass("size1").removeClass("size4");
+							$("#sizeTxt span").addClass('icon-xiao').removeClass('icon-da');
+							break;
+						case 2:
+							$("#editTxt").css({"font-size":"18px"}).addClass("size2").removeClass("size1");
+							$("#sizeTxt span").removeClass('icon-xiao').addClass("icon-fontzhong");
+							break;
+						case 3:
+							$("#editTxt").css({"font-size":"20px"}).addClass("size3").removeClass("size2");
+							break;
+						default:
+							$("#editTxt").css({"font-size":"24px"}).addClass("size4").removeClass("size3");
+							$("#sizeTxt span").removeClass('icon-fontzhong').addClass("icon-da");
+							break;
+					}	
+					if (i>=4) {
+						i=0;
+					}
+					
+				})
+		</script>
+		<script>
+		function getListPicTemplate(){
+			var openId = getQueryString("openId")
+			mui.ajax("http://www.zdz1.com/web/product/listPicTemplate",{
+				dataType:'json',//服务器返回json格式数据
+				type:'get',//HTTP请求类型
+				timeout:100000,//超时时间设置为100秒；
+				success:function(data){
+					console.log(data)
+					var result = data.result;
+					$.each(result, function(index,item) {
+						var tabA = '<a class="mui-control-item" href="#item'+(index+1)+'">'+item.category+'</a>';
+						$(".mui-slider-indicator").append(tabA);
+						$(".mui-slider-indicator a:nth-child(1)").addClass('mui-active');
+						switch (item.category){
+							case '个性定制':
+								var list = item.list;
+								$.each(list, function(index,item) {
+									var picTemplate ='<img src="'+item.url+'" templateFlag ="'+item.templateFlag+'" templateId="'+item.templateId+'" />';
+									$("#item1 .temp").append(picTemplate);
+								});
+								break;
+							case '企业':
+								var list = item.list;
+								$.each(list, function(index,item) {
+									var picTemplate ='<img src="'+item.url+'" templateFlag ="'+item.templateFlag+'" templateId="'+item.templateId+'" />';
+									$("#item2 .temp").append(picTemplate);
+								});
+								break;
+							case '婚礼':
+								var list = item.list;
+								$.each(list, function(index,item) {
+									var picTemplate ='<img src="'+item.url+'" templateFlag ="'+item.templateFlag+'" templateId="'+item.templateId+'" />';
+									$("#item3 .temp").append(picTemplate);
+								});
+								break;
+							default:
+								break;
+						}
+						
+					});
+					$("#item1 .temp,#item2 .temp,#item3 .temp").find('img').on("touchend",function(){
+						
+					 var picTemplateUrl = $(this).attr('src');
+					 $(".zd_area img").attr('src',picTemplateUrl);
+					});
+				},
+				error:function(xhr,type,errorThrown){
+					//异常处理；
+					console.log(type);
+					alert(errorThrown);
+				}
+			});
+		}
+		getListPicTemplate();
+		</script>
+	</body>
+</html>

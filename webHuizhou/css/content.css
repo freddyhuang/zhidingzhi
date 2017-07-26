@@ -1,0 +1,49 @@
+@charset "utf-8";
+#con{
+	width: 1190px;
+	margin: 10px auto;
+}
+#con .con-item{
+	width: 100%;	
+}
+#con .con-item .con-item-ul{
+	overflow: hidden;
+}
+#con .con-list{
+	width: 260px;
+	height: 389px;
+	margin-left: 20px;
+	margin-top: 30px;
+	opacity: 1;
+}
+#con .con-list a{
+	border: 1px solid transparent; 
+}
+#con .con-list img{
+	width: 251px;
+	height: 263px;
+}
+#con .con-list:hover a{
+	border: 1px solid red;
+}
+#con .con-list .conlist-con{
+	position: relative;
+}
+#con .con-list .conlist-con:hover img{
+	opacity: 0.8;
+}
+#con .con-list .conlist-con .hot{
+	position: absolute;
+	top: -12px;
+	right: 0px;
+	font-size: 25px;
+	color: #c40000;
+}
+#con .con-list .conlist-con .conlist-txt-con{
+	margin-bottom: 10px;
+	height: 90px;
+	color: #333;
+}
+#con .con-list .conlist-con .conlist-sale{
+	margin-left: 10px;
+}

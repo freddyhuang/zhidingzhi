@@ -1,0 +1,42 @@
+.mui-segmented-control.mui-segmented-control-inverted~.mui-slider-progress-bar{
+	background-color: #8529ff;
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+	color: #8529ff;
+}
+.mui-ios .mui-table-view-cell{
+	line-height: 2.5rem;
+	color: #666;
+}
+.mui-table-view{
+	margin-top: 1.5rem;
+	border-top: 1px solid #D5D5D5;
+	border-bottom: 1px solid #D5D5D5;
+}
+.mui-slider .mui-slider-group .mui-slider-item img{
+	width: 65px;
+	height: 65px;
+}
+.orderImg{
+	clear: both;
+}
+.toalPice{
+	color: #8529FF;
+	font-size: 1.8rem;
+	font-weight: 600;
+}
+.cannelPay{
+	color:#8529ff;
+}
+.immediatelyPay{
+	width: 6.5rem;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	text-align: center;
+	color: #fff;
+	font-size: 1.2rem;
+	border-radius: 5px;
+	background: -webkit-linear-gradient(left,#8529ff,#ad52ff);
+	margin-left: 1.2rem;
+	color:#f9f3ff;
+}

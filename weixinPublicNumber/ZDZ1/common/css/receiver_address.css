@@ -1,0 +1,44 @@
+section{
+	background: #fff;
+	text-indent: 1.5rem;
+	color: #333333;
+	line-height: 1.5rem;
+	border-bottom: 1px solid #D5D5D5;
+	border-top:1px solid #D5D5D5;
+	margin-bottom: 1rem;
+}
+.receiver_address_top{
+	font-size: 1.4rem;
+	font-weight:600;
+	margin-top: 1.7rem;
+}
+.receiver_address_center{
+	font-size: 1.2rem;
+	padding: 1rem 0;
+	border-bottom:1px solid #d5d5d5;
+	margin-left: 1.5rem;
+	text-indent: 0;
+}
+.receiver_address_phone{
+	margin-left: 1rem;
+}
+.receiver_address_bottom{
+	padding: 1.5rem 0;
+	font-size: 1.2rem;
+}
+.receiver_address_text span{
+	vertical-align:sub;
+}
+.receiver_address_del{
+	margin-right: 1.5rem;
+}
+.addAdress_btn{
+	width: 75%;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	color: #fff;
+	margin: 0 auto;
+	border-radius: 5px;
+	margin-bottom:30px;
+}

@@ -1,0 +1,27 @@
+@charset "utf-8";
+#header .h-nav{
+	width: 320px;
+}
+#header .h-ul li{
+	margin: 0;
+	padding: 0;
+}
+#header .h-ul li.h-mobiletype a{
+	color: #DF5685;
+}
+#QQ a img{
+	width: 42px;
+	height: 80px;
+}
+#qq{
+	display: none;
+}
+#con{
+	width: 100%;
+}
+#con .con-item .con-item-ul{
+	width: 100%;
+}
+#footer{
+	display: none;
+}

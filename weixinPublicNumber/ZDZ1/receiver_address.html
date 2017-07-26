@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>收货地址</title>
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_uqxys0enf0jgiudi.css"/>
+		<link rel="stylesheet" type="text/css" href="common/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="common/css/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="common/css/receiver_address.css"/>
+	</head>
+	<body>
+		<!--<section id="receiver_address1">
+			<p class="receiver_address_top">广州市天河区正佳广场5楼</p>
+			<p class="receiver_address_center"><span class="receiver_address_name">小星星</span><span class="receiver_address_phone">13631458355</span></p>
+			<div class="receiver_address_bottom clearfix">
+				<p class="receiver_address_text fl"><span class="iconfont coloricon icon-moren fontSize18"></span> 默认地址</p>
+				<p class="receiver_address_del fr"><span class="iconfont icon-shanchu"></span> 删除</p>
+				<p class="receiver_address_edit fr"><span class="iconfont icon-bianji"></span> 编辑</p>
+			</div>
+		</section>
+		<section id="receiver_address2">
+			<p class="receiver_address_top">广州市天河区正佳广场5楼</p>
+			<p class="receiver_address_center"><span class="receiver_address_name">小星星</span><span class="receiver_address_phone">13631458355</span></p>
+			<div class="receiver_address_bottom clearfix">
+				<p class="receiver_address_text fl"><span class="iconfont coloricon icon-moren fontSize18"></span> 默认地址</p>
+				<p class="receiver_address_del fr"><span class="iconfont icon-shanchu"></span> 删除</p>
+				<p class="receiver_address_edit fr"><span class="iconfont icon-bianji"></span> 编辑</p>
+			</div>
+		</section>
+		<section id="receiver_address3">
+			<p class="receiver_address_top">广州市天河区正佳广场5楼</p>
+			<p class="receiver_address_center"><span class="receiver_address_name">小星星</span><span class="receiver_address_phone">13631458355</span></p>
+			<div class="receiver_address_bottom clearfix">
+				<p class="receiver_address_text fl"><span class="iconfont coloricon icon-moren fontSize18"></span> 默认地址</p>
+				<p class="receiver_address_del fr"><span class="iconfont icon-shanchu"></span> 删除</p>
+				<p class="receiver_address_edit fr"><span class="iconfont icon-bianji"></span> 编辑</p>
+			</div>
+		</section>-->
+		<div class="addAdress_btn bglg_s">增加地址</div>
+		<script type="text/javascript" src="common/js/mui.min.js" ></script>
+		<script src="common/js/base.js"></script>
+		<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript">
+				mui.init();
+		</script>
+		<script>
+			$(".addAdress_btn").on("touchend",function(){
+			  mui.openWindow({
+			    url:'add_address.html'+window.location.search
+			  });
+			});
+		</script>
+		<script type="text/javascript">
+			//删除
+			mui.init();
+		function del_address(sid){
+			var openId = getQueryString("openId")
+			var addressId = sid;
+			mui.ajax("http://www.zdz1.com/web/user/deleteAddress",{
+				dataType:'json',//服务器返回json格式数据
+				data:{
+					openId:decodeURIComponent(openId),
+					addressId:addressId
+				},
+				type:'post',//HTTP请求类型
+				timeout:100000,//超时时间设置为100秒；
+				success:function(data){
+					//服务器返回响应，根据响应结果，分析是否登录成功；
+					console.log(data)
+					getlistAddress();
+					alert("删除成功")
+					window.location.reload();
+					
+				},
+				error:function(xhr,type,errorThrown){
+					//异常处理；
+					console.log(type);
+					alert(errorThrown);
+				}
+			});
+		}
+		
+		</script>
+		<script type="text/javascript">
+		
+			mui.init();
+			
+			//设置默认地址
+			function setDefaultAddress(defaultId){
+				var openId = getQueryString("openId")
+				var addressId = defaultId;
+					mui.ajax("http://www.zdz1.com/web/user/setDefaultAddress",{
+					dataType:'json',//服务器返回json格式数据
+					data:{
+						openId:openId,
+						
+						addressId:addressId
+					},
+					type:'post',//HTTP请求类型
+					timeout:100000,//超时时间设置为100秒；
+					success:function(data){
+						//服务器返回响应，根据响应结果，分析是否登录成功；
+						console.log(data)
+						
+					},
+					error:function(xhr,type,errorThrown){
+						//异常处理；
+						console.log(type);
+						alert(errorThrown);
+					}
+				});
+			}
+			//获取我的地址
+			function getlistAddress(){
+				var openId = getQueryString("openId")
+					mui.ajax("http://www.zdz1.com/web/user/listAddress",{
+					dataType:'json',//服务器返回json格式数据
+					data:{
+						openId:openId
+					},
+					type:'get',//HTTP请求类型
+					timeout:100000,//超时时间设置为100秒；
+					success:function(data){
+						//服务器返回响应，根据响应结果，分析是否登录成功；
+						console.log(data)
+						var result = data.result;
+						console.log(result);
+						$.each(result, function(index,item) {
+						var section = '<section addressId="addressId">'
+							+'<p class="receiver_address_top">'+item.contactsProvince+item.contactsCity+item.contactsBlock+item.contactsAddress+'</p>'
+							+'<p class="receiver_address_center"><span class="receiver_address_name">'+decodeURI(item.contactsName)+'</span><span class="receiver_address_phone">'+item.contactsMobile+'</span></p>'
+							+'<div class="receiver_address_bottom clearfix">'
+								+'<p class="receiver_address_text fl"  DefaultAddress="'+item.addressId+'"><span class="iconfont icon-moren fontSize18"></span> 默认地址</p>'
+								+'<p class="receiver_address_del fr" data="'+item.addressId+'"><span class="iconfont icon-shanchu"></span> 删除</p>'
+								+'<p class="receiver_address_edit fr" id="'+item.addressId+'"><span class="iconfont icon-bianji" ></span> 编辑</p>'
+							+'</div>'
+						+'</section>'
+						$("body").prepend(section);
+					});
+						
+					$(".receiver_address_edit").on("touchend",function(event){
+						var addressId = $(this).attr('id');
+						console.log(addressId)
+					  mui.openWindow({
+					    url:'edit_address.html'+window.location.search+"&addressId="+addressId
+					  });
+					});
+					 
+					 $(".receiver_address_del").on("touchend",function(){
+						var sid = $(this).attr('data');
+							console.log(sid);
+							del_address(sid);
+						});
+						
+					
+					//设置默认的地址
+					var a , k;
+						$(".receiver_address_text").click(function(event){
+							$(this).attr('data-ng',true);
+							var a = $(this).attr('data-ng');
+						 var defaultId = $(this).attr('DefaultAddress');
+							setDefaultAddress(defaultId);
+							mui.toast("设置成功");
+							$(this).addClass('coloricon');
+						$(".receiver_address_text").each(function(index){
+						 		k = $(this).eq(index);
+								
+						});
+					})
+					},
+					error:function(xhr,type,errorThrown){
+						//异常处理；
+						console.log(type);
+						alert(errorThrown);
+					}
+				});
+			}
+			getlistAddress();
+		</script>
+	</body>
+</html>

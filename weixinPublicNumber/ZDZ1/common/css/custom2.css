@@ -1,0 +1,186 @@
+body{
+	background: #fff;
+}
+.headerImg{
+	width: 100%;
+	position: relative;
+}
+/*定制区域*/
+.zd_area{
+	position: absolute;
+	left: 50%;
+	bottom: 17%;
+	width: 145px;
+	margin-left:-74px;
+	margin-top: -100px;
+	height: 170px;
+}
+.zd_area img{
+	width: 100%;
+	height: 100%;
+}
+.bottle_area{
+	position: absolute;
+	left: 50%;
+	top:50%;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+
+#editTxt{
+	position: absolute;
+	left: 50%;
+	top: 0%;
+	z-index: 2;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	background: rgba(0,0,0,0);
+	border: none;
+	color: #fff;
+	font-family: "楷体";
+	font-size: 19px;
+	height: 100px;
+}
+textarea::-webkit-input-placeholder{
+	color: #fff;
+	font-weight: 700;
+	font-family: "STXinwei";
+	font-size: 19px;
+}
+textarea.active1::-webkit-input-placeholder{
+	color: #006666;
+	font-weight: 700;
+	font-family: "楷体";
+	font-size: 19px;
+}
+textarea.active2::-webkit-input-placeholder{
+	color: #0033FF;
+	font-weight: 700;
+	font-family: "楷体";
+	font-size: 19px;
+}
+textarea.active3::-webkit-input-placeholder{
+	color: #000;
+	font-weight: 700;
+	font-family: "楷体";
+	font-size: 19px;
+}
+textarea.active4::-webkit-input-placeholder{
+	color: #cc0000;
+	font-weight: 700;
+	font-family: "楷体";
+	font-size: 19px;
+}
+/*改字体*/
+textarea.text1::-webkit-input-placeholder{
+	color: #fff;
+	font-weight: 700;
+	font-family: "STHeiti";
+	font-size: 19px;
+}
+textarea.text2::-webkit-input-placeholder{
+	color: #fff;
+	font-weight: 700;
+	font-family: "STSong";
+	font-size: 19px;
+}
+textarea.text3::-webkit-input-placeholder{
+	color: #fff;
+	font-weight: 700;
+	font-family: "STCaiyun";
+	font-size: 19px;
+}
+textarea.text4::-webkit-input-placeholder{
+	color: #fff;
+	font-weight: 700;
+	font-family: "STXingkai";
+	font-size: 19px;
+}
+/*改字体大小*/
+textarea.size1::-webkit-input-placeholder{
+	color: #fff;
+	font-weight: 700;
+	font-family: "STHeiti";
+	font-size: 15px;
+}
+textarea.size2::-webkit-input-placeholder{
+	color: #fff;
+	font-weight: 700;
+	font-family: "STSong";
+	font-size: 18px;
+}
+textarea.size3::-webkit-input-placeholder{
+	color: #fff;
+	font-weight: 700;
+	font-family: "STCaiyun";
+	font-size: 20px;
+}
+textarea.size4::-webkit-input-placeholder{
+	color: #fff;
+	font-weight: 700;
+	font-family: "STXingkai";
+	font-size: 24px;
+}
+
+
+.mui-btn-danger, .mui-btn-negative, .mui-btn-red{
+	border: 1px solid #8529FF;
+}
+.mui-btn-outlined.mui-btn-royal, .mui-btn-outlined.mui-btn-negative, .mui-btn-outlined.mui-btn-red{
+	color: #8529FF;
+}
+.mui-btn{
+	padding: 3px 15px;
+	margin: 0 10px;
+	font-size: 1.5rem;
+}
+.mui-btn span{
+	margin-right: 10px;
+}
+.custom_btn{
+	margin: 22px auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+	color: #8529ff;
+}
+.mui-segmented-control.mui-segmented-control-inverted~.mui-slider-progress-bar{
+	background-color: #8529ff;
+	border-bottom: none;
+}
+.mui-btn-purple, .mui-btn-royal{
+	border: 1px solid #8529FF;
+}
+.mui-slider-progress-bar{
+	height: 0;
+	width: 0;
+}
+.mui-segmented-control.mui-segmented-control-inverted~.mui-slider-progress-bar.mui-active{
+	background-color: #8529ff;
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+	border-bottom: 2px solid #8529ff;
+}
+.temp{
+	display: flex;width:100%;flex-direction: row;margin-bottom: 1rem;overflow-x: scroll;overflow-y: hidden;
+}
+.temp img{
+	width: 44px!important;
+	height: 44px;
+	margin: 12px 15px;
+}
+.custom_save{
+	width: 70%;
+	color:#fff;
+	border-radius: 8px;
+	text-align: center;
+	font-size: 1.4rem;
+	height: 50px;
+	line-height: 50px;
+	margin: 15px auto;
+}
+/*
+ 字号大小用 14px  18px  22px  26px  28px
+ */

@@ -9,8 +9,8 @@
 	bottom: .5rem;
 }
 .swiper-pagination-bullet{
-	width: 12px;
-	height: 12px;
+	width: 10px;
+	height: 10px;
 }
 .swiper-pagination-bullet-active{
 	background: #984B99;

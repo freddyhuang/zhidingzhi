@@ -1,0 +1,131 @@
+body{
+	background: #fff;
+}
+.headerImg{
+	width: 100%;
+	position: relative;
+}
+.zd_area{
+	position: absolute;
+	left: 50%;
+	bottom: 17%;
+	width: 145px;
+	margin-left:-74px;
+	margin-top: -100px;
+	height: 170px;
+}
+.zd_area img{
+	width: 100%;
+	height: 100%;
+}
+.zdz_ping{
+	position: absolute;
+	left: 50%;
+	top:50%;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+.myselt,.shopCar_ru{
+	position: absolute;
+	top: 20px;
+	right: 3px;
+	background: rgba(1,1,1,0.5);
+	color: #fff;
+	padding: 10px 15px;
+	border-radius: 50px;
+	font-size: 16px;
+}
+.shopCar_ru{
+	top: 70px;
+}
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item{
+	border-bottom: none!important;
+}
+.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+	color: #8529ff;
+}
+.mui-segmented-control.mui-segmented-control-inverted~.mui-slider-progress-bar{
+	background-color: #8529ff;
+}
+.mui-slider-progress-bar{
+	height: 0px;
+	min-height: 0px;
+}
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+	border-bottom: 2px solid #8529FF;
+}
+.mui-btn{
+	padding: 10px 20px;
+
+}
+
+ #item2 .mui-btn{
+	padding: 10px 20px;
+	margin-top: 8px;
+	margin-left: 5px;
+}
+.bglg_s{
+	color: #fff!important;
+}
+.bglg_n{
+	color:#8529ff;
+	border: 1px solid #8529FF;
+	margin-left: 1rem;
+}
+.jiuzhi_btn{
+	margin: 30px 15px;
+}
+.numApri{
+	margin-left:15px;
+	margin: 15px 8px;
+	font-size: 1.6rem;
+}
+.numApri P{
+	margin-bottom: 0px;
+	font-size: 1.6rem;
+}
+.numAprices{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 35px 0;
+}
+.zd_total{
+	box-shadow: 1px 1px 0px 0px #D5D5D5;
+	height: 52px;
+	text-indent: 9px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.zd_total_type{
+	margin-left: 9px;
+}
+.zd_totalNum p{
+	margin: 0;
+}
+.zd_totalNum_btn{
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	line-height: 52px;
+	font-size: 18px;
+	font-weight: 600;
+}
+.zd_shopCar{
+	height: 100%;
+}
+.zd_shopCar{
+	padding-right: 8px;
+}
+.zd_media {
+	padding: 0 10px;
+}
+.footer{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}

@@ -1,0 +1,82 @@
+li{list-style: none;}
+header{width: 100%;height: 50px;line-height: 50px;background: #000000;
+display: flex;justify-content: space-around;color: #fff;font-size: 12px;position: fixed;top: 0px;left: 0px;z-index: 2;}
+body{
+	background: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1498590110133&di=cbd6b101892ac0ecf0b933e92e188d04&imgtype=0&src=http%3A%2F%2Fpic23.nipic.com%2F20120914%2F3763118_234836155000_2.png") no-repeat;
+	background-attachment: fixed;
+}
+
+/*轮播图*/
+.warp{
+	margin-top:50px
+}
+/*中部*/
+.content ul{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-top: 10px;
+	color: #fff;
+}
+.content ul li{
+	width: 85px;
+	height: 65px;
+	line-height: 65px;
+	text-align: center;
+	color:#fff;
+	font-family: "楷体";
+	border: 1px solid #fff;
+	margin: 5px 10px;
+	box-shadow: 1px 1px 1px 1px #67490D;
+	border-radius: 5px;
+	background: rgba(1,1,1,0.3);
+}
+/*微信二维码*/
+.wx_QRcode{
+	width: 256px;
+	height: 256px;
+	
+	margin:  50px auto;
+}
+.wx_QRcode p{
+	text-align: center;
+}
+/*尾部*/
+footer{
+	padding:15px;
+	margin-bottom: 50px;
+	background: #2B2B2B;
+	color: #fff;
+}
+.mui-bar{
+	background: #000000;
+	color: #fff;
+}
+.mui-bar-tab .mui-tab-item{
+	color: #fff;
+}
+.record{
+	margin-top: 15px;
+	text-align: center;
+	color: #777777;
+}
+/*客服电话icon*/
+.customer_service_icon{
+	position: fixed;
+	bottom: 120px;
+	right: 10px;
+	width: 54px;
+	height: 54px;
+	background: url(../img/customer_service_icon.png) no-repeat;
+	background-size: 54px 54px;
+}
+.customer_service_sms{
+	position: fixed;
+	bottom: 50px;
+	right: -3px;
+	width: 54px;
+	height: 54px;
+}
+.companyAddress{
+	margin-bottom: 15px;
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>支付前</title>
+		<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/css/header.css"/>
+		<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/css/paybefore.css"/>
+		<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/css/footer.css"/>
+	</head>
+	<body>
+		<header>
+		 	<div class="headerTop clearfix">
+		 		<div class="header-left fl">
+			 		<div class="logo fl">
+			 			<a  href="javascript:;">
+			 				<img src="{dede:global.cfg_templets_skin/}/images/header/logo.png" width="86" height="49" alt="只定制logo"/>
+			 			</a>
+			 		</div>
+			 		<h1 class="logoTxt fl">只定制酒&nbsp;&nbsp;&nbsp;&nbsp;上只定制</h1>
+			 		<div class="vip fl">
+			 			<p class="vipCenter">会员中心</p>
+			 			<p class="factory">厂家入驻</p>
+			 		</div>
+			 	</div>
+		 		<div class="header-right fr clearfix">
+		 			<span class="login fl">登录</span>
+		 			<!--
+                     	登录弹窗
+                     -->
+		 			<div id='loginTip'>
+		 				<div class="loginTip-close">
+		 					×
+		 				</div>
+		 				<div class="loginTip-line">
+		 					<P>登录</P>
+		 				</div>
+		 				<div class="loginTip-center clearfix">
+		 					<input type="text" name="user" id="user" value="" placeholder="请输入手机号码" />
+		 					<input type="password" name="psd" id="psd" value="" placeholder="请输入密码" />
+		 					<a class="fl" href="javascript:;">快速登录</a>
+		 					<a class="forgetpsd fr" href="javascript:;">忘记密码</a>
+		 				</div>
+		 				<div class="loginTip-btn">
+		 					<a href="javascript:;">登录</a>
+		 				</div>
+		 			</div>
+		 			<i class="topLine fl"></i>
+		 			<span class="register fl">注册</span>
+		 			<!--
+                     	注册弹窗
+                     -->
+		 			<div id="registerTip">
+		 				<div class="registerTip-close">
+		 					×
+		 				</div>
+		 				<div class="registerTip-line">
+		 					<P>注册</P>
+		 				</div>
+		 				<div class="registerTip-center clearfix">
+		 					<input type="text" name="user" id="new-user" value="" placeholder="请输入手机号码" />
+		 					<div class="getCode">
+		 						<input type="text" name="code" id="code" value="" placeholder="短信验证码" />
+		 						<button class="code-btn">获取验证码</button>
+		 					</div>
+		 					<input type="password" name="psd" id="new-psd" value="" placeholder="密码由6-16位数字和字母组成" />
+		 					<a class="fr" href="javascript:;">已有账号</a>
+		 				</div>
+		 				<div class="registerTip-btn">
+		 					<a href="javascript:;">创建账号</a>
+		 				</div>
+		 			</div>
+		 			<!--
+                     	修改密码弹窗
+                     -->
+		 			<div id="resetpsd">
+		 				<div class="resetpsd-close">
+		 					×
+		 				</div>
+		 				<div class="resetpsd-line">
+		 					<P>修改密码</P>
+		 				</div>
+		 				<div class="resetpsd-center clearfix">
+		 					<input type="text" name="user" id="new-user" value="" placeholder="请输入手机号码" />
+		 					<div class="getCode">
+		 						<input type="text" name="code" id="code" value="" placeholder="短信验证码" />
+		 						<button class="code-btn">获取验证码</button>
+		 					</div>
+		 					<input type="password" name="psd" id="new-psd" value="" placeholder="输入旧密码" />
+		 					<input type="password" name="psd" id="new-psd" value="" placeholder="输入新密码" />
+		 					
+		 				</div>
+		 				<div class="resetpsd-btn">
+		 					<a href="javascript:;">完成</a>
+		 				</div>
+		 			</div>
+		 			<div class="shopCar fl">
+		 				<img src="{dede:global.cfg_templets_skin/}/images/header/shopCar_03.png" />
+		 				<p  class="shopCar-txt">购物车</p>
+		 			</div>
+		 		</div>
+		 	</div>
+		 	<nav class="nav">
+		 		<ul class="clearfix">
+		 			<li><a href="#">品牌选择</a></li>
+		 			<li class="sex"><a href="#">首页</a></li>
+		 			<li><a href="#">个性定制</a></li>
+		 			<li><a href="#">企业活动</a></li>
+		 			<li><a href="#">婚庆活动</a></li>
+		 		</ul>
+		 	</nav>
+		 </header>
+		 <div class="con">
+		 	<div class="addPay clearfix">
+				<h3 class="fl">添加银行卡快捷支付</h3>
+				<img class="fl" src="{dede:global.cfg_templets_skin/}/images/container/paytype/pay_03.png"/>
+		 	</div>
+		 	<div class="paytype">
+			 		<!--中国工商银行-->
+			 		<div class="Union clearfix">
+			 			<div class="Union-txt fl">
+			 				<p>中国工商银行</p>
+			 			</div>
+			 			<div class="Union-radio fl">
+			 				<input type="radio" name="Union" id="gs" value=""/>
+			 				<label  for="gs"></label>
+			 			</div>
+			 		</div>
+			 		<!--中国建设银行-->
+			 		<div class="Union clearfix">
+			 			<div class="Union-txt fl">
+			 				<p>中国建设银行</p>
+			 			</div>
+			 			<div class="Union-radio fl">
+			 				<input type="radio" name="Union" id="js" value=""/>
+			 				<label class="on"  for="js"></label>
+			 			</div>
+			 		</div>
+			 		<!--中国农业银行-->
+			 		<div class="Union clearfix">
+			 			<div class="Union-txt fl">
+			 				<p>中国农业银行</p>
+			 			</div>
+			 			<div class="Union-radio fl">
+			 				<input type="radio" name="Union" id="ny" value=""/>
+			 				<label for="ny"></label>
+			 			</div>
+			 		</div>
+			 		<!--中国银行-->
+			 		<div class="Union clearfix">
+			 			<div class="Union-txt fl">
+			 				<p>中国银行</p>
+			 			</div>
+			 			<div class="Union-radio fl">
+			 				<input type="radio" name="Union" id="zg" value=""/>
+			 				<label for="zg"></label>
+			 			</div>
+			 		</div>
+				</div>
+				<!--
+	             	银行卡信息栏
+	             -->
+				<div class="bankInfor clearfix">
+					<span class="bankNum">6227************567</span>
+					<span class="bankName">刘xxxxx</span>
+					<a class="fr" href="javascript:;">支付</a>
+				</div>
+			</div>
+		 <footer>
+		 	<div class="footerTop">
+		 		<a href="#">首页</a>
+		 		<a href="#">自我介绍</a>
+		 		<a href="#">寻找合伙人</a>
+		 		<a href="#">来找我呀</a>
+		 		<a href="#">批评吐槽</a>
+		 	</div>
+		 	<div class="footerCenter">
+		 		广州捌每刻电子商务有限公司
+		 	</div>
+		 	<div class="footerBottm">
+		 		Copyright © 2015-2016 zdz1.com 网上经营许可证号：粤ICP备15015842号-1
+		 	</div>
+		 </footer>
+	</body>
+</html>

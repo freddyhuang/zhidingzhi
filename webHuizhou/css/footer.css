@@ -1,0 +1,87 @@
+@charset "utf-8";
+#footer{
+	width: 100%;
+	min-width: 1230px;
+	border-top: 1px solid #D1D7DC;
+	font-family: "Microsoft YaHei",tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif
+}
+#footer .footertop{
+	width:1230px;
+	background: #fff;
+	margin: 25px auto;
+}
+#footer .footertop .tmall-ensure{
+	width: 100%;
+	padding: 50px 0px;
+	border-bottom: 1px solid #DDDDDD;
+}
+#footer .foIcon{
+	vertical-align: middle;
+}
+#footer .footertop .tmall-ensure .ftext{
+	vertical-align: middle;
+	margin-left: 5px;
+}
+#footer .footertop .tmall-ensure a{
+	width: 185px;
+	color: #000;
+	vertical-align: middle;
+}
+#footer .footerAfirst{
+	margin-left: 80px;
+}
+#footer .ftline{
+	display: inline-block;
+	width: 1px;
+	height: 40px;
+	background: #999999;
+	margin: 20px 45px;
+}
+#footer .tmall-desc{
+	width: 100%;
+}
+#footer .tmall-desc .descfist{
+	margin-left: 40px;
+}
+#footer .descList{
+	width: 130px;
+	font: 12px/1.5 tahoma,arial,"\5b8b\4f53";
+	padding: 25px 45px;
+}	
+#footer .descImg img{
+	left: 60px;
+}
+#footer .footerbottom{
+	width: 100%;
+	min-height: 177px;
+	background: #000;
+	border-top: 2px solid red;
+}
+#footer .footerbottom p{
+	width: 1190px;
+	height: 25px;
+	line-height: 25px;
+	padding: 5px 0;
+	margin: 0 auto;
+}
+
+#footer .footerbottom .mui-global-fragment-load a{
+	margin-right: 3px;
+	font: 12px/1.5 tahoma,arial,"\5b8b\4f53";
+	color: #fff;
+}
+#footer .footer-copyright{
+	width: 1190px;
+	color: #a4a4a4;
+	margin: 0 auto;
+	font-size: 14px;
+	line-height: 20px;
+}
+#footer .footer-copyright a{
+	margin-right:65px;
+}
+#footer .footer-copyright b{
+	display: block;
+	color: #686868;
+	font-weight: 400;
+}

@@ -1,0 +1,5 @@
+div,ul, li,p,ol,dl,dd,dt{margin: 0;padding: 0;}
+/*字体大小*/
+.fontSize45{
+	font-size: 45px;
+}

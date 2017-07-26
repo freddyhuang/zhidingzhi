@@ -1,0 +1,94 @@
+@charset "utf-8";
+.con{
+	width:780px;
+	margin-left:410px;
+}
+.con h3{
+	width: 180px;
+	color:#d92616;
+	font-size: 18px;
+	margin: 50px 0;
+}
+.con img{
+	margin: 50px 138px;
+}
+.con .paytype{
+	width: 100%;
+}
+/*在线支付*/
+.con .paytype .Union{
+	width: 100%;
+}
+.con .paytype .Union  .Union-txt{
+	width: 180px;
+
+}
+.con .paytype p{
+	font-size: 18px;
+	line-height: 27px;
+	margin-bottom: 48px;
+	color: #999;
+}
+/*银行卡信息栏*/
+.con .bankInfor{
+	width: 100%;
+	color: #999;
+	font-size:18px;
+	margin: 65px 0;
+}
+.con .bankInfor .bankNum{
+	display: inline-block;
+	border: 1px dashed #333;
+  	padding:20px 0 20px 10px;
+	width: 40%;
+}
+.con .bankInfor .bankName{
+	margin: 0 20px;
+}
+.con .bankInfor a{
+	display:block;
+	width: 280px;
+	height: 48px;
+	background-color: #D92616;
+	color: #fff;
+	line-height: 48px;
+	text-align: center;
+	margin-top: 7px;
+}
+/*美化选中按钮样式*/
+.con .paytype input[type='radio']{
+	display: none;
+	cursor: pointer;
+	position: absolute;
+	
+}
+.con .paytype input[type='radio'] + label{
+	position: relative;
+	vertical-align: middle;
+	margin: 50px 140px;
+}
+.con .paytype input[type='radio'] + label:before{
+	content: "";
+	display:inline-block;
+	width:25px;
+	height: 25px;
+	border-radius: 50%;
+	border: 1px solid #999;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.con .paytype input[type='radio'] + label.on:before{
+	border: 1px solid #333;
+}
+.con .paytype input[type='radio'] + label.on:after{
+	content: "";
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	background: #333;
+	border-radius: 50%;
+	position: absolute;
+	top: 7px;
+	left: 7px;
+}

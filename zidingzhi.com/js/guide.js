@@ -1,8 +1,11 @@
 $(document).ready(function(){
 	var $shareBtn = $(".shareBtn .left");
-	var $shareGuide = $(".shareGuide");
+	var $shareGuide = $(".mask");
 	$shareBtn.bind("click",function(){
-		Json.mask();
 		$shareGuide.show();
 	})
+	$(document).on("click",'.mask',function(){
+		$(this).fadeOut();
+	})
+	$(".bg").css({'height':$(document).height()+'px'})//动态设置瓶子的高度
 })

@@ -1,0 +1,108 @@
+header{
+	height: 50px;
+	line-height: 50px;
+	display: flex;
+	margin: 0 15px;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	justify-content: space-between;
+}
+.goods_item{
+	border-top: 1px solid #D7D7D7;
+	border-bottom: 1px solid #D7D7D7;
+}
+.goodsTxt{
+	border-bottom: 1px solid #D7D7D7;
+	background: #fff;
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+	padding: 15px;
+}
+.mui-right{
+	display: flex;
+	padding: 20px 15px;
+	border-bottom: 1px solid #D7D7D7;
+}
+.typeRight{
+	width: 100%;
+	margin-left: 1rem;
+}
+.zdzName{
+	font-size: 19px;
+}
+.typeCenter{
+	margin: 10px 0;
+	color: #B6B6B6;
+	font-size: 16px;
+}
+.typeCenter span{
+	margin-right: 0.5rem;
+}
+.praiseAnum{
+	display: flex;
+	justify-content: space-between;
+}
+.praise{
+	flex-direction: column;
+	justify-content: center;
+}
+.praiseAnum i{
+	color: #222222;
+}
+.goods_prices{
+	margin-top: 10px;
+	background: #fff;
+	
+	border-bottom: 1px solid #D7D7D7;
+	border-top: 1px solid #D7D7D7;
+}
+.goods_prices_txt{
+	border-bottom: 1px solid #D7D7D7;
+	padding: 15px;
+}
+.goods_prices_total{
+	padding: 15px;
+	
+}
+.goods_prices_total p{
+	color: #222222;
+	font-size: 16px;
+	line-height: 30px;
+}
+.Pay{
+	margin: 15px 0;
+	width:100%;
+	height: 50px;
+	line-height: 50px;
+	
+	text-align: center;
+	color: #fff;
+	font-size: 1.8rem;
+	display: flex;
+	justify-content:space-around;
+}
+.closePay{
+	width: 45%;
+	font-size: 1.8rem;
+	border: 1px solid #8529FF;
+	
+	border-radius: 10px;
+}
+.suePay{
+	width: 45%;
+	border-radius: 10px;
+}
+.re_Pay{
+	height: 50px;
+	line-height: 50px;
+	border-radius: 10px;
+	width: 80%;
+	margin:  10px auto;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+}
+.goods_prices_total span{
+	font-size: 15px;
+}

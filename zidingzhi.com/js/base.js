@@ -1,5 +1,5 @@
 var Json = {
-	mask: function() {
+	mask: function(H) {
 		var div = $("<div>").addClass("div_obj");
 		console.log(div);
 		$("body").append(div);
@@ -12,7 +12,7 @@ var Json = {
 			'z-index':'1000000000',
 			'background': 'rgba(0,0,0,0.8)',
 			'width': '100%',
-			'height': "136%"
+			'height': H
 		});
 	},
 	//自定义toast弹框  

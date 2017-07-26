@@ -1,4 +1,7 @@
 header{
+	position: fixed;
+	top: 0;
+	left: 0;
 	height: 30px;
 	width: 100%;
 	line-height: 30px;
@@ -49,12 +52,24 @@ header{
 	justify-content: space-between;
 	margin: 0 15px;	
 }
+/*修改过的地方*/
 .customDetailDes p{
-	line-height: 22px;
-	font-size: 14px;
+	color: #969696;
+	font-size: 10px;
+	line-height: 20px;
 }
 .ProductParameter{
-	color: #333333;
+	color: #969696;
+	font-size: 12px;
+	margin-top: 5px;
+}
+.productdes{
+	display: -webkit-flex;
+}
+.productdes p:nth-child(1){
+		width: 120px;
+		max-width: 135px;
+		overflow: hidden;
 }
 .customProductD{
 	display: -webkit-flex;
@@ -90,8 +105,8 @@ footer{
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	height: 35px;
-	line-height: 35px;
+	height: 45px;
+	line-height: 45px;
 	font-size: 13px;
 }
 .customcompleteFooter{

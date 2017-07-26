@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>新增地址</title>
+		<link rel="stylesheet" type="text/css" href="common/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="common/css/mui.picker.css"/>
+		<link rel="stylesheet" type="text/css" href="common/css/add_address.css"/>
+	</head>
+	<body>
+		
+			<input type="text" name="" id="addresse_name" value="" placeholder="请输入收件人姓名"/>
+			<input type="number" name="" id="addresse_phone" value="" placeholder="请输入收件人联系电话" />
+			<input type="text" name="" id="city_text" value="" readonly  placeholder="请选择省市区"/>
+			<!--<p id="city_text">选择省市区</p>
+			<input type="text" id="city_id">-->
+			<input type="text" name="" id="detaile_address" value="" placeholder="请输入详细地址"/>
+			<input type="button" name="submit" id="submit" class="ajax" value="保存" />
+		
+		<script type="text/javascript" src="common/js/mui.min.js" ></script>
+		<script src="common/js/base.js"></script>
+		<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="common/js/mui.picker.min.js"></script>
+		<script src="common/js/city.data.js"></script>
+		<script type="text/javascript">
+			$(".ajax").click(function(){
+				var addresse_name = $('#addresse_name');
+				var addresse_phone = $('#addresse_phone');
+				var city_text =$('#city_text');
+				var detaile_address =$('#detaile_address');
+				if (addresse_name.val()=='') {
+					alert("请输入收件人姓名")
+					return false;
+				}else{
+					var addresse_name = addresse_name.val();
+				}
+				if (addresse_phone.val()=='') {
+					alert("请输入收件人联系电话")
+					return false;
+				}else{
+					addresse_phone=addresse_phone.val()
+				}
+			  if(!(/^1[3|4|5|7|8]\d{9}$/.test($('#addresse_phone').val()))){ 
+			        alert("手机号码有误，请重填");  
+			        return false;
+			    }
+				if (city_text.val()=='') {
+					alert("请选择省市区")
+					return false;
+				}else{
+					city_text = city_text.val();
+				}
+				if (detaile_address.val()=='') {
+					alert("请输入详细地址")
+					return false;
+				}else{
+					var detaile_address = detaile_address.val()
+				}
+				if (addresse_name!=''&&addresse_phone!=''&&city_text!=''&&detaile_address!='') {
+					saveAddress();
+				}
+		})
+			
+			//修改地址
+			mui.init();
+			function saveAddress(){
+				var openId = getQueryString("openId")
+					$.ajax({
+					url:"http://www.zdz1.com/web/user/saveAddress",
+					dataType:'json',//服务器返回json格式数据
+					data:{
+						openId:openId,
+						contactsName:$('#addresse_name').val(),
+						contactsMobile:$('#addresse_phone').val(),
+						contactsProvince:sessionStorage.getItem("contactsProvince"),
+						contactsCity:sessionStorage.getItem("contactsCity"), 
+						contactsBlock:sessionStorage.getItem("contactsBlock"),
+						contactsAddress:$('#detaile_address').val(),
+					},
+					type:'post',//HTTP请求类型
+					success:function(data){
+						//服务器返回响应，根据响应结果，
+						console.log(data)
+						var msg = data.msg;
+						console.log(msg);
+						if (msg=="成功") {
+							alert("添加地址成功");
+							 mui.openWindow({
+							    url:'receiver_address.html'+window.location.search
+							});
+					}else if(msg=="新增地址失败"){
+						alert("服务器说新增地址失败")
+					}else{
+						alert("新增地址失败")
+					}
+					},
+					error:function(xhr,type,errorThrown){
+						//异常处理；
+						console.log(type);
+						alert(errorThrown);
+					}
+				});
+			}
+		</script>
+		<script>
+		//时间选择就不多说了，mui框架自带，重点是城市
+		var start_time_picker = new mui.DtPicker({"type":"date","beginYear":1960,"endYear":2020});
+		$("#useData").on("tap", function(){
+			setTimeout(function(){
+				start_time_picker.show(function(items){
+					$("#useData_id").val(items.text);
+					$("#useData").html(items.text);
+				});
+			},200);
+		});
+		
+		//选择省市区
+		var city_picker = new mui.PopPicker({layer:3});
+		city_picker.setData(init_city_picker);
+		$("#city_text").on("tap", function(){
+			setTimeout(function(){
+				city_picker.show(function(items){
+					//$("#city_id").val((items[0] || {}).value + "," + (items[1] || {}).value + "," + (items[2] || {}).value);//该ID为接收城市ID字段
+					$("#city_text").val((items[0] || {}).text + " " + (items[1] || {}).text + " " + (items[2] || {}).text);
+					sessionStorage.setItem('contactsProvince',(items[0] || {}).text);
+					sessionStorage.setItem("contactsCity",(items[1] || {}).text);
+					sessionStorage.setItem("contactsBlock",(items[2] || {}).text)
+				});
+			},200);
+		});
+		//选择省市
+		var city_picker1 = new mui.PopPicker({layer:2});
+		city_picker1.setData(init_city_picker);
+		$("#city_text1").on("tap", function(){
+			setTimeout(function(){
+				city_picker1.show(function(items){
+					$("#city_id1").val((items[0] || {}).value + "," + (items[1] || {}).value);
+					$("#city_text1").html((items[0] || {}).text + " " + (items[1] || {}).text);
+				});
+			},200);
+		});
+		//选择省
+		var city_picker2 = new mui.PopPicker({layer:1});
+		city_picker2.setData(init_city_picker);
+		$("#city_text2").on("tap", function(){
+			setTimeout(function(){
+				city_picker2.show(function(items){
+					$("#city_id2").val((items[0] || {}).value);
+					$("#city_text2").html((items[0] || {}).text);
+				});
+			},200);
+		});
+	</script>
+	</body>
+</html>

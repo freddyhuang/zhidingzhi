@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>个人中心</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="common/css/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_7t4q6pnbbmv1v2t9.css"/>
+		<link rel="stylesheet" type="text/css" href="common/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="common/css/myseft.css"/>
+	</head>
+
+	<body>
+		<header class="myselfBar">
+		   	 <img src="" class="touXiang" align="absmiddle"/>
+		   	 <span class="myseftName"></span>
+		</header>
+		<nav>
+			 <ul class="mui-table-view">
+	            <li class="mui-table-view-cell">
+	                <a class="mui-navigate-right" href="javascript:;">
+	                   	<span class="iconfont coloricon icon-shopping-cart fontSize25"></span>  &nbsp; &nbsp;购物车
+	                </a>
+	            </li>
+	            <li class="mui-table-view-cell">
+	                <a class="mui-navigate-right" href="javascript:;">
+	                    <span class="iconfont coloricon icon-unie64a fontSize25"></span>   &nbsp; &nbsp;我的订单
+	                </a>
+	            </li>
+	             <li class="mui-table-view-cell">
+	                <a class="mui-navigate-right" href="javascript:;">
+	                    <span class="iconfont coloricon icon-dizhi fontSize25"></span>  &nbsp; &nbsp;收货地址
+	                </a>
+	            </li>
+		    </ul>
+		</nav>
+	</body>
+	<script type="text/javascript" src="common/js/mui.min.js" ></script>
+	<script src="common/js/base.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+		mui.init();
+		$(".mui-table-view li:nth-child(1)").on("touchend",function(){
+			
+		  mui.openWindow({
+		    url:'shopCar.html'+window.location.search
+		  });
+		});
+		$(".mui-table-view li:nth-child(2)").on("touchend",function(){
+			
+		   mui.openWindow({
+		    url:'myOrder.html'+window.location.search
+		  });
+		});
+		$(".mui-table-view li:nth-child(3)").on("touchend",function(){
+			
+		  mui.openWindow({
+		    url:'receiver_address.html'+window.location.search
+		  });
+		});
+	</script>
+	<script>
+		//获取个人信息
+		getbaseInfo();
+		function getbaseInfo(){
+				var openId = getQueryString("openId")
+					$.ajax({
+					url:"http://www.zdz1.com/web/user/baseInfo",
+					dataType:'json',//服务器返回json格式数据
+					data:{
+						openId:openId,
+						contactsName:$('#addresse_name').val(),
+						contactsMobile:$('#addresse_phone').val(),
+						contactsProvince:sessionStorage.getItem("contactsProvince"),
+						contactsCity:sessionStorage.getItem("contactsCity"), 
+						contactsBlock:sessionStorage.getItem("contactsBlock"),
+						contactsAddress:$('#detaile_address').val(),
+					},
+					type:'get',//HTTP请求类型
+					success:function(data){
+						//服务器返回响应，根据响应结果，
+						console.log(data)
+						var result = data.result;
+						var headImgUrl = result.headImgUrl;
+						var nickname = result.nickname;
+						$(".touXiang").attr("src",headImgUrl);
+						$(".myseftName").text(nickname);
+					},
+					error:function(xhr,type,errorThrown){
+						//异常处理；
+						console.log(type);
+						alert(errorThrown);
+					}
+				});
+			}
+	</script>
+</html>

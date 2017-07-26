@@ -1,0 +1,17 @@
+﻿index.html 首页
+
+details.html  详情页
+
+shopcar.html   购物车
+
+myorder.html  我的订单
+  
+paybefore.html 支付前页面
+
+paying.html 支付中页面
+
+paycompleted.html 支付完成页面
+
+paytype.html 支付类型页面
+
+personCustom.html 个性定制页面

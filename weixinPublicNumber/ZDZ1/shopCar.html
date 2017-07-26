@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="common/css/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="common/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="common/css/shopCar.css"/>
+	</head>
+	<body>
+		<nav>
+			<ul>
+		     	<!--<li class="mui-table-view">
+		      	<div class="mui-input-row mui-checkbox mui-left">
+					<label>
+						<div class="mui-right">
+							<div class="typeImg">
+								<img src="common/images/myOrder/imgjiu.png" width="70px" height="70px"/>
+							</div>
+							<div class="typeRight">
+								<div class="zdzName">只定制个性酒</div>
+								<div class="typeCenter">
+									<span>浓香型</span><span>白色瓶</span><span>烤瓷</span>
+								</div>	
+								<div class="praiseAnum">
+									<div class="praise coloricon fontSize18">￥30</div>
+									<div class="num">
+										<div class="mui-numbox"  id="roomNumber" data-numbox-min="1" data-numbox-max="">
+											<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+											<input id="box" class="mui-input-numbox" type="number">
+											<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+										</div>
+									</div>
+								</div>
+							</div>	
+						</div>
+					</label>
+					<input name="checkbox" value="Item 1" type="checkbox">
+				</div>
+		      </li>
+			
+				<li class="mui-table-view">
+		      	<div class="mui-input-row mui-checkbox mui-left">
+					<label>
+						<div class="mui-right">
+							<div class="typeImg">
+								<img src="common/images/myOrder/imgjiu.png" width="70px" height="70px"/>
+							</div>
+							<div class="typeRight">
+								<div class="zdzName">只定制个性酒</div>
+								<div class="typeCenter">
+									<span>浓香型</span><span>白色瓶</span><span>烤瓷</span>
+								</div>	
+								<div class="praiseAnum">
+									<div class="praise coloricon fontSize18">￥30</div>
+									<div class="num">
+										<div class="mui-numbox"  id="roomNumber" data-numbox-min="1" data-numbox-max="">
+											<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+											<input id="box" class="mui-input-numbox" type="number">
+											<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+										</div>
+									</div>
+								</div>
+							</div>	
+						</div>
+					</label>
+					<input name="checkbox" value="Item 1" type="checkbox">
+				</div>
+		      </li>-->
+		      <!--<li class="mui-table-view">
+		      	<div class="mui-input-row mui-checkbox mui-left">
+					<label>
+						<div class="mui-right">
+							<div class="typeImg">
+								<img src="common/images/myOrder/imgjiu.png" width="70px" height="70px"/>
+							</div>
+							<div class="typeRight">
+								<div class="zdzName">只定制个性酒</div>
+								<div class="typeCenter">
+									<span>浓香型</span><span>白色瓶</span><span>烤瓷</span>
+								</div>	
+								<div class="praiseAnum">
+									<div class="praise coloricon fontSize18">￥30</div>
+									<div class="num">
+										<div class="mui-numbox"  id="roomNumber" data-numbox-min="1" data-numbox-max="">
+											<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+											<input id="box" class="mui-input-numbox" type="number">
+											<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+										</div>
+									</div>
+								</div>
+							</div>	
+						</div>
+					</label>
+					<input name="checkbox" value="Item 1" type="checkbox">
+				</div>
+		      </li>-->
+		    <div class="mui-input-row mui-checkbox mui-left">
+				<label id="checkAllLabel">全选
+					<div class="totalAll">合计：<span class="tatalAllPrice color852">￥300</span></div>
+				</label>
+				<input name="checkbox" value="Item 1" type="checkbox" id="checkAll">
+				<div class="payAll bglg_s">结算<span>300</span> </div>
+			</div>
+		
+			</ul>
+		</nav>
+		
+			
+		
+		<script type="text/javascript" src="common/js/mui.min.js" ></script>
+		<script src="common/js/base.js"></script>
+		<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			//直接下单
+			var productId,bottleId,pictureId,quantity
+			$(".zd_media").on("click",function(){
+				
+				$("#item1 .jiuzhi_btn button").each(function(index){
+					console.log(index)
+					if ($(this).is(".bglg_s")) {
+						productId = $(this).attr('productId');
+					}
+					
+				});
+				$("#item2 .jiuzhi_btn button").each(function(index){
+					console.log(index)
+					if ($(this).is(".bglg_s")) {
+						 bottleId = $(this).attr('bottleId');
+						 pictureId =$(this).attr("pictureId");
+					}
+				});
+				
+				var templateid = $(".zd_area").find("img").attr("templateid");	
+				console.log(templateid)
+				quantity = $("#quantity").val();
+				createOrder(productId,bottleId,templateid,quantity);
+			});
+			function createOrder(productId,bottleId,templateid,quantity){
+				var openId = getQueryString("openId")
+				mui.ajax("http://www.zdz1.com/web/custom/addShopCart",{
+					dataType:'json',//服务器返回json格式数据
+					type:'post',//HTTP请求类型
+					data:{
+							openId:decodeURIComponent(openId),
+							productId:productId,
+							bottleId:bottleId,
+							pictureId:templateid,
+							quantity:quantity
+						},
+					timeout:100000,//超时时间设置为100秒；
+					success:function(data){
+						console.log(data)
+						var msg = data.msg;
+						console.log(msg)
+						if (msg == '成功') {
+							mui.toast("加入购物车成功")
+							 mui.openWindow({
+							    url:'shopCar.html'+window.location.search
+							  });
+						}
+					
+					},
+					error:function(xhr,type,errorThrown){
+						//异常处理；
+						console.log(type);
+						alert(errorThrown);
+					}
+				});
+			}
+			
+			
+			//购物车列表
+			function shopCarList(){
+				var openId = getQueryString("openId")
+				
+				mui.ajax("http://www.zdz1.com/web/shopCart/list",{
+					dataType:'json',//服务器返回json格式数据
+					type:'get',//HTTP请求类型
+					data:{
+							openId:decodeURIComponent(openId)	
+						},
+					timeout:100000,//超时时间设置为100秒；
+					success:function(data){
+						console.log(data)
+						var msg = data.msg;
+						var result = data.result;
+						
+						console.log(msg)
+						if (msg == '成功') {
+						$.each(result, function(index,item) {
+							
+						
+							var li = '<li class="mui-table-view">'
+		      		+'<div class="mui-input-row mui-checkbox mui-left">'
+					+'<label>'
+						+'<div class="mui-right">'
+							+'<div class="typeImg">'
+								+'<img src="common/images/myOrder/imgjiu.png" width="70px" height="70px"/>'
+							+'</div>'
+							+'<div class="typeRight">'
+								+'<div class="zdzName">只定制个性酒</div>'
+								+'<div class="typeCenter">'
+									+'<span>'+item.prodcutName+'</span><span>'+item.bottleColor+'</span><span>'+item.bottleType+'</span>'
+								+'</div>'
+								+'<div class="praiseAnum">'
+									+'<div class="praise coloricon fontSize18">￥'+item.totalAmount+'</div>'
+									+'<div class="num">'
+										+'<div class="mui-numbox"  id="roomNumber" data-numbox-min="1" data-numbox-max="">'
+											+'<button class="mui-btn mui-btn-numbox-minus" type="button" cartId="'+item.cartId+'" >-</button>'
+											+'<input  class="mui-input-numbox" type="number" value="'+item.quantity+'" cartId="'+item.cartId+'" onlyready>'
+											+'<button class="mui-btn mui-btn-numbox-plus" type="button" cartId="'+item.cartId+'" >+</button>'
+										+'</div>'
+									+'</div>'
+								+'</div>'
+							+'</div>'	
+						+'</div>'
+					+'</label>'
+					+'<input name="checkbox" value="Item 1" type="checkbox">'
+				+'</div>'
+		     +' </li>'
+		     $("nav ul").prepend(li);
+		     mui(".mui-numbox").numbox();
+			});
+			
+				$('.num').on("change",".mui-input-numbox",function(event) {
+					
+					var cartId  = $(this).attr('cartId');
+					var quantity =$(this).val();
+					console.log(cartId)
+					console.log(quantity);
+					shopCarChangeNumber(cartId,quantity);
+				});
+		}	
+					},
+					error:function(xhr,type,errorThrown){
+						//异常处理；
+						console.log(type);
+						alert(errorThrown);
+					}
+				});
+			}
+			shopCarList();
+			
+			
+			
+			//修改购物车的数量
+			function shopCarChangeNumber(cartId,quantity){
+				var openId = getQueryString("openId")
+				mui.ajax("http://www.zdz1.com/web/shopCart/changeNumber",{
+					dataType:'json',//服务器返回json格式数据
+					type:'post',//HTTP请求类型
+					data:{
+							openId:decodeURIComponent(openId),
+							cartId:cartId,
+							quantity:quantity
+						},
+					timeout:100000,//超时时间设置为100秒；
+					success:function(data){
+						console.log(data)
+						var msg = data.msg;
+						var result = data.result;
+						
+						console.log(msg)
+						
+					},
+					error:function(xhr,type,errorThrown){
+						//异常处理；
+						console.log(type);
+						alert(errorThrown);
+					}
+				});
+			}
+			
+			
+		
+			
+			
+			
+			//点击结算按钮
+			$(".payAll").click(function(){
+				sessionStorage.setItem("parthName",window.location.pathname)
+					mui.openWindow({
+					    url:'suebill.html'+window.location.search
+					 });
+				});
+		</script>
+	</body>
+</html>

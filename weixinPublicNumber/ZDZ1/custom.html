@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>只定制</title>
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_7t4q6pnbbmv1v2t9.css"/>
+		<link rel="stylesheet" type="text/css" href="common/css/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="common/css/custom.css"/>
+		<link rel="stylesheet" type="text/css" href="common/css/base.css"/>
+	</head>
+	<body>
+		<header>
+			<div class="headerImg">
+				<img src="common/images/custom/bg02.png" width="100%" height="320px"/>
+				<img class="zdz_ping" src="common/images/custom/ping2.jpg"  width="148px"/>
+				
+				<div class="zd_area">
+					<img src="http://ooga6zvey.bkt.clouddn.com/personal/8.jpg" templateflag="1" templateid="personal/8.jpg">
+				</div>
+				<div class="myselt">
+					<i class="iconfont  icon-4 fontSize18"></i>
+					个人中心
+				</div>
+				<div class="shopCar_ru">
+					<i class="iconfont  icon-shopping-cart fontSize18"></i>
+					购物车
+				</div>
+			</div>
+		</header>
+		<div class="mui-content">
+		    <div class="mui-slider">
+			    <div class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+			        <a class="mui-control-item mui-active" href="#item1">酒汁</a>
+			        <a class="mui-control-item" href="#item2">酒瓶</a> 
+			        <a class="mui-control-item" href="#item3">数量</a>
+			        <a class="mui-control-item" id="zdy" href="javascript:;">开始设计</a>
+			    </div>
+		   		 <div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-2"></div>
+			    <div class="mui-slider-group">
+			        <div id="item1" class="mui-slider-item mui-control-content mui-active">
+			          <div class="jiuzhi_btn">
+			          		<!--<button class="mui-btn bglg_s" >酱香型</button>
+			           	 	<button class="mui-btn bglg_n" >浓香型</button>-->
+			          </div>
+			        </div>
+			        <div id="item2" class="mui-slider-item mui-control-content">
+			             <div class="jiuzhi_btn">
+			          		<!--<button class="mui-btn bglg_s" >白色瓶</button>
+			           	 	<button class="mui-btn bglg_n" >红色瓶</button>
+			           	 	<button class="mui-btn bglg_n" >黑色瓶</button>-->
+			          	</div>
+			        </div>
+			        <div id="item3" class="mui-slider-item mui-control-content">
+			           <div class="numAprices">
+			           		<div class="mui-numbox" data-numbox-min="1" data-numbox-max="">
+								<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+								<input class="mui-input-numbox" type="number" id="quantity">
+								<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+							</div>
+					  		<!--<div class="numAprices1 numApri">
+					  			<p>¥78.00</p>
+					  			<p>1~5瓶</p>
+					  		</div>
+					  		<div class="numAprices2 numApri">
+					  			<p>¥66.00</p>
+					  			<p>6~17瓶</p>
+					  		</div>
+					  		<div class="numAprices3 numApri">
+					  			<p>¥78.00</p>
+					  			<p>≥18瓶</p>
+					  		</div>-->
+					  		
+					  		
+					  	</div>
+			        </div>
+			        <div id="item4" class="mui-slider-item mui-control-content">
+			          
+			        </div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+		  	<div class="zd_total">
+		  		<div class="zd_totalNum">
+		  			<p>合计<span class="totalNum"></span></p>
+		  			<p>已选<span class="zd_total_type"><!--浓香型  黄色瓶  烤瓷-->
+		  				<span class="productType"></span>
+		  				<span class="bottleColor"></span>
+		  				<span class="bottleType"></span>
+		  			</span></p>
+		  		</div>
+		  		<div class="zd_totalNum_btn">
+		  			<div class="zd_shopCar color852">加购物车</div>
+		  			<div class="zd_media bglg_s">马上定制</div>
+		  		</div>
+		  	</div>
+		</footer>
+		<script type="text/javascript" src="common/js/mui.min.js" ></script>
+		<script src="common/js/base.js"></script>
+		<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript">
+				mui.init();
+		</script>
+		<script>
+			$("#zdy").on("touchend",function(){
+			  mui.openWindow({
+			    url:'custom2.html'+window.location.search
+			  });
+			});
+			$(".myselt").on("touchend",function(){
+			//console.log(window.location.search);
+			  mui.openWindow({
+			    url:'myself.html'+window.location.search
+			  });
+			});
+			$(".shopCar_ru").on("touchend",function(){
+			  mui.openWindow({
+			    url:'shopCar.html'+window.location.search
+			  });
+			});
+			$(".zd_media").on("tap",function(){
+				mui.openWindow({
+			    url:'suebill.html'+window.location.search			    
+				 });
+			});
+		</script>
+		<script>
+			var openId = getQueryString("openId")
+			if(openId==null){
+				window.location.href = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx67283e5ff6d99dcb&redirect_uri=http%3A%2F%2Fwww.zdz1.com%2F%2Fweb%2Flogin%2Fqryaccesstoken&response_type=code&scope=snsapi_userinfo&state=kpcni7kpb1y4rugg#wechat_redirect';
+	
+			};
+			
+		</script>
+		<script>
+			
+	$(document).ready(function(){		
+			var productId;
+			var bottleId;
+			var quantity;
+			//商品价格区间列表
+			function getListPrice(){
+				var openId = getQueryString("openId")
+				mui.ajax("http://www.zdz1.com/web/product/listPrice",{
+					dataType:'json',//服务器返回json格式数据
+					type:'get',//HTTP请求类型
+					timeout:100000,//超时时间设置为100秒；
+					success:function(data){
+						//服务器返回响应，根据响应结果，分析是否登录成功；
+						console.log(data)
+						var result = data.result;
+						$.each(result, function(index,item) {
+							var priceButton ='<div class="numAprices'+(index+1)+' numApri">'
+					  			+'<p>¥'+item.price+'.00</p>'
+					  			+'<p>'+item.mixSellCount+'~'+item.maxSellCount+'瓶</p>'
+					  		+'</div>'
+							$("#item3 .numAprices").append(priceButton);
+							
+						});
+						
+					},
+					error:function(xhr,type,errorThrown){
+						//异常处理；
+						console.log(type);
+						alert(errorThrown);
+					}
+				});
+			}
+			getListPrice();
+			
+			//商品列表展示(酒汁)
+			function getListProduct(){
+				var openId = getQueryString("openId")
+				mui.ajax("http://www.zdz1.com/web/product/listProduct",{
+					dataType:'json',//服务器返回json格式数据
+					type:'get',//HTTP请求类型
+					timeout:100000,//超时时间设置为100秒；
+					success:function(data){
+						console.log(data)
+						var result = data.result;
+						$.each(result, function(index,item) {
+							
+							var productButton ='<button class="mui-btn bglg_n" productId ="'+item.productId+'" originPrice="'+item.originPrice+'" >'+item.name+'</button>'
+					  			
+							$("#item1 .jiuzhi_btn").append(productButton);
+						});
+						$("#item1 .jiuzhi_btn .mui-btn:nth-child(1)").addClass('bglg_s');
+						//计算价格要用
+						productId = $("#item1 .jiuzhi_btn .mui-btn:nth-child(1)").attr('productId');
+						console.log(productId)
+						//已选
+						$(".zd_total_type .productType").text($("#item1 .jiuzhi_btn .mui-btn:nth-child(1)").text())
+					
+						originPrice	=$("#item1 .jiuzhi_btn .mui-btn:nth-child(1)").attr('originPrice');
+						
+					
+						
+						$("#item1 .jiuzhi_btn .mui-btn").on("touchend",function(){
+							$(this).addClass("bglg_s").siblings().removeClass('bglg_s');
+							$(".zd_total_type .productType").text($(this).text());
+					
+									console.log(originPrice);
+									console.log(price);
+						 	originPrice = $(this).attr('originPrice');
+							
+						})
+					},
+					error:function(xhr,type,errorThrown){
+						//异常处理；
+						console.log(type);
+						alert(errorThrown);
+					}
+				});
+			}
+			
+			
+			//酒瓶列表
+			function getListBottle(){
+				var openId = getQueryString("openId")
+				mui.ajax("http://www.zdz1.com/web/product/listBottle",{
+					dataType:'json',//服务器返回json格式数据
+					type:'get',//HTTP请求类型
+					timeout:100000,//超时时间设置为100秒；
+					success:function(data){
+						//服务器返回响应，根据响应结果，分析是否登录成功；
+						console.log(data)
+						getListProduct();
+						var result = data.result;
+						$.each(result, function(index,item) {
+							var bottleButton ='<button class="mui-btn bglg_n" bottleId = "'+item.bottleId+'" pictureId="'+item.pictureId+'" pictureUrl="'+item.pictureUrl+'" price="'+item.price+'">'+item.bottleColor+'</button>'
+							$("#item2 .jiuzhi_btn").append(bottleButton);
+						});
+						$("#item2 .jiuzhi_btn .mui-btn:nth-child(1)").addClass('bglg_s');
+						//计算价格要用
+						bottleId = $("#item2 .jiuzhi_btn .mui-btn:nth-child(1)").attr("bottleId");
+						console.log(bottleId)
+						//已选
+						$(".zd_total_type .bottleColor").text($("#item2 .jiuzhi_btn .mui-btn:nth-child(1)").text());
+						 price = $("#item2 .jiuzhi_btn .mui-btn:nth-child(1)").attr('price');
+							
+						 	
+						$("#item2 .jiuzhi_btn .mui-btn").on("touchend",function(){
+							$(this).addClass("bglg_s").siblings().removeClass('bglg_s');
+							//换瓶
+						 	var pictureurl	= $(this).attr("pictureurl");
+						 	$(".zdz_ping").attr("src",pictureurl);
+							$(".zd_total_type .bottleColor").text($(this).text())
+						 	price	 = $(this).attr("price");
+							
+						})
+					},
+					error:function(xhr,type,errorThrown){
+						//异常处理；
+						console.log(type);
+						alert(errorThrown);
+					}
+				});
+			}
+			getListBottle();
+			
+//			document.getElementsByClassName("mui-btn").addEventListener('tap', function(event) {
+//				mui.alert('当前值: ' + document.getElementById("quantity").value, null, "提示");
+//			});
+			var quantity=document.getElementById("quantity");
+				quantity.addEventListener('change',function(){
+				
+				
+				var productId,bottleId,pictureId,quantity;
+				$("#item1 .jiuzhi_btn button").each(function(index){
+					console.log(index)
+					if ($(this).is(".bglg_s")) {
+						productId = $(this).attr('productId');
+					}
+					
+				});
+				$("#item2 .jiuzhi_btn button").each(function(index){
+					console.log(index)
+					if ($(this).is(".bglg_s")) {
+						 bottleId = $(this).attr('bottleId');
+						 pictureId =$(this).attr("pictureId");
+					}
+				});
+				
+				var templateid = $(".zd_area").find("img").attr("templateid");	
+				console.log(templateid)
+				quantity = $("#quantity").val();
+				calculatePrice(productId,bottleId,quantity);
+			});
+			
+		//计算总金额
+			$("#item1 .jiuzhi_btn, #item2 .jiuzhi_btn").on("click","button" ,function(){
+				var productId,bottleId,pictureId,quantity;
+				$("#item1 .jiuzhi_btn button").each(function(index){
+					console.log(index)
+					if ($(this).is(".bglg_s")) {
+						productId = $(this).attr('productId');
+					}
+					
+				});
+				$("#item2 .jiuzhi_btn button").each(function(index){
+					console.log(index)
+					if ($(this).is(".bglg_s")) {
+						 bottleId = $(this).attr('bottleId');
+						 pictureId =$(this).attr("pictureId");
+					}
+				});
+				
+				var templateid = $(".zd_area").find("img").attr("templateid");	
+				console.log(templateid)
+				quantity = $("#quantity").val();
+				
+				calculatePrice(productId,bottleId,quantity);
+		});
+		
+		
+//		console.log(quantityNum);
+//		console.log(originPrice);
+//		console.log(price);
+//		 totalNum = quantity*originPrice*price;
+//		$(".totalNum").text(totalNum);
+		
+//		$("#item1 .jiuzhi_btn button").each(function(){
+//			if ($(this).is(".bglg_s")) {
+//				var productId = 
+//			}
+//		});
+			//加入购物车
+			var productId,bottleId,pictureId,quantity
+			$(".zd_shopCar").on("click",function(){
+				
+				$("#item1 .jiuzhi_btn button").each(function(index){
+					console.log(index)
+					if ($(this).is(".bglg_s")) {
+						productId = $(this).attr('productId');
+					}
+					
+				});
+				$("#item2 .jiuzhi_btn button").each(function(index){
+					console.log(index)
+					if ($(this).is(".bglg_s")) {
+						 bottleId = $(this).attr('bottleId');
+						 pictureId =$(this).attr("pictureId");
+					}
+				});
+				
+				var templateid = $(".zd_area").find("img").attr("templateid");	
+				console.log(templateid)
+				quantity = $("#quantity").val();
+				addShopCart(productId,bottleId,templateid,quantity);
+			});
+			function addShopCart(productId,bottleId,templateid,quantity){
+			var openId = getQueryString("openId")
+			mui.ajax("http://www.zdz1.com/web/custom/addShopCart",{
+				dataType:'json',//服务器返回json格式数据
+				type:'post',//HTTP请求类型
+				data:{
+						openId:decodeURIComponent(openId),
+						productId:productId,
+						bottleId:bottleId,
+						pictureId:templateid,
+						quantity:quantity
+					},
+				timeout:100000,//超时时间设置为100秒；
+				success:function(data){
+					console.log(data)
+					var msg = data.msg;
+					console.log(msg)
+					if (msg == '成功') {
+						mui.toast("加入购物车成功")
+//						 mui.openWindow({
+//						    url:'shopCar.html'+window.location.search
+//						  });
+					}
+				
+				},
+				error:function(xhr,type,errorThrown){
+					//异常处理；
+					console.log(type);
+					alert(errorThrown);
+				}
+			});
+		}
+			//一键直接下单
+			var productId,bottleId,pictureId,quantity
+			$(".zd_media").on("click",function(){
+				
+				var templateid = $(".zd_area").find("img").attr("templateid");	
+				console.log(templateid)
+				
+				sessionStorage.setItem('templateid',templateid);
+				
+				$("#item1 .jiuzhi_btn button").each(function(index){
+					console.log(index)
+					if ($(this).is(".bglg_s")) {
+						productId = $(this).attr('productId');
+						sessionStorage.setItem('productId',productId);
+					}
+					
+				});
+				$("#item2 .jiuzhi_btn button").each(function(index){
+					console.log(index)
+					if ($(this).is(".bglg_s")) {
+						 bottleId = $(this).attr('bottleId');
+						 sessionStorage.setItem('bottleId',bottleId);
+						 pictureId =$(this).attr("pictureId");
+						 sessionStorage.setItem('pictureId',pictureId);
+					}
+				});
+				
+				var templateid = $(".zd_area").find("img").attr("templateid");	
+				console.log(templateid)
+				quantity = $("#quantity").val();
+				sessionStorage.setItem('quantity',quantity);
+				sessionStorage.setItem('parthName',window.location.pathname);
+				toConfirmOrder(productId,bottleId,quantity,pictureId);
+				//调用一键订单接口
+				function toConfirmOrder(productId,bottleId,quantity,pictureId){
+					var openId = getQueryString("openId")
+					mui.ajax("http://www.zdz1.com/web/order/toConfirmOrder",{
+						dataType:'json',//服务器返回json格式数据
+						type:'post',//HTTP请求类型
+						data:{
+							openId:decodeURIComponent(openId),
+							productId:productId,
+							bottleId:bottleId,
+							quantity:quantity,
+							pictureId:templateid
+							},
+						timeout:100000,//超时时间设置为100秒；
+						success:function(data){
+							console.log(data)
+							var result = data.result
+							var token = result.token;
+							sessionStorage.setItem('token',token);
+						},
+						error:function(xhr,type,errorThrown){
+							//异常处理；
+							console.log(type);
+							alert(errorThrown);
+						}
+					});
+				}
+			});
+			
+		
+			quantity = $("#quantity").val();
+			console.log(quantity);
+			setTimeout(function(){
+				calculatePrice(productId,bottleId,quantity)
+			},1000)
+			
+		
+		
+		
+		function calculatePrice(productId,bottleId,quantity){
+			var openId = getQueryString("openId")
+			mui.ajax("http://www.zdz1.com/web/custom/calculatePrice",{
+				dataType:'json',//服务器返回json格式数据
+				type:'post',//HTTP请求类型
+				data:{
+					openId:decodeURIComponent(openId),
+					productId:productId,
+					bottleId:bottleId,
+					quantity:quantity
+					},
+				timeout:100000,//超时时间设置为100秒；
+				success:function(data){
+					console.log(data)
+					var totalAmount = data.result.totalAmount;
+					$(".totalNum").text('￥'+totalAmount);
+				},
+				error:function(xhr,type,errorThrown){
+					//异常处理；
+					console.log(type);
+					alert(errorThrown);
+				}
+			});
+		}
+	});
+		</script>
+	</body>
+</html>

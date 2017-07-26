@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>确认订单</title>
+		<link rel="stylesheet" type="text/css" href="common/css/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="common/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="common/css/suebill.css"/>
+	</head>
+	<body>
+		<ul class="mui-table-view">
+	        <li class="mui-table-view-cell">
+	            <a class="mui-navigate-right fontSize18">
+	                	请选择地址
+	            </a>
+	        </li>
+		 </ul>
+		<div class="goods_item">
+			<div class="goodsTxt">
+			 	<div class="goodsTXt_left">商品信息</div>
+			 	<div class="goodsTXt_right">共60瓶</div>
+			</div>
+			<div class="mui-right">
+				<div class="typeImg">
+					<img src="common/images/myOrder/imgjiu.png" width="90px" height="90px"/>
+				</div>
+				<div class="typeRight">
+					<div class="zdzName">只定制个性酒</div>
+					<div class="typeCenter">
+						<span>浓香型</span><span>白色瓶</span><span>烤瓷</span>
+					</div>	
+					<div class="praiseAnum">
+						<div class="praise coloricon fontSize22">￥30<i>×30瓶</i></div>
+					</div>
+				</div>	
+			</div>
+			<div class="mui-right">
+				<div class="typeImg">
+					<img src="common/images/myOrder/imgjiu.png" width="90px" height="90px"/>
+				</div>
+				<div class="typeRight">
+					<div class="zdzName">只定制个性酒</div>
+					<div class="typeCenter">
+						<span>浓香型</span><span>白色瓶</span><span>烤瓷</span>
+					</div>	
+					<div class="praiseAnum">
+						<div class="praise coloricon fontSize22">￥30<i>×30瓶</i></div>
+					</div>
+				</div>	
+			</div>
+		</div> 
+		<div class="goods_prices">
+			<div class="goods_prices_txt fontSize18">商品金额</div>
+			<div class="goods_prices_total">
+				<p>合计：￥<span>410</span></p>
+				<p>实付：￥<span>410</span></p>
+			</div>
+		</div>
+		<div class="suePay bglg_s">
+			支付￥<span>410</span>
+		</div>
+		<script type="text/javascript" src="common/js/mui.min.js" ></script>
+		<script src="common/js/base.js"></script>
+		<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+		<script>
+			//是从custom的订单
+			console.log(sessionStorage.getItem('parthName'))
+			if (sessionStorage.getItem('parthName')=='/custom.html') {
+			//一键直接下单
+			$(".suePay").on("click",function(){
+				var productId = sessionStorage.getItem('productId');
+				var bottleId = sessionStorage.getItem('bottleId');
+				var templateid = sessionStorage.getItem('templateid');	
+				var quantity = sessionStorage.getItem('quantity');	
+				var addressId = 201704191000370000;
+				createOrder(productId,bottleId,templateid,quantity,addressId);
+			});
+			
+			//获取订单的信息
+			 getConfirmOrder();
+			 function getConfirmOrder(){
+			 	var openId = getQueryString("openId")
+				mui.ajax("http://www.zdz1.com/web/order/getConfirmOrder",{
+					dataType:'json',
+					type:'post',
+					data:{
+							openId:decodeURIComponent(openId),
+							token:sessionStorage.getItem("token")
+						},
+					timeout:100000,//超时时间设置为100秒；
+					success:function(data){
+						console.log(data)
+						console.log(2)
+					},
+					error:function(xhr,type,errorThrown){
+						//异常处理；
+						console.log(type);
+						alert(errorThrown);
+					}
+				});
+			 }
+			
+			
+			//创建订单
+			function createOrder(productId,bottleId,templateid,quantity,addressId){
+			var openId = getQueryString("openId")
+			mui.ajax("http://www.zdz1.com/web/custom/createOrder",{
+				dataType:'json',//服务器返回json格式数据
+				type:'post',//HTTP请求类型
+				data:{
+						openId:decodeURIComponent(openId),
+						productId:productId,
+						bottleId:bottleId,
+						pictureId:templateid,
+						quantity:quantity,
+						addressId:addressId
+					},
+				timeout:100000,//超时时间设置为100秒；
+				success:function(data){
+					console.log(data)
+					var msg = data.msg;
+					var result = data.result
+					var orderJnId = result.orderJnId;
+					console.log(orderJnId)
+					unifiedorder(orderJnId);
+				},
+				error:function(xhr,type,errorThrown){
+					//异常处理；
+					console.log(type);
+					alert(errorThrown);
+				}
+			});
+		}
+		
+		
+	}
+			
+		//从购物车来的订单
+		if (sessionStorage.getItem('parthName')=='/shopCar.html') {
+			console.log("购物车");
+			//购物车提交定单
+			$(".suePay").on("click",function(){
+				var cartIdList = 201704191000270000;
+				var addressId = 201704191000370000;
+				createShopCartOrder(cartIdList,addressId);
+			});
+			function createShopCartOrder(cartIdList,addressId){
+			var openId = getQueryString("openId")
+			mui.ajax("http://www.zdz1.com/web/shopCart/toOrder",{
+				dataType:'json',//服务器返回json格式数据
+				type:'post',//HTTP请求类型
+				data:{
+						openId:decodeURIComponent(openId),
+						cartIdList:cartIdList,
+						addressId:addressId
+					},
+				timeout:100000,//超时时间设置为100秒；
+				success:function(data){
+					console.log(data)
+					var msg = data.msg;
+					var result = data.result
+					var orderJnId = result.orderJnId;
+					console.log(orderJnId)
+					unifiedorder(orderJnId);
+				},
+				error:function(xhr,type,errorThrown){
+					//异常处理；
+					console.log(type);
+					alert(errorThrown);
+				}
+			});
+		}
+			
+		
+	}
+		
+		
+		
+		//支付
+		function unifiedorder(orderJnId){
+			var openId = getQueryString("openId")
+			mui.ajax("http://www.zdz1.com/web/weixin/unifiedorder",{
+				dataType:'json',//服务器返回json格式数据
+				type:'post',//HTTP请求类型
+				data:{
+						openId:decodeURIComponent(openId),
+						orderJnId:orderJnId
+					},
+				timeout:100000,//超时时间设置为100秒；
+				success:function(data){
+					console.log(data)
+					var msg = data.msg;
+					var result = data.result.payInfo;
+					var appId = result.appId;
+					var nonceStr = result.nonceStr;
+					var package =result.package;
+					var paySign = result.paySign;
+					var signType = result.signType;
+					var timeStamp = result.timeStamp;
+					console.log(msg)
+					wx.chooseWXPay({
+					    timestamp: timeStamp, // 支付签名时间戳，注意微信jssdk中的所有使用timestamp字段均为小写。但最新版的支付后台生成签名使用的timeStamp字段名需大写其中的S字符
+					    nonceStr: nonceStr, // 支付签名随机串，不长于 32 位
+					    package: package, // 统一支付接口返回的prepay_id参数值，提交格式如：prepay_id=***）
+					    signType: signType, // 签名方式，默认为'SHA1'，使用新版支付需传入'MD5'
+					    paySign: paySign, // 支付签名
+					    success: function (res) {
+					        // 支付成功后的回调函数
+					        alert(1)
+					    },
+					    error:function(){
+					    	alert("error")
+					    }
+					});			
+				},
+				error:function(xhr,type,errorThrown){
+					//异常处理；
+					console.log(type);
+					alert(errorThrown);
+				}
+			});
+		}
+		
+		</script>
+	</body>
+</html>

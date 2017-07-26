@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>订单详情页</title>
+		<link rel="stylesheet" type="text/css" href="common/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="common/css/myOrderDetail.css"/>
+	</head>
+	<body>
+		<header>
+			<div>订单号：25223363</div>
+			<div class="orderStatus">待支付</div>
+		</header>
+		<div class="goods_item">
+			<div class="goodsTxt">
+			 	<div class="goodsTXt_left">商品信息</div>
+			 	<div class="goodsTXt_right">共60瓶</div>
+			</div>
+			<div class="mui-right">
+				<div class="typeImg">
+					<img src="common/images/myOrder/imgjiu.png" width="90px" height="90px"/>
+				</div>
+				<div class="typeRight">
+					<div class="zdzName">只定制个性酒</div>
+					<div class="typeCenter">
+						<span>浓香型</span><span>白色瓶</span><span>烤瓷</span>
+					</div>	
+					<div class="praiseAnum">
+						<div class="praise coloricon fontSize22">￥30<i>×30瓶</i></div>
+					</div>
+				</div>	
+			</div>
+			<div class="mui-right">
+				<div class="typeImg">
+					<img src="common/images/myOrder/imgjiu.png" width="90px" height="90px"/>
+				</div>
+				<div class="typeRight">
+					<div class="zdzName">只定制个性酒</div>
+					<div class="typeCenter">
+						<span>浓香型</span><span>白色瓶</span><span>烤瓷</span>
+					</div>	
+					<div class="praiseAnum">
+						<div class="praise coloricon fontSize22">￥30<i>×30瓶</i></div>
+					</div>
+				</div>	
+			</div>
+		</div> 
+		
+		<div class="goods_prices">
+			<div class="goods_prices_txt fontSize18">收货信息</div>
+			<div class="goods_prices_total">
+				<p>管好自己偶试试是的</p>
+				<p>度数     <b>136686555625</b> </p>
+			</div>
+		</div>
+		
+		<div class="goods_prices">
+			<div class="goods_prices_txt fontSize18">商品金额</div>
+			<div class="goods_prices_total">
+				<p>合计：￥<span>410</span></p>
+				<p>实付：￥<span>410</span></p>
+			</div>
+		</div>
+		
+		<div class="goods_prices">
+			<div class="goods_prices_txt fontSize18">快递信息</div>
+			<div class="goods_prices_total">
+				<span>中通快递    582355556623</span>
+			</div>
+		</div>
+		<script type="text/javascript" src="common/js/mui.min.js" ></script>
+		<script src="common/js/base.js"></script>
+		<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script>
+			
+			//订单详情查询
+			 orderJnId();
+			function orderJnId(){
+				var openId = getQueryString("openId");
+				mui.ajax("http://www.zdz1.com/web/order/list",{
+					datatype:"json",
+					type:"GET",
+					data:{
+						openId:decodeURIComponent(openId),
+						orderJnId:1111111,
+					},
+					success:function(data){
+
+
+					},
+					err:function(xhr,type,errorThrown){
+						console.log(type);
+						alert(errorThrown);
+					}
+				});
+			}
+			
+		</script>
+	</body>
+</html>

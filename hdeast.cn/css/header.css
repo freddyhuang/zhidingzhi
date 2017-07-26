@@ -1,0 +1,369 @@
+@charset "utf-8";
+/* top left*/
+.headerTop{
+	width: 100%;
+	min-width: 1120px;
+	height: 100px;
+	background-color: #fff;
+	margin: 0 auto;
+}
+/*logo*/
+.headerTop .logo{
+	width: 86px;
+	height: 50px;
+	margin: 25px 18px 25px 210px;
+}
+.headerTop .logoTxt{
+	display:block;
+	width: 168px;
+	height: 100px;
+	line-height: 100px;
+	font-size: 18px;
+}
+/*vip*/
+.headerTop .vip{
+	height: 100%;
+	font-size: 16px;
+	margin: auto 0px;
+	margin-left: 38px;
+}
+.headerTop .vip .vipCenter{
+	margin-bottom: 20px;
+	margin-top: 25px;
+	color: #D92616;
+}
+.headerTop .vip .factory{
+	color: #333;
+}
+/* top rigth*/
+.headerTop .header-right{
+	width:280px;
+	height: 100px;
+	margin-right: 225px;
+	position: relative;
+}
+/*top login*/
+.headerTop .header-right .login{
+	font-size: 16px;
+	font-weight: 400;
+	color:#D92616;
+	line-height: 100px;
+}
+.headerTop .header-right .topLine{
+	display: inline-block;
+	width: 1px;
+	height: 20px;
+	background-color: #D92616;
+	margin: 40px 33px;
+}
+/*登陆弹窗 start*/
+#loginTip{
+	width: 480px;
+	height: 480px;
+	background: #fff;
+	-webkit-box-shadow: 0px 0px  3px #fff;
+	-moz-box-shadow: 0px 0px  3px #fff;
+	-ms-box-shadow: 0px 0px  3px #fff;
+	-o-box-shadow: 0px 0px  3px #fff;
+	box-shadow: 0px 0px  3px #fff;
+	position: absolute;
+	top: 185px;
+	left: 0;
+	z-index: 9999;
+	display: none;
+}
+#loginTip .loginTip-close{
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	position: absolute;
+	top: -27px;
+	left: -30px;
+	font-size: 25px;
+	background:#fff;
+	text-align: center;
+	color: #999;
+}
+#loginTip .loginTip-line{
+	width: 280px;
+	height: 1px;
+	background: #999;
+	margin: 80px auto 60px;
+	position: relative;
+}
+#loginTip p{
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	background: #fff;
+	font-size: 20px;
+	color: #999;
+	margin: 0 auto;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -40px;
+	margin-top: -17px;
+}
+#loginTip .loginTip-center{
+	width: 280px;
+	margin: 0 auto;
+}
+#loginTip .loginTip-center input{
+	width: 100%;
+	height: 48px;
+	margin: 10px auto;
+	border: 1px solid #D92616;
+	padding: 0 10px;
+	font-size: 16px;
+} 
+#loginTip .loginTip-center a{
+	color: #999999;
+	font-size: 16px;
+	margin-top: 18px;
+}
+#loginTip .loginTip-btn{
+	width: 280px;
+	height: 48px;
+	background: #D92616;
+	margin: 55px auto;
+}
+#loginTip .loginTip-btn a{
+	display: block;
+	color: #fff;
+	font-size: 20px;
+	line-height: 48px;
+	text-align: center;
+}
+/*登陆弹窗 end*/
+/*top register*/
+.headerTop .header-right .register{
+	font-size: 14px;
+	color: #333;
+	line-height: 100px;
+}
+.headerTop .header-right .shopCar{
+	margin-top: 25px;
+	margin-left: 68px;
+}
+/*注册弹窗 start*/
+#registerTip{
+	width: 480px;
+	height: 480px;
+	background: #fff;
+	-webkit-box-shadow: 0px 0px  3px #fff;
+	-moz-box-shadow: 0px 0px  3px #fff;
+	-ms-box-shadow: 0px 0px  3px #fff;
+	-o-box-shadow: 0px 0px  3px #fff;
+	box-shadow: 0px 0px  3px #fff;
+	position: absolute;
+	top: 185px;
+	left: 0;
+	z-index: 9999;
+	display: none;
+}
+#registerTip .registerTip-close{
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	position: absolute;
+	top: -27px;
+	left: -30px;
+	font-size: 25px;
+	background:#fff;
+	text-align: center;
+	color: #999;
+}
+#registerTip .registerTip-line{
+	width: 280px;
+	height: 1px;
+	background: #999;
+	margin: 80px auto 50px;
+	position: relative;
+}
+#registerTip p{
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	background: #fff;
+	font-size: 20px;
+	color: #999;
+	margin: 0 auto;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -40px;
+	margin-top: -17px;
+}
+#registerTip .registerTip-center{
+	width: 280px;
+	margin: 0 auto;
+}
+#registerTip .registerTip-center input{
+	width: 100%;
+	height: 48px;
+	margin: 10px auto;
+	border: 1px solid #999;
+	padding: 0 10px;
+	font-size: 16px;
+} 
+#registerTip .registerTip-center .getCode{
+	position: relative;
+}
+#registerTip .registerTip-center .code-btn{
+	width: 35%;
+	height: 48px;
+	color: #fff;
+	background: #e5e5e5;
+	position: absolute;
+	top: 10px;
+	right: 0px;
+}
+#registerTip .registerTip-center a{
+	color: #999999;
+	font-size: 16px;
+	margin-top: 5px;
+}
+#registerTip .registerTip-btn{
+	width: 280px;
+	height: 48px;
+	background: #D92616;
+	margin: 20px auto;
+}
+#registerTip .registerTip-btn a{
+	display: block;
+	color: #fff;
+	font-size: 20px;
+	line-height: 48px;
+	text-align: center;
+}
+/*注册弹窗  end*/
+/*修改密码 start*/
+#resetpsd{
+	width: 480px;
+	height: 480px;
+	background: #fff;
+	-webkit-box-shadow: 0px 0px  3px #fff;
+	-moz-box-shadow: 0px 0px  3px #fff;
+	-ms-box-shadow: 0px 0px  3px #fff;
+	-o-box-shadow: 0px 0px  3px #fff;
+	box-shadow: 0px 0px  3px #fff;
+	position: absolute;
+	top: 185px;
+	left: 0;
+	z-index: 9999;
+	display: none;
+}
+#resetpsd .resetpsd-close{
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	position: absolute;
+	top: -27px;
+	left: -30px;
+	font-size: 25px;
+	background:#fff;
+	text-align: center;
+	color: #999;
+}
+#resetpsd .resetpsd-line{
+	width: 280px;
+	height: 1px;
+	background: #999;
+	margin: 50px auto;
+	position: relative;
+}
+#resetpsd p{
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	background: #fff;
+	font-size: 20px;
+	color: #999;
+	margin: 0 auto;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -50px;
+	margin-top: -17px;
+}
+#resetpsd .resetpsd-center{
+	width: 280px;
+	margin: 0 auto;
+}
+#resetpsd .resetpsd-center input{
+	width: 100%;
+	height: 48px;
+	margin: 10px auto;
+	border: 1px solid #999;
+	padding: 0 10px;
+	font-size: 16px;
+} 
+#resetpsd .resetpsd-center .getCode{
+	position: relative;
+}
+#resetpsd .resetpsd-center .code-btn{
+	width: 35%;
+	height: 48px;
+	color: #fff;
+	background: #e5e5e5;
+	position: absolute;
+	top: 10px;
+	right: 0px;
+}
+#resetpsd .resetpsd-center a{
+	color: #999999;
+	font-size: 16px;
+	margin-top: 5px;
+}
+#resetpsd .resetpsd-btn{
+	width: 280px;
+	height: 48px;
+	background: #D92616;
+	margin: 20px auto;
+}
+#resetpsd .resetpsd-btn a{
+	display: block;
+	color: #fff;
+	font-size: 20px;
+	line-height: 48px;
+	text-align: center;
+}
+/*修改密码弹窗  end*/
+
+/*top shopcar*/
+.headerTop .header-right .shopCar-txt{
+	margin-top: 7px;
+	color: #D92616;
+	font-size: 20px;
+	font-weight: 400;
+}
+/*top nav*/
+.nav{
+	width: 100%;
+	height: 50px;
+	background: #D92616;
+}
+.nav ul{
+	width: 900px;
+	height: 50px;
+	margin: 0 auto;
+}
+.nav ul li{
+	width: 180px;
+	height: 50px;
+	float: left;
+	text-align: center;
+	line-height: 50px;
+}
+.nav ul li.sex{
+	background:#A61D11;
+}
+.nav ul li a{
+	color: #fff;
+	font-size: 16px;
+	font-family: "microsoft yahei";
+}

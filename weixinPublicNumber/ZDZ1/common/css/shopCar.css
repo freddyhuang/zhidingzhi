@@ -1,0 +1,68 @@
+.mui-checkbox input[type=checkbox], .mui-radio input[type=radio]{
+	top:32px
+}
+.mui-input-row{
+	overflow: inherit;
+}
+.mui-right{
+	display: flex;
+}
+.typeRight{
+	width: 100%;
+	margin-left: 1rem;
+}
+.zdzName{
+	font-size: 14px;
+}
+.typeCenter{
+	margin: 10px 0;
+	color: #B6B6B6;
+	font-size: 12px;
+}
+.typeCenter span{
+	margin-right: 0.5rem;
+}
+.praiseAnum{
+	display: flex;
+	justify-content: space-between;
+}
+.praise{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.mui-table-view{
+	margin-top: 1rem;
+}
+#checkAll{
+	top: 24px;
+}
+footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	border-top: 1px solid #D8D8D8;
+	box-shadow: 1px 1px 1px 0px #D5D5D5;
+}
+#checkAllLabel{
+	color: #868686;
+	height: 50px;
+	line-height: 50px;
+	border-top: 1px solid #ebebeb;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+.tatalAllPrice{
+	font-size: 18px;
+	font-weight: 700;
+}
+.payAll{
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	padding: 0 15px;
+	position: absolute;
+    right: 0;
+    bottom: -8px;
+}

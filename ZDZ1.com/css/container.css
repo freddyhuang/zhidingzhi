@@ -1,0 +1,148 @@
+@charset "utf-8";
+/*	banner start*/
+.banner{
+	width: 100%;
+	height: 550px;
+	margin: 0px auto;
+	overflow: hidden;
+	position: relative;
+}
+.banner .ban-img ul li{
+	width: 100%;
+	list-style: none;
+}
+.banner .ban-img ul li a img{
+	border:0;
+	display: block;
+}
+.btn div{
+	width: 37px;
+	height: 37px;
+	position:absolute;
+	top: 50%;
+	margin-top: -19px;
+	font-size: 30px;
+	font-family: 楷体;
+	color: #fff;
+	text-align: center;
+	line-height: 37px;
+	cursor: pointer;
+	background: rgba(0,0,0,.5);
+}
+.btn .pre{
+	left: 100px;
+}
+.btn .next{
+	right: 100px;
+}
+.ban-nav{
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	margin-left: -69px;
+}
+.ban-nav ul li{
+	width: 20px;
+	height: 17px;
+	cursor: pointer;
+	font-weight: 500;
+	float: left;
+	list-style: none;
+	margin: 20px;
+	background: rgba(0,0,0,.5);
+}
+
+.ban-nav ul li.ban-sex{
+	background: rgb(217,43,23);
+}
+/*	banner end*/
+
+/*	bar 酒汁类型*/
+.container .bar{
+	width:1180px;
+	height: 150px;
+	background: #D92B17;
+	margin: 50px auto;
+}
+.container .bar .barTxt{
+	color: #fff;
+	font-size: 35px;
+	line-height: 150px;
+	text-align: center;
+} 
+/*产品列表*/
+.productsList{
+	width:1180px;
+	margin: 50px auto;
+}
+.productsList ul li{
+	width: 380px;
+	float: left;
+	cursor: pointer;
+}
+.productsList ul li img{
+	width: 380px;
+}
+.productsList ul li.produtsLast{
+	margin: 0px 20px;
+}
+.productsList ul li .proList-top .proList-img{
+	border: 1px solid #000;
+}
+/*产品介绍*/
+.productsList ul li .proList-bottom{
+	width: 96%;
+	margin: 0px auto 20px;
+}
+.productsList ul li .proList-bottom .introduce{
+	padding: 20px 0px;
+	color: #333;
+	font-size: 16px;
+	border-bottom: 1px solid #666
+}
+.productsList ul li .proList-bottom{
+	font-size: 16px;
+	color: #333;
+}
+/*产品价格*/
+.productsList ul li .proList-bottom .pricelist{
+	width: 100%;
+}
+.productsList ul li .proList-bottom i{
+	font-size: 12px;
+}
+.productsList ul li .proList-bottom .price{
+	margin: 0 50px 10px 15px;
+}
+.productsList ul li .proList-bottom .price .priceNumber{
+	margin: 20px 0px 5px;
+}
+.productsList ul li .proList-bottom .price1 p{
+	color: #D92B17;
+}
+/*产品购买按钮*/
+.productsList ul li .proList-bottom .buy{
+	width: 100%;
+	background: #D92B17;
+	color: #fff;
+	height: 70px;
+}
+.productsList ul li .proList-bottom .buy .buy-price{
+	margin-left: 60px;
+	line-height: 70px;
+}
+.productsList ul li .proList-bottom .buy .buy-numer{
+	display: inline-block;
+	margin-left: 20px;
+	padding: 2px 5px;
+	background: #FFAA00;
+	font-size: 14px;
+}
+.productsList ul li .proList-bottom .buy .buyNow{
+	width: 80px;
+	height: 38px;
+	padding: 16px 0;
+	text-align: center;
+	background: #FFAA00;
+	color: #fff;
+}
