@@ -48,6 +48,37 @@ header{
 	align-items: center;
 }
 /*尾部end*/
+.searchBox{
+	margin: 15px auto;
+}
+.search{
+	width: 90%;
+	margin: 0 auto;
+	height: 30px;
+	line-height: 30px;
+	background: #fff;
+	position: relative;
+	top: 5px;
+}
+#searchIcon{
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	transform: translateY(-50%);
+	z-index: 1;
+}
+#distributorSearch{
+	outline: #984B99;
+	height: 30px;
+	line-height: 30px;
+	margin: 0px auto;
+	background: #fff;
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	transform: translateY(-50%);
+	padding-left: 27px;
+}
 /*内容部分*/
 .today,.all{
 	background: #fff;
@@ -56,8 +87,13 @@ header{
 	justify-content: space-around;
 	padding: 8px 0;
 }
+.today p,.all p{
+	color: #969696;
+	font-size: 12px;
+}
 .today p:nth-child(1),.all p:nth-child(1),.today p b,.all p b{
 	color: #984B99;
+	font-size: 16px;
 	font-weight: 700;
 }
 .wxId{
