@@ -24,6 +24,10 @@ th, td{border:1px solid #eee; padding:0px;}
 .fontSize15{
 	font-size: 15px;
 }
+/*主题颜色类*/
+.color98{
+	color: #984c99;
+}
 
 /*在480 和767 像素之间的屏幕里，超小屏幕，主要是手机*/
 @media (min-width: 480px) and (max-width: 767px) {
