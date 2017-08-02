@@ -1,0 +1,56 @@
+body{-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+input:focus{color: #999;}
+
+/*头部str*/
+header{
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 30px;
+	width: 100%;
+	line-height: 30px;
+	background: #984B99;
+	display: flex;
+	display: -webkit-flex;
+}
+.arrow{
+	margin-left: 15px;
+	margin-top: 5px;
+}
+.addressTxt{
+	color: #fff;
+	font-size: 15px;
+	font-family: "youyuan";
+	margin: 0 auto;
+}
+
+/*头部end*/
+
+#loginForm input{border:0;}
+#loginForm input{
+    background-repeat: repeat-x;
+    -webkit-background-size: 100% 1px;
+}
+.bgcolor{background-color:rgb(252,190,0)!important;color: #fff!important;background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.1,rgb(252,190,0)), color-stop(0.1, rgb(252,190,0)))!important;}
+#loginForm{width: 90%;margin: 80px auto 0px;}
+#loginForm input{width: 100%; height: 35px;border:none;font-size: 16px;outline:none;background-color:rgb(240,240,240);margin-top: 25px;}
+#loginForm #login_form{display: block;color: #666;background-color: #fff;width: 100%;border-radius: 5px;margin-top: 50px;border: none;height: 44px;line-height: 44px}
+/*第三方登录（微信）*/
+.wxlogin{
+	width: 80%;
+	position: relative;
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+	transform: -webkit-translateX(-50%);
+}
+.wxlogin p.otherLoTxt{position: absolute;top: -9px;left: 30%;color: #969696;font-weight: 600;font-size: 13px; padding:0px 15px;background: #fff;}
+.wxlogin .wxline{width: 100%;background-color: #9ea1a6;}
+.wxlogin .wxline {position: relative;}
+.wxlogin .wxline:before {content: '';position: absolute;width: 200%; height: 200%;border: 1px solid  #9ea1a6;-webkit-transform-origin: 0 0; 
+-moz-transform-origin: 0 0; -ms-transform-origin: 0 0;-o-transform-origin: 0 0; transform-origin: 0 0; -webkit-transform: scale(0.5, 0.5);   
+-ms-transform: scale(0.5, 0.5);-o-transform: scale(0.5, 0.5); transform: scale(0.5, 0.5);-webkit-box-sizing: border-box;-moz-box-sizing: border-box;  
+box-sizing: border-box;}
+.wxlogin .wxlogin_icon{width: 100%;text-align: center;}
+.wxlogin .wxlogin_icon img{margin-top: 25px;}

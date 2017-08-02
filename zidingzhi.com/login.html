@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<title>登录</title>
+	</head>
+	<body>
+		<header>
+			<div class="arrow">
+				<img src="images/addAdress/arrow.png" width="15px" height="15px"/>
+			</div>
+			<div class="addressTxt">登录</div>
+		</header>
+		<div id="loginForm">
+			<input type="text" placeholder="手机号码" name="phoneNum" class="phoneNum" id="phoneNum" maxlength="11"/>
+			<input type="password" placeholder="登录密码" name="password" class="password" id="password" maxlength="12" />
+			<input type="submit" value="登录" id="login_form"/>
+		</div>
+		<!--
+        	第三方登录（微信）
+        -->
+        <div class="wxlogin">
+        	<div class="wxline"></div>
+        	<p class="otherLoTxt">第三方账号登录</p>
+        	<div class="wxlogin_icon">
+        		<img src="image/wechaticon.png" width="45" height="45"/>
+        	</div>
+        </div>
+        <script src="js/jquery-3.1.0.min.js"></script>
+        <script src="js/DES3.js"></script>
+        <script src="js/reward.js"></script>
+        <script type="text/javascript">
+        	$("#phoneNum,#password").bind("input propertychange",function(){
+        		var phoneNum = document.getElementById('phoneNum').value;
+			    var password = document.getElementById('password').value;
+			    
+        		if (phoneNum.length==11&&password.length>5) {
+        			$("#login_form").addClass("bgcolor");
+        			return false;
+        		}
+        		if (phoneNum.length<11||password.length<5) {
+        			$("#login_form").removeClass("bgcolor");
+        			return false;
+        		}
+        		return false;
+        	});
+        </script>
+        <script type="text/javascript">
+       		var rovedUserId = sessionStorage.getItem("rovedUserId");
+       		var $login_form = $("#login_form");
+	        $login_form.on("touchend",function(){
+	        	if ($login_form.is('.bgcolor')) {
+	        		var key="1234567890qwertyuiopasdf";
+				    var phoneNum = document.getElementById('phoneNum').value;
+				    var password = document.getElementById('password').value;
+				    if(!(/^1[3|4|5|7|8]\d{9}$/.test(phoneNum))){ 
+				        alert("手机号码有误，请重填");  
+				        return false;
+				    }
+				    if(password==''){
+				        alert("密码不能为空");  
+				        return false; 
+				    }
+				    function phoneLogin(){
+						$.ajax ({
+							type: "POST",
+							url:"https://wx.fmsecret.cn/newfmb-app-server/rest",
+							// url:"121.41.117.81:8082/newfmb-app-server/rest",
+							data:{
+								data:encrypt_3des(key,JSON.stringify({mobile:phoneNum,password:password}))
+							},
+							dataType: 'json',
+							error: function() {
+								alert ("ajax请求失败");
+							},
+							success: function(data) {
+								var userDecrypt_3des = decrypt_3des(key,data.data);
+								var userInfo =JSON.parse(userDecrypt_3des);
+								console.log(userInfo);
+								var uuId = userInfo["uuId"];
+								var tokenId = userInfo["tokenId"];
+								var flag = userInfo["flag"];
+								var msg = userInfo["msg"];
+								if(uuId!="" && flag==true){ 
+							      	location.href = 'https://wx.fmsecret.cn/fm-html5/share/share_herself.html?rovedUserId='+rovedUserId+'&type=2&return=1&token='+tokenId
+							        return false; 
+							   } else if(msg=="此号码未注册"&& flag==false){
+							   		alert("此号码未注册");  
+							        return false; 
+							   } else if(msg=="密码错误"&& flag==false){
+							   		alert("密码错误");
+							   		return false;
+							   } else{
+							   		alert("账号与密码不一致");
+							   		return false;
+							   }
+							},
+							headers: {
+								data:JSON.stringify({"apiCode":"1110","appVersion":"3.0.0"})
+							}
+						});
+					};
+					phoneLogin();
+				}
+			});
+        </script>
+        <script>
+        	//第三方微信登录（微信授权）
+	        $(".wxlogin_icon img").on("touchend",function(){
+	        	window.location.href='https://wx.fmsecret.cn/newfmb-app-server/rest/weixin/wx_login_for_h5?back_url=https://wx.fmsecret.cn/fm-html5/share/share_herself.html?rovedUserId='+rovedUserId+'&type=2?';
+	        });
+        </script>
+	</body>
+</html>
