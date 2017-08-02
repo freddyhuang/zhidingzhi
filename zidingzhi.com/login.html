@@ -17,7 +17,11 @@
 			<div class="addressTxt">登录</div>
 		</header>
 		<div id="loginForm">
-			<input type="text" placeholder="手机号码" name="phoneNum" class="phoneNum" id="phoneNum" maxlength="11"/>
+			<div class="phone">
+				<input type="text" placeholder="请填写手机号码" name="phoneNum" class="phoneNum" id="phoneNum" maxlength="11"/>
+				<img src="images/phone.png" width="32px" height="32px" class="loginPhoenIcon" />
+			</div>
+			
 			<input type="password" placeholder="登录密码" name="password" class="password" id="password" maxlength="12" />
 			<input type="submit" value="登录" id="login_form"/>
 		</div>
@@ -28,7 +32,7 @@
         	<div class="wxline"></div>
         	<p class="otherLoTxt">第三方账号登录</p>
         	<div class="wxlogin_icon">
-        		<img src="image/wechaticon.png" width="45" height="45"/>
+        		<img src="images/wxlogin.png" width="45" height="45"/>
         	</div>
         </div>
         <script src="js/jquery-3.1.0.min.js"></script>
