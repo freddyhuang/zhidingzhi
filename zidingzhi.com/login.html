@@ -18,11 +18,22 @@
 		</header>
 		<div id="loginForm">
 			<div class="phone">
-				<input type="text" placeholder="请填写手机号码" name="phoneNum" class="phoneNum" id="phoneNum" maxlength="11"/>
 				<img src="images/phone.png" width="32px" height="32px" class="loginPhoenIcon" />
+				<div class="phoneDependency">+86</div>
+				<input type="text" placeholder="请填写手机号码" name="phoneNum" class="phoneNum" id="phoneNum" maxlength="11"/>		
 			</div>
-			
-			<input type="password" placeholder="登录密码" name="password" class="password" id="password" maxlength="12" />
+			<div class="codeBox">
+				<p>短信验证码:</p>
+				<input type="text" name="code" class="code" id="code" maxlength="6"/>		
+				<p class="time">60</p>
+				<div class="grtCodeBtn">重新获取</div>
+			</div>
+			<div class="picCodeBox"> 
+				<div class="picture">
+					<img />
+				</div>
+				<input type="text" placeholder="请输入图形验证码" name="code" class="picCode" id="picCode" maxlength="6"/>	
+			</div>
 			<input type="submit" value="登录" id="login_form"/>
 		</div>
 		<!--
