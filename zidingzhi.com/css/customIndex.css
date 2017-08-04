@@ -7,7 +7,7 @@ body{
 .temp{background-color: #fff;overflow: hidden;margin-bottom: 70px;}
 .lunbo{width: 100%;}
 .swiper-container {width:100%;}
-.swiper-slide img{width: 100%;}
+.swiper-slide img{width: 100%;vertical-align:top;display: block;}
 .swiper-pagination{text-align: center;color:#fff;font-size: 1.1rem;width: 96%}
 .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
 	bottom: .5rem;
@@ -44,4 +44,9 @@ body{
 .customerBottom img{
 	width: 180px;
 	height: 47px;
+}
+.customerBottom a{
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;	
 }
