@@ -8,7 +8,7 @@ and (min-device-width : 320px)
 
 and (max-device-height : 568px){
 	.swiper-slide img {
-		height: 499px;
+		height: 524px;
 	}
 }
 
@@ -18,7 +18,7 @@ and (min-device-width : 320px)
 
 and (max-device-height : 480px){
 	.swiper-slide img {
-		height: 412px;
+		height: 436px;
 	}
 }
 
@@ -28,7 +28,7 @@ and (min-device-width : 375px)
 
 and (max-device-width : 667px){
 	.swiper-slide img {
-		height: 596px;
+		height:620px;
 	}
 }
 
@@ -38,6 +38,6 @@ and (min-device-width : 414px)
 
 and (max-device-width : 736px){
 	.swiper-slide img {
-		height: 671px;
+		height: 693px;
 	}
 }

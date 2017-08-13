@@ -4,7 +4,7 @@ body{
 	margin: 0 auto;
 }
 /*轮播str */
-.temp{background-color: #fff;overflow: hidden;margin-bottom: 70px;}
+.temp{background-color: #fff;overflow: hidden;}
 .lunbo{width: 100%;}
 .swiper-container {width:100%;}
 .swiper-slide img{width: 100%;vertical-align:top;display: block;}
@@ -22,9 +22,9 @@ body{
 /*轮播 end*/
 .customerBottom{
 	width: 100%;
-	height:70px;
+	height:47px;
 	background: #984B99;
-	line-height: 70px;
+	line-height: 47px;
 	position: fixed;
 	bottom: 0;
 	left: 0;

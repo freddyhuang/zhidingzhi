@@ -159,3 +159,32 @@ footer{
 	font-size: 16px;
 	font-weight: 700;
 }
+
+/*新手引导*/
+.mask{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+}
+.searchTip{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 8;
+	color: #fff;
+	font-size: 25px;
+}
+.searchTip div{
+	position: absolute;
+}
+.stepA{
+	width: 200px;
+	height: 323px;
+	background: url(../images/guideA.png) no-repeat;
+	background-size: contain;
+}
