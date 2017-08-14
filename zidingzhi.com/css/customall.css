@@ -115,7 +115,7 @@ footer{
 }
 .TextAreaBox{
 	width: 98%;
-	height: 50px;
+	height: 80px;
 }
 .TextArea{
 	width: 100%;
@@ -160,7 +160,8 @@ footer{
 	font-weight: 700;
 }
 
-/*新手引导*/
+
+/*新手引导（新增修改）*/
 .mask{
 	position: absolute;
 	top: 0;
@@ -182,9 +183,82 @@ footer{
 .searchTip div{
 	position: absolute;
 }
+.searchTip div a{
+	display: block;
+	width: 73px;
+	position: absolute;
+	text-indent: -99999px;
+	overflow: hidden;
+}
 .stepA{
-	width: 200px;
-	height: 323px;
-	background: url(../images/guideA.png) no-repeat;
+	width: 336px;
+	height: 432px;
+	background: url(../images/guide/guideAAA.png) no-repeat;
 	background-size: contain;
+	bottom:4px;
+	left: 8px;
+}
+.stepB{
+	width: 336px;
+	height: 412px;
+	background: url(../images/guide/guideB.png) no-repeat;
+	background-size: contain;
+	bottom: 4px;
+    left: 8px;
+}
+.stepC{
+	width: 336px;
+	height: 412px;
+	background: url(../images/guide/guidec.png) no-repeat;
+	background-size: contain;
+	bottom: 70px;
+    left: 6px;
+}
+.stepD{
+	width: 344px;
+    height: 364px;
+    background: url(../images/guide/guideD.png) no-repeat;
+    background-size: contain;
+    bottom: 58px;
+    left: 16px;
+}
+.stepE{
+	width: 344px;
+    height: 407px;
+    background: url(../images/guide/guideE.png) no-repeat;
+    background-size: contain;
+    bottom: -3px;
+    left: 3px;
+}
+.stepF{
+	width: 344px;
+    height: 435px;
+    background: url(../images/guide/guideF.png) no-repeat;
+    background-size: contain;
+    bottom: 110px;
+    left: 12px;
+}
+.stepA a{
+	bottom: 109px;
+    left: 208px;
+}
+.stepB a{
+	bottom: 217px;
+    left: 201px;
+}
+.stepC a{
+	bottom: 156px;
+    left: 203px;
+}
+.stepD a{
+	bottom: 169px;
+    left: 203px;
+}
+.stepE a{
+	bottom: 221px;
+    left: 203px;
+}
+.stepF a{
+	bottom: 156px;
+    left: 209px;
 }

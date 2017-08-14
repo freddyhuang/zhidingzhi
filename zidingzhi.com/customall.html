@@ -20,13 +20,13 @@
 		<footer>
 			<section class="firstFloor">
 				<div class="footer fixed">
-					<div class="footerImg">
+					<div class="footerImg active">
 						<img src="images/customEdit/imgIcon.png" width="28px" height="28px"  align="absmiddle"/>&nbsp;图
 					</div>
 					<div class="footerImg ">
 						<img src="images/customEdit/writeTxtIcon.png" width="28px" height="28px"  align="absmiddle"/>&nbsp;文
 					</div>
-					<div class="footerImg active">
+					<div class="footerImg ">
 						<img src="images/customEdit/bottleIcon.png" width="22px" height="35px"  align="absmiddle"/>&nbsp;酒
 					</div>
 					<div class="footerImg">
@@ -49,7 +49,7 @@
 						 <span class="uploadimg">上传图片</span> 
 					</div>
 				</div>
-				<div class="footer  borderW"  style="display: none;">
+				<div class="footer  borderW" style="display: none;">
 					<div class="footerImg active" style="width: 127px;">
 						<span>文案</span>
 					</div>
@@ -112,15 +112,53 @@
 				</div>
 			</section>
 		</footer>
-		<div class="mask"></div>
-		<div class="searchTip">
-			<div class="stepA"><a>下一步</a><span title="关闭">关闭</span></div>
-			<div class="stepB"><a>下一步</a><span title="关闭">关闭</span></div>
-			<div class="stepC"><a>下一步</a><span title="关闭">关闭</span></div>
-			<div class="stepD"><a>下一步</a><span title="关闭">关闭</span></div>
-			<div class="stepE"><a>下一步</a><span title="关闭">关闭</span></div>
-			<div class="stepF"><a>下一步</a><span title="关闭">关闭</span></div>
-			<div class="stepG"><a>下一步</a><span title="关闭">关闭</span></div>
+		<!--
+        	新手引导
+        -->
+		<div class="mask" id="mask"></div>
+		<div class="searchTip" id="searchTip">
+			<div class="stepA" style="display: none;"><a>朕知道啦></a></div>
+			<div class="stepB" style="display: none;"><a>下一步</a></div>
+			<div class="stepC" style="display: none;"><a>下一步</a></div>
+			<div class="stepD" style="display: none;"><a>下一步</a></div>
+			<div class="stepE" style="display: none;"><a>下一步</a></div>
+			<div class="stepF" style="display: none;"><a>下一步</a></div>
 		</div>
+		<script>
+			window.onload=function(){
+				var oMask=document.getElementById('mask');
+				var oSearch=document.getElementById('searchTip');	
+				var aStep=oSearch.getElementsByTagName('div');
+			
+				//读取cookie
+				var res=document.cookie.substring(5);
+				
+				
+				if(res!="www.zidingzhi.com"){
+					alert(res);
+					oMask.style.display=oSearch.style.display=aStep[0].style.display="block";
+					
+					for( var i=0; i<aStep.length; i++){
+						(function(index){
+							aStep[i].onclick=function(){
+							this.style.display="none";
+							if(index<aStep.length-1){
+								aStep[index+1].style.display="block";
+							 }
+							 else if(index==aStep.length-1){
+								oMask.style.display="none";
+								this.style.display=oSearch.style.display="none";
+							}
+						 }
+						})(i)	
+					}
+					
+				//定义cookie
+				var oDate=new Date();
+				oDate.setDate(oDate.getDate()+30);
+				document.cookie="name=www.zidingzhi.com;expires="+oDate;
+				}
+			}
+		</script>
 	</body>
 </html>
