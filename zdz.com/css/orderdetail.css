@@ -1,0 +1,182 @@
+body{
+  background: rgb(240,240,240);
+}
+header{
+	height: 30px;
+	width: 100%;
+	line-height: 30px;
+	background: #984B99;
+	display: flex;
+	display: -webkit-flex;
+}
+.arrow{
+	margin-left: 15px;
+	margin-top: 5px;
+}
+.addressTxt{
+	color: #fff;
+	font-size: 15px;
+	font-family: "youyuan";
+	margin: 0 auto;
+}
+
+.orderNumber{
+	background: #fff;
+	width: 100%;
+	padding: 10px 0;
+}
+.oNumber{
+	display: -webkit-flex;
+	-webkit-justify-content: space-between;
+	margin: 0 15px;
+}
+/*订单内容*/
+.order{
+	background: #fff;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.orderBox{
+	margin: 0 15px;
+}
+.orderTop{
+	display: -webkit-flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 0;
+}
+.margin1px{
+	border: 1px solid rgb(240,240,240);
+}
+.check_n{
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	border: 2px solid #984B99;
+}
+.orderLeft{
+	display: flex;
+	display: -webkit-flex;
+}
+.orderDes{
+	margin-left: 20px;
+}
+.orderPrice{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.orderPrice p:nth-child(1){
+	font-size: 23px;
+	color: #984B99;
+	font-weight:bold;
+}
+.orderPrice p:nth-child(2){
+	font-size: 18px;
+	color: #969696;
+}
+.orderDes p{
+	line-height: 20px
+}
+.orderDes p:nth-child(2),.orderDes p:nth-child(3){
+	color: #333;
+}
+.orderBottom{
+	display: -webkit-flex;
+	-webkit-justify-content: space-between;
+	padding: 10px 0;
+	border-top: 2px solid rgb(240,240,240);
+	border-bottom: 2px solid rgb(240,240,240);
+}
+
+/*价格计算*/
+ .price{
+ 	background: #fff;
+ 	width: 100%;
+ 	color: #984B99;
+ }    		
+.priceBox{
+	margin: 0 15px;
+	display: -webkit-flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.ordertoatalPrice,.ordertoatalsalePrice,.actualPayment{
+	display: -webkit-flex;
+	justify-content: space-between;
+}
+.ordertoatalsalePrice{
+	margin-right: 6px;
+}
+.ordertoatalPrice p:nth-child(2){
+	font-size: 15px;
+	font-weight: 500;
+}
+.ordertoatalsalePrice p:nth-child(2){
+	font-size: 15px;
+	font-weight: 500;
+}
+.actualPayment p:nth-child(1),.actualPayment p:nth-child(2){
+	font-size: 18px;
+	font-weight: 700;
+}
+/*收货地址*/
+.addressCon{
+	background: #fff;
+	padding: 10px 0;
+	margin-top: 15px;
+}
+.addressBox{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	align-content: center;	
+	color: #969696;
+}
+.containLeft{
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	width: 100%;
+}
+.addressDes{
+	width: 100%;
+	margin-left: 15px;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+}
+.addressT{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	margin-right:15px;
+}
+.detailAdreess{
+	margin-top: 10px;
+}
+/*尾部str*/
+.footer{
+	width: 100%;
+	border-top: 2px solid #DDCBDD;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: #fff;
+	color: #984B99;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+}
+.footerIcon{
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	align-items: center;
+}
+/*尾部end*/

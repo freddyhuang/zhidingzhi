@@ -1,0 +1,217 @@
+body{
+	background: rgb(240,240,240);
+}
+.activeBg{
+	background: #DDC3DE;
+}
+/*头部str*/
+header{
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 30px;
+	width: 100%;
+	line-height: 30px;
+	background: #984B99;
+	display: flex;
+	display: -webkit-flex;
+}
+.arrow{
+	margin-left: 15px;
+	margin-top: 5px;
+}
+.addressTxt{
+	color: #fff;
+	font-size: 15px;
+	font-family: "youyuan";
+	margin: 0 auto;
+}
+/*头部end*/
+/*尾部str*/
+.footer{
+	width: 100%;
+	border-top: 2px solid #DDCBDD;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: #fff;
+	color: #984B99;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+}
+.footerIcon{
+	padding-top: 10px;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 1;
+}
+/*尾部end*/
+nav{
+	width: 100%;
+	background: #fff;
+	position: fixed;
+	top: 30px;
+	left: 0;
+}
+.active{
+	border-bottom: 2px solid #984B99;
+}
+.topTab{
+	width:100%;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-around;
+	-webkit-justify-content: space-around;
+	color: #984B99;
+	font-size:16px;
+	font-family: "youyuan";
+}
+.topTab li{
+	text-align: center;
+	padding: 10px 0;
+	flex: 1;
+}
+/*订单内容部分*/
+.order{
+	background: #fff;
+	margin-top: 15px;
+}
+.orderBox{
+	margin: 0 15px;
+}
+.orderTop{
+	display: -webkit-flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 0;
+}
+.check_n{
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	border: 2px solid #984B99;
+}
+.orderLeft{
+	display: flex;
+	display: -webkit-flex;
+}
+.orderDes{
+	margin-left: 20px;
+}
+.orderPrice{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.orderPrice p:nth-child(1){
+	font-size: 23px;
+	color: #984B99;
+	font-weight:bold;
+}
+.orderPrice p:nth-child(2){
+	font-size: 18px;
+	color: #969696;
+	text-decoration: line-through;
+}
+.orderPrice p:nth-child(3){
+	font-size: 14px;
+	color: #969696;
+	
+}
+.orderDes p{
+	line-height: 20px
+}
+.orderDes p:nth-child(2),.orderDes p:nth-child(3){
+	color: #333;
+}
+.orderBottom{
+	display: -webkit-flex;
+	-webkit-justify-content: space-between;
+	padding: 10px 0;
+	border-top: 2px solid rgb(240,240,240);
+	border-bottom: 2px solid rgb(240,240,240);
+}
+.checkBtn{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: flex-end;
+	padding: 8px 0;
+}
+#seeBtn,#payOrderBtn{
+	background: none;
+	padding: 5px 10px;
+	border: none;
+	border-radius: 3px;
+	background: #984B99;
+	color: #fff;
+}
+#payOrderBtn{
+	padding: 5px 28px;
+	margin-left:10px;
+}
+#closeOrderBtn{
+	background: none;
+	border: 1px solid #984B99;
+	color: #984B99;
+	padding: 5px 15px;
+	border-radius: 3px;
+}
+.productNum{
+	text-decoration: none!important;
+}
+.orderBottom p:nth-child(1){
+	color: #969696;
+}
+.orderBottom p:nth-child(2){
+	color: #333;
+}
+.orderwaitPayBox{
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	-webkit-justify-content: space-between;
+}
+.orderwaitPayIscheck{
+	margin-bottom: 60px;
+}
+.orderwaitPayBottom{
+	background: #fff;
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	position: fixed;
+	bottom: 50px;
+	left: 0;
+	color: #984B99;
+	display: -webkit-flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 16px;
+}
+.orderwaitPayB{
+	padding: 15px;
+	display: -webkit-flex;
+	align-items: center;
+}
+.tatoalPay{
+	background: #984B99;
+	color: #fff;
+	height: 35px;
+	line-height: 35px;
+	padding: 0 15px;
+	font-size: 12px;
+}
+.orderPayState{
+	color:#984B99!important;
+}
+.orderNum{
+	color: #333!important;
+}
+strong{
+  color: #000;
+}

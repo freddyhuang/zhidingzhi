@@ -1,0 +1,121 @@
+body{
+	background: rgb(240,240,240);
+}
+.activeBg{
+	background: #DDC3DE;
+}
+/*头部str*/
+header{
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 30px;
+	width: 100%;
+	line-height: 30px;
+	background: #984B99;
+	display: flex;
+	display: -webkit-flex;
+}
+.arrow{
+	margin-left: 15px;
+	margin-top: 5px;
+}
+.addressTxt{
+	color: #fff;
+	font-size: 15px;
+	font-family: "youyuan";
+	margin: 0 auto;
+}
+
+nav{
+	width: 100%;
+	background: #fff;
+	position: fixed;
+	top: 30px;
+	left: 0;
+}
+.active{
+	border-bottom: 2px solid #984B99;
+}
+.topTab{
+	width:100%;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-around;
+	-webkit-justify-content: space-around;
+	color: #984B99;
+	font-size:16px;
+	font-family: "youyuan";
+}
+.topTab li{
+	text-align: center;
+	padding: 10px 0;
+	flex: 1;
+}
+/*尾部str*/
+.footer{
+	width: 100%;
+	border-top: 2px solid #DDCBDD;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: #fff;
+	color: #984B99;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+}
+.footerIcon{
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	align-items: center;
+}
+/*尾部end*/
+/*<!--优惠卷内容部分-->*/
+.couponBg{
+	margin:  0 auto;
+	height: 115px;
+	width: 97%;
+	background: url(../images/discount/coupon.png) no-repeat;
+	background-size: 100% 100%;
+}
+.coupon{
+	margin-top: 25px;
+	margin-bottom: 15px;
+	position: relative;
+}
+.couponTxt{
+	padding-left: 10px;
+	color: #984B99;
+	padding-top: 22px
+}
+.newUserCoupon{
+	font-size: 18px;
+	font-weight: 600;
+}
+.couponTime{
+	margin-top: 5px;
+	display: flex;
+	display: -webkit-flex;
+}
+.couponState{
+	font-size: 14px;
+	line-height: 10px;
+	margin-left: 5px;
+}
+.couponPrices{
+	position: absolute;
+	right: 50px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 45px;
+	color: #fff;
+}
+.couponPrices i{
+	font-size: 19px;
+	font-weight: 700;
+}

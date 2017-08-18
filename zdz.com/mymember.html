@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/mymember.css"/>
+	</head>
+	<body>
+		<header>
+			<div class="arrow">
+				<img src="images/addAdress/arrow.png" width="15px" height="15px"/>
+			</div>
+			<div class="addressTxt">我的会员</div>
+		</header>
+		<div style="height: 35px;"></div>
+		<nav>
+			<ul class="topTab">
+				<li class="active">会员</li>
+				<li >游客</li>
+			</ul>
+		</nav>
+		<!--
+        	搜索
+        -->
+        <div class="search">
+       		<img src="images/search.png" width="20px" height="20px" id="searchIcon"/>
+        	<input type="text" id="distributorSearch"/>
+        </div>
+			<!--
+        	内容部分
+        -->
+        
+		<div class="distributorNum">
+			<p>总人数 &nbsp;<b>2</b></p>
+			<p>今日新增 &nbsp;<b>1</b></p>
+		</div>
+		
+		<section class="distributorItem margin65">
+			<div class="distributorItemBox">
+				<div class="distriHead">
+					<img src="images/Mydistributor/wxhead_03.png" width="60px" height="60px"/>
+					<div class="distriTxt">
+						<p>微信:阿达大大大大</p>
+						<p>所属分销商:阿达</p>
+					</div>
+				</div>
+			</div>
+			<div class="distriBottom">
+				<div class="distriBottomLeft">
+					<p>开通日期:</p>
+					<P>2017/02/15</P>
+					
+				</div>
+				<div class="cancelDistri">
+					<button class="cancelDistriBtn" onclick="setDistributor()">设置为我的分销</button>
+				</div>
+			</div>
+		</section>
+		<section class="distributorItem">
+			<div class="distributorItemBox">
+				<div class="distriHead">
+					<img src="images/Mydistributor/wxhead_03.png" width="60px" height="60px"/>
+					<div class="distriTxt">
+						<p>微信:阿达大大大大</p>
+						<p>所属分销商:阿达</p>
+					</div>
+				</div>
+			</div>
+			<div class="distriBottom">
+				<div class="distriBottomLeft">
+					<p>开通日期:</p>
+					<P>2017/02/15</P>
+					
+				</div>
+				<div class="cancelDistri">
+					<button class="cancelDistriBtn" onclick="setDistributor()">设置为我的分销</button>
+				</div>
+			</div>
+		</section>
+		<section class="distributorItem">
+			<div class="distributorItemBox">
+				<div class="distriHead">
+					<img src="images/Mydistributor/wxhead_03.png" width="60px" height="60px"/>
+					<div class="distriTxt">
+						<p>微信:阿达大大大大</p>
+						<p>所属分销商:阿达</p>
+					</div>
+				</div>
+			</div>
+			<div class="distriBottom">
+				<div class="distriBottomLeft">
+					<p>开通日期:</p>
+					<P>2017/02/15</P>
+					
+				</div>
+				<div class="cancelDistri">
+					<button class="cancelDistriBtn" onclick="setDistributor()">设置为我的分销</button>
+				</div>
+			</div>
+		</section>
+		<!--<div class="addDistributor">
+			+
+		</div>-->
+		<div style="height: 85px;"></div>
+		<footer>
+			<div class="footer clearfix">
+				<div class="footerIcon fl">
+					<img src="images/userCenter/edit.png" width="28px" height="28px" />
+					<p>点我定制</p>
+				</div>
+				<div class="footerIcon fl">
+					<img src="images/userCenter/survey.png" width="28px" height="28px" />
+					<p>定制稿</p>
+				</div>
+				<div class="footerIcon fl  ">
+					<img src="images/userCenter/cart.png" width="28px" height="28px" />
+					<p>购物车</p>
+				</div>
+				<div class="footerIcon fl">
+					<img src="images/userCenter/account.png" width="28px" height="28px" />
+					<p>用户中心</p>
+				</div>
+				<div class="footerIcon fl activeBg">
+					<img src="images/userCenter/vip.png" width="28px" height="28px"/>
+					<p>我的分销</p>
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript">
+			function setDistributor(){
+			 var isSet = confirm("是否设置为我的分销商");
+			 if (isSet) {
+			 	alert('yes')
+			 } else{
+			 	alert('no')
+			 }
+			}
+		</script>
+	</body>
+</html>

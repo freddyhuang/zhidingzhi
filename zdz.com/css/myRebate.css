@@ -1,0 +1,154 @@
+body{
+  background: rgb(240,240,240);
+}
+.activeBg{
+	background: #DDC3DE;
+}
+.fontw{
+	font-weight: 600;
+}
+/*头部str*/
+header{
+	height: 30px;
+	width: 100%;
+	line-height: 30px;
+	background: #984B99;
+	display: flex;
+	display: -webkit-flex;
+}
+.arrow{
+	margin-left: 15px;
+	margin-top: 5px;
+}
+.addressTxt{
+	color: #fff;
+	font-size: 15px;
+	font-family: "youyuan";
+	margin: 0 auto;
+}
+.footer{
+	width: 100%;
+	border-top: 2px solid #DDCBDD;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: #fff;
+	color: #984B99;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+}
+.footerIcon{
+	padding-top: 10px;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 1;
+}
+/*尾部end*/
+.searchBox{
+	margin: 15px auto;
+}
+.search{
+	width: 90%;
+	margin: 0 auto;
+	height: 30px;
+	line-height: 30px;
+	background: #fff;
+	position: relative;
+	top: 5px;
+}
+#searchIcon{
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	transform: translateY(-50%);
+	z-index: 1;
+}
+#distributorSearch{
+	outline: #984B99;
+	height: 30px;
+	line-height: 30px;
+	margin: 0px auto;
+	background: #fff;
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	transform: translateY(-50%);
+	padding-left: 27px;
+}
+/*内容部分*/
+.today,.all{
+	background: #fff;
+	display: -webkit-flex;
+	-webkit-justify-content: space-around;
+	justify-content: space-around;
+	padding: 8px 0;
+}
+.today{
+	margin-bottom: 3px;
+}
+.today p,.all p{
+	color: #969696;
+	font-size: 12px;
+}
+.today p:nth-child(1),.all p:nth-child(1),.today p b,.all p b{
+	color: #984B99;
+	font-size: 16px;
+	font-weight: 700;
+}
+.wxId{
+	background: #fff;
+	width: 100%;
+}
+.wxIdBox{
+	margin: 10px 0px 10px;
+}
+.wxCon{
+	display: -webkit-flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.wxidTop{
+	display: -webkit-flex;
+	justify-content: space-between;
+	-webkit-align-items: center;
+	font-size: 15px;
+	padding: 10px 15px;
+}
+.rebateRight{
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+.myRebateMoney{
+	color: #984c99;
+}
+.wxidBottom{
+	padding: 8px 0;
+	display: -webkit-flex;
+	align-items: center;
+	border-bottom: 1px  solid rgb(240,240,240);
+	text-indent: 15px;
+}
+.rebateUnder{
+	padding: 8px 0;
+	display: -webkit-flex;
+	align-items: center;
+	border-top: 1px  solid rgb(240,240,240);
+	text-indent: 15px;
+	font-size: 15px;
+}
+.rebateUnder p{
+	margin-right:5px;
+}
+.wxidBottom p:nth-child(2){
+	margin-left: 20px;
+}
+.wxidBottomRight{
+	display: -webkit-flex;
+	justify-content: space-around;
+	align-items: center;
+}

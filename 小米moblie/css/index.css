@@ -1,0 +1,16 @@
+*{margin: 0;padding: 0;}
+#hd{
+	height: 70px;
+	background: grey;
+}
+body{
+	padding: 0 10px;
+}
+#hd .lc{
+	height: 100%;
+}
+#hd .hd-con.fix{
+	position: fixed;
+	top: 0;
+	left: 0;
+}

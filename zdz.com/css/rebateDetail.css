@@ -1,0 +1,170 @@
+body{
+  background: rgb(240,240,240);
+}
+.activeBg{
+	background: #ddc3de;
+}
+header{
+	height: 30px;
+	width: 100%;
+	line-height: 30px;
+	background: #984B99;
+	display: flex;
+	display: -webkit-flex;
+}
+.arrow{
+	margin-left: 15px;
+	margin-top: 5px;
+}
+.addressTxt{
+	color: #fff;
+	font-size: 15px;
+	font-family: "youyuan";
+	margin: 0 auto;
+}
+
+.orderNumber{
+	background: #fff;
+	width: 100%;
+	padding: 10px 0;
+}
+.oNumber{
+	display: -webkit-flex;
+	-webkit-justify-content: space-between;
+	margin: 0 15px;
+}
+/*订单所属*/
+.orderUnder{
+	margin-top: 8px;
+	background: #fff;
+}
+.oUnderNum{
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	margin-left: 15px;
+	padding: 10px 0;
+}
+.oUnderNum P{
+	margin-right: 15px;
+	font-size: 15px;
+}
+/*订单内容*/
+.order{
+	background: #fff;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+.orderBox{
+	margin: 0 15px;
+}
+.orderTop{
+	display: -webkit-flex;
+	align-items: center;
+	padding: 10px 0;
+}
+.margin1px{
+	border: 1px solid rgb(240,240,240);
+}
+.check_n{
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	border: 2px solid #984B99;
+}
+.orderLeft{
+	display: flex;
+	display: -webkit-flex;
+}
+.orderDes{
+	margin-left: 20px;
+}
+.orderPrice{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: -25px;
+	margin-left: -30px;
+	-webkit-align-content: center;
+	justify-content: center;
+}
+.orderRebate{
+	border-left: 1px solid #aaaaaa;
+	margin-left: 15px;
+}
+.orderRebate p{
+	margin-left: 15px;
+	line-height: 20px;
+}
+.orderPrice p:nth-child(1){
+	font-size: 20px;
+	color: #984B99;
+}
+.orderPrice p:nth-child(2){
+	font-size: 18px;
+	color: #969696;
+}
+.orderDes p{
+	line-height: 20px
+}
+.discountP{
+	margin-left: 25px;
+}
+.orderDes p:nth-child(2),.orderDes p:nth-child(3){
+	color: #333;
+}
+.orderBottom{
+	display: -webkit-flex;
+	-webkit-justify-content: space-between;
+	padding: 10px 0;
+	border-top: 2px solid rgb(240,240,240);
+	border-bottom: 2px solid rgb(240,240,240);
+}
+
+/*此单收益*/
+.orderwaitPayBottom{
+	background: #fff;
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	position: fixed;
+	bottom: 57px;
+	left: 0;
+	display: -webkit-flex;
+	justify-content: flex-end;
+	-webkit-align-items: center;
+	align-items: center;
+	font-size: 16px;
+}
+.orderwaitPayB{
+	padding: 15px;
+	display: -webkit-flex;
+	align-items: center;
+}
+.tatoalPay{
+	color: #984c99;
+	padding: 0 15px;
+	font-size: 12px;
+}
+/*尾部str*/
+.footer{
+	width: 100%;
+	border-top: 2px solid #DDCBDD;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: #fff;
+	color: #984B99;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+}
+.footerIcon{
+	padding-top: 10px;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 1;
+}
+/*尾部end*/

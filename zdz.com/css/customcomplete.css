@@ -1,0 +1,131 @@
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 30px;
+	width: 100%;
+	line-height: 30px;
+	background: #984B99;
+	display: flex;
+	display: -webkit-flex;
+	color: #F0F0F0;
+}
+.arrow{
+	margin-left: 15px;
+	margin-top: 5px;
+}
+.addressTxt{
+	color: #fff;
+	font-size: 15px;
+	font-family: "youyuan";
+	margin: 0 auto;
+}
+.useCenter{
+	color: #f0f0f0;
+	margin-right:15px;
+}
+.customcompleteImg img{
+	width: 100%;
+}
+.customDes{
+	display: -webkit-flex;
+	justify-content: space-between;
+	border-bottom: 2px solid #DDC3DE;
+	border-top: 2px solid #DDC3DE;
+	padding:10px 15px;
+	color: #333;
+}
+.customDesTxt{
+	display: -webkit-flex;
+	justify-content: space-between;
+	align-content: center;
+	align-items: center;
+}
+.customtatoalPrice{
+	color: #984B99;
+	font-weight: 700;
+	font-size: 16px;
+}
+.customDetailDes{
+	display: -webkit-flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 0 15px;	
+}
+/*修改过的地方*/
+.customDetailDes p{
+	color: #969696;
+	font-size: 10px;
+	line-height: 20px;
+}
+.ProductParameter{
+	color: #969696;
+	font-size: 12px;
+	margin-top: 5px;
+}
+.productdes{
+	display: -webkit-flex;
+}
+.productdes p:nth-child(1){
+		width: 120px;
+		max-width: 135px;
+		overflow: hidden;
+}
+.customProductD{
+	display: -webkit-flex;
+	justify-content: space-between;
+	border-top: 2px solid #DDC3DE;
+	padding:10px 0;
+}
+.customProductDetail{
+	margin: 0 15px;
+	color: #333333;
+	font-size: 14px;
+}
+/*加减按钮*/
+.addBtn{
+	border: none;
+	outline: none;
+	font-size: 19px;
+	background: none;
+	width: 35px;
+	height: 35px;
+}
+.join-money{
+	width: 50px;
+	height: 20px;
+	text-align: center;
+}
+
+/*尾部str*/
+footer{
+	border-top: 2px solid #DDC3DE;
+	background: #fff;
+	position:fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	font-size: 13px;
+}
+.customcompleteFooter{
+	display: -webkit-flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 15px;
+}
+.customcompletetotal{
+	color: #984B99;
+	flex: 2;
+}
+.customcompleteAddCar,.customcompletetBug{
+	background: #984B99;
+	color: #fff;
+	flex: 1;
+	text-align: center;
+	padding:  0 10px;
+}
+.customcompletetBug{
+	border-left: 3px solid #9B619B;
+}

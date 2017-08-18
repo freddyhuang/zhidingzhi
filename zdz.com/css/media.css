@@ -1,0 +1,43 @@
+@media (max-width: 320px) {
+	
+}
+
+/*iphone5*/
+@media only screen
+and (min-device-width : 320px)
+
+and (max-device-height : 568px){
+	.swiper-slide img {
+		height: 524px;
+	}
+}
+
+/*iphone4*/
+@media only screen
+and (min-device-width : 320px)
+
+and (max-device-height : 480px){
+	.swiper-slide img {
+		height: 436px;
+	}
+}
+
+/*iphone6*/
+@media only screen
+and (min-device-width : 375px)
+
+and (max-device-width : 667px){
+	.swiper-slide img {
+		height:620px;
+	}
+}
+
+/*iphone6p*/
+@media only screen
+and (min-device-width : 414px)
+
+and (max-device-width : 736px){
+	.swiper-slide img {
+		height: 693px;
+	}
+}

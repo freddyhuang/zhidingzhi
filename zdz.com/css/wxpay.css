@@ -1,0 +1,152 @@
+body{
+	background: rgb(240,240,240);
+}
+header{
+	height: 30px;
+	width: 100%;
+	line-height: 30px;
+	background: #984B99;
+	display: flex;
+	display: -webkit-flex;
+}
+.arrow{
+	margin-left: 15px;
+	margin-top: 5px;
+}
+.addressTxt{
+	color: #fff;
+	font-size: 15px;
+	font-family: "youyuan";
+	margin: 0 auto;
+}
+
+/*中间部分str*/
+.addressCon{
+	background: #fff;
+	padding: 10px 0;
+}
+.addressBox{
+	margin: 15px 15px;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	align-content: center;	
+}
+.containLeft{
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+}
+.addressDes{
+	margin-left: 15px;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+}
+.addressT{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+}
+.detailAdreess{
+	margin-top: 10px;
+}
+.addressArrow{
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+}
+.CustomWine{
+	margin-top: 15px;
+	background: #fff;
+	padding: 10px 0;
+}
+.wineBox{
+	margin: 0 15px;
+	display: flex;
+	display: -webkit-flex;
+}
+.customWRight{
+	display: flex;
+	display: -webkit-flex;
+	margin-left: 10px;
+	flex-direction: column;
+}
+.WinePrice{
+	color: #984B99;
+}
+.customerDes{
+	display: flex;
+	display: -webkit-flex;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	font-family: "youyuan";
+	font-weight: 600;
+	font-size: 18px;
+}
+.customerdetail{
+	display: flex;
+	display: -webkit-flex;
+	margin-top: 10px;
+}
+
+.discount{
+	background: #fff;
+	margin-top: 15px;
+}
+.discountBox{
+	margin: 0 15px;
+	padding: 10px 0;
+	display: -webkit-flex;
+	align-items: center;
+}
+.discountLeft{
+	display: flex;
+	display: -webkit-flex;
+}
+.discountRight{
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	margin-left: 10px;
+	color: #984B99;
+	flex: 1;
+}
+.discountprice{
+	width: 77%;
+	display: flex;
+	display: -webkit-flex;
+	-webkit-justify-content: space-between;
+	font-size: 16px;
+	font-weight: 600;
+	margin-top: 10px;
+}
+.discountTxt p:nth-child(2){
+	margin-top: 10px;
+}
+.discountTxt{
+	color: #984B99;
+}
+/*尾部str*/
+.tatoal{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	border-top: 1px solid #D7D7D7;
+	width:100%;
+	height: 35px;
+	line-height: 35px;
+	background: #fff; 
+	display: flex;
+	display: -webkit-flex;
+	justify-content: flex-end;
+}
+.taltoalNum{
+	margin-right: 15px;
+	color: #984B99;
+}
+.taltoalBtn{
+	background: #984B99;
+	padding: 0 20px;
+	color: #fff;
+}

@@ -1,0 +1,38 @@
+.bg-orange{
+	background: #FB803C;
+	color:#fff;
+}
+/*尾部str*/
+footer{
+	background: #fff;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	color: #333;
+	width: 100%;
+}
+.footer{
+	margin: 0 auto;
+	justify-content: space-between;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+	align-content: center;
+	border-top: 1px solid #fff;
+	box-shadow: 0px 1px 1px #fff;
+	font-size: 15px;
+}
+.footer div{
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-direction: column;
+	-webkit-align-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+	align-content: center;
+	padding: 5px 20px;
+}

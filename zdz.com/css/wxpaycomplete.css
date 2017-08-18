@@ -1,0 +1,95 @@
+.container{
+	width: 100%;
+	height: 100%;
+	max-width: 960px;
+	margin: 0  auto;
+}
+
+.payDes{
+	position: absolute;
+	top: 37%;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	color: #fff;
+	font-size: 30px;
+	font-weight: 700;
+}
+.paySuss,.shareTXt{
+	width: 210px;
+	text-align: center;
+}
+.shareTXt{
+	line-height: 40px;
+}
+.payDesBottom{
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	color: #984B99;
+	font-size: 20px;
+	font-weight: 400;
+}
+/*	<!--分享之后出现红包-->*/
+
+*{
+    box-sizing: border-box;
+}
+
+.container2{
+    text-align: center;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px 5px;
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    z-index:5
+}
+.hongbao{
+	position: relative;
+	 width: 300px;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+.hongbao img{
+	width: 100%;
+	height: 100%;
+}
+.detailBtn{
+	position: absolute;
+    top: 166px;
+    left: 92px;
+    width: 116px;
+    height: 44px;
+    text-indent: -999px;
+    overflow: hidden;
+    background: none;
+    outline: none;
+}
+.closeBnt{
+	position: absolute;
+    bottom: 0px;
+    left: 129px;
+    width: 50px;
+    height: 50px;
+    background: none;
+    text-indent: -999px;
+    overflow: hidden;
+    outline: none;
+    border-radius: 50%;
+}
+@media only screen
+and (min-device-width : 320px)
+
+and (max-device-height : 480px){
+	.hongbao{
+		height: 402px;
+	}
+}

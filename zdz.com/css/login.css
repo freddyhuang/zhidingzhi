@@ -1,0 +1,146 @@
+body{-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+input:focus{color: #999;}
+
+/*头部str*/
+header{
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 30px;
+	width: 100%;
+	line-height: 30px;
+	background: #984B99;
+	display: flex;
+	display: -webkit-flex;
+}
+.arrow{
+	margin-left: 15px;
+	margin-top: 5px;
+}
+.addressTxt{
+	color: #fff;
+	font-size: 15px;
+	font-family: "youyuan";
+	margin: 0 auto;
+}
+
+/*头部end*/
+
+#loginForm input{border:0;}
+#loginForm input{
+    background-repeat: repeat-x;
+    -webkit-background-size: 100% 1px;
+}
+#loginForm{
+	width: 90%;
+	margin: 50px auto 0px;
+}
+#loginForm input{
+	overflow: hidden;
+	 height: 32px;
+	 line-height: 32px;
+	 padding: 4px 0;
+	 border:none;
+	 font-size: 16px;
+	 outline:none;
+	 background-color:rgb(240,240,240);
+}
+#loginForm #login_form{
+	display: block;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	background-color: #984B99;
+	width: 100%;
+	margin-top: 50px;
+	border: none;
+	height: 44px;
+	padding: 0;
+	line-height: 44px;
+}
+.phone{
+	width: 100%;
+	height: 40px;
+	background: rgb(240,240,240);
+	display: -webkit-flex;
+	align-items: center;
+	align-content: center;
+}
+.phoneDependency{
+	align-self: center;
+	display: -webkit-flex;
+	align-items: center;
+	border-left: 3px solid #fff;
+	border-right: 3px solid #fff;
+	font-size: 20px;
+	padding: 0 5px;
+	font-weight: bolder;
+}
+.codeBox{
+	margin-top: 25px;
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	align-items: center;
+	font-size: 14px;
+}
+#code{
+	width: 90px;
+	padding-left: 5px!important;
+}
+.codeBox p:nth-child(1){
+	color: #969696;
+}
+.codeBox .time{
+	font-weight: bold;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.grtCodeBtn{
+	background: #984B99;
+	color: #fff;
+	padding: 10px 15px;
+	font-weight: bold;
+	font-size: 15px;
+}
+.picCodeBox{
+	margin-top: 25px;
+	display: -webkit-flex;
+}
+.picture{
+	width: 100px;
+	height: 38px;
+	border: 1px solid #984B99;
+}
+#picCode{
+	margin-left: 10px;
+	padding-left: 5px;
+}
+/*第三方登录（微信）*/
+.wxlogin{
+	width: 80%;
+	position: relative;
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+	transform: -webkit-translateX(-50%);
+}
+.wxlogin p.otherLoTxt{
+	position: absolute;
+	top: -9px;
+	left: 50%;
+	transform: translateX(-50%);
+	color: #969696;
+	font-weight: 600;
+	font-size: 13px; 
+	padding:0px 15px;
+	background: #fff;
+}
+.wxlogin .wxline{width: 100%;background-color: #9ea1a6;}
+.wxlogin .wxline {position: relative;}
+.wxlogin .wxline:before {content: '';position: absolute;width: 200%; height: 200%;border: 1px solid  #9ea1a6;-webkit-transform-origin: 0 0; 
+-moz-transform-origin: 0 0; -ms-transform-origin: 0 0;-o-transform-origin: 0 0; transform-origin: 0 0; -webkit-transform: scale(0.5, 0.5);   
+-ms-transform: scale(0.5, 0.5);-o-transform: scale(0.5, 0.5); transform: scale(0.5, 0.5);-webkit-box-sizing: border-box;-moz-box-sizing: border-box;  
+box-sizing: border-box;}
+.wxlogin .wxlogin_icon{width: 100%;text-align: center;}
+.wxlogin .wxlogin_icon img{margin: 28px auto 0;}

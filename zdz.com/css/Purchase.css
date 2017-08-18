@@ -1,0 +1,168 @@
+orderwaitPayBottombody{
+	background: rgb(240,240,240);
+}
+.activeBg{
+	background: #DDC3DE;
+}
+/*头部str*/
+header{
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 30px;
+	width: 100%;
+	line-height: 30px;
+	background: #984B99;
+	display: flex;
+	display: -webkit-flex;
+}
+.arrow{
+	margin-left: 15px;
+	margin-top: 5px;
+}
+.addressTxt{
+	color: #fff;
+	font-size: 15px;
+	font-family: "youyuan";
+	margin: 0 auto;
+}
+.active{
+	border-bottom: 2px solid #984B99;
+}
+.topTab{
+	width:100%;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-around;
+	-webkit-justify-content: space-around;
+	color: #984B99;
+	font-size:16px;
+	font-family: "youyuan";
+}
+.topTab li{
+	text-align: center;
+	padding: 10px 0;
+	flex: 1;
+}
+/*尾部str*/
+.footer{
+	width: 100%;
+	border-top: 2px solid #DDCBDD;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: #fff;
+	color: #984B99;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+}
+.footerIcon{
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.orderwaitPayBottom{
+	background: #fff;
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	position: fixed;
+	bottom: 57px;
+	left: 0;
+	color: #984B99;
+	display: -webkit-flex;
+	justify-content: flex-end;
+	align-items: center;
+	font-size: 16px;
+	border-top: 2px solid #DDC3DE;
+}
+.tatoalPrice{
+	margin-right: 25px;
+}
+.orderwaitPayB{
+	padding: 15px;
+	display: -webkit-flex;
+	align-items: center;
+}
+.tatoalPay{
+	background: #984B99;
+	color: #fff;
+	height: 35px;
+	line-height: 35px;
+	padding: 0 35px;
+	font-size: 12px;
+}
+.check_n{
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	border: 2px solid #984B99;
+}
+/*尾部end*/
+
+
+.purchaseItem{
+	margin: 15px 0;
+	width:100%;
+	background: #fff;
+}
+.purchcaseItemBox{
+	margin: 0 5px;
+	padding: 20px 0;
+	display: -webkit-flex;
+	flex-direction: row;
+	justify-content: space-between;
+	-webkit-align-items: center;
+	align-items: center;
+}
+.purchaseBottle{
+	display: -webkit-flex;
+	flex-direction: row;
+}
+.purchaseBottle p{
+	font-size: 15px;
+	margin-left: 10px;
+}
+.discountprice{
+	color: #984B99;
+}
+.OriginalPrice{
+	margin-left: 12px;
+}
+/*加减按钮*/
+.addBtn{
+	border: none;
+	outline: none;
+	font-size: 19px;
+	background: none;
+	width: 25px;
+	height: 20px;
+}
+.join-money{
+	width: 25px;
+	height: 20px;
+	text-align: center;
+}
+.purchaseBottleColor{
+	width: 22px;
+	height: 22px;
+}
+.colorHei{
+	background: black;
+}
+.colorhong{
+	background: red;
+}
+.colorBai{
+	background: #fff;
+	border: 1px solid #000000;
+}
+.colorhuang{
+	background: yellow;
+}
