@@ -11,13 +11,10 @@
 		<link rel="stylesheet" type="text/css" href="css/public.css"/>
 	</head>
 	<body>
-		<header>
-			<div class="header">
-				<div class="headLeftH">帮助中心</div>
-				<div class="headCenterZ">自定制</div>
-				<div class="headRightU">用户中心</div>
-			</div>
-		</header>
+		<div class="container">
+			<img src="images/customEdit/customImg_01.png" width="100%" height="621px" />
+		</div>
+		
 		<footer>
 			<section class="firstFloor">
 				<div class="footer">
@@ -48,42 +45,42 @@
 				</div>
 			</section>
 			<section class="secondFloor" >
-				<div class="footer borderB">
+				<div class="footer borderB" style="display: none;">
 					<div class="footerImg active">
-						<span style="margin-left:5px;">为朋友</span>
+						为朋友
 					</div>
 					<div class="footerImg">
-						 <span style="width: 50px;">为爱人</span> 
+						 为爱人
 					</div>
 					<div class="footerImg">
-						 <span style="margin-left: 6px;">为亲人</span> 
+						 为亲人
 					</div>
 					<div class="footerImg">
-						 <span class="uploadimg">上传图片</span> 
+						<p class="uploadingImg">上传图片</p>
 					</div>
 				</div>
 				<div class="footer  borderW" style="display: none;">
-					<div class="footerImg active" style="width: 127px;">
+					<div class="footerImg" style="width: 127px;">
 						<span>文案</span>
 					</div>
 					<div class="footerImg" style="width: 95px;">
 						 <span>字体</span> 
 					</div>
-					<div class="footerImg" style="width: 95px;">
-						 <span >字号</span> 
+					<div class="footerImg " style="width: 95px;">
+						 <span >大小</span> 
 					</div>
-					<div class="footerImg" style="width: 95px;">
+					<div class="footerImg active" style="width: 95px;">
 						 <span class="uploadimg">颜色</span> 
 					</div>
 					<div class="footerImg" style="width: 95px;">
-						 <span>竖</span> 
+						 <span>竖排</span> 
 					</div>
 				</div>
-				<div class="footer  borderJ" style="display: none;">
-					<div class="footerImg " >
+				<div class="footer  borderJ">
+					<div class="footerImg active" >
 						<span>酌饮</span>
 					</div>
-					<div class="footerImg active">
+					<div class="footerImg ">
 						 <span>品味</span> 
 					</div>
 					<div class="footerImg" >
@@ -92,8 +89,8 @@
 				</div>
 			</section>
 			<section class="ThirdFloor">
-				<div class="imgList">
-					<ul class="imgUl clearfix">
+				<div class="imgList"style="display: none;">
+					<ul class="imgUl clearfix" >
 						<li class="fl"> <img src="images/customall/8_03.png" width="80px" height="100px"> </li>
 						<li class="fl"> <img src="images/customall/8_05.png" width="80px" height="100px"> </li>
 						<li class="fl"> <img src="images/customall/8_07.png" width="80px" height="100px"> </li>
@@ -105,22 +102,51 @@
 					</ul>
 				</div>
 				<div class="TextAreaBox" style="display: none;">
-					<textarea  class="TextArea" placeholder="请输入文字"></textarea>
+					<textarea  class="TextArea" placeholder="请输入文字" style="display: none;"></textarea>
+					<div class="fontf"  style="display: none;">
+						<p>思源黑体</p>
+						<p>禹卫书法行书简体</p>
+						<p>方正兰亭超细黑简体</p>
+						<p>方正兰亭超细黑简体</p>
+						<p>方正兰亭超细黑简体</p>
+					</div>
+					<div class="fontsize" style="display: none;">
+						<p>72</p>
+						<p>68</p>
+						<p>20</p>
+						<p>12</p>
+						<p>16</p>
+						<p>16</p>
+						<p>16</p>
+						<p>16</p>
+						<p>16</p>
+					</div>
+					<div class="fontColor">
+						<p style="background: red;">红色</p>
+						<p style="background: orange;">橙色</p>
+						<p style="background: yellow;">黄色</p>
+						<p style="background: green;">绿色</p>
+						<p style="background: blue;">蓝色</p>
+						<p style="background: blue;">蓝色</p>
+						<p style="background: blue;">蓝色</p>
+						<p style="background: blue;">蓝色</p>
+						<p style="background: blue;">蓝色</p>
+					</div>
 				</div>
 				<div class="imgList">
-					<ul class="imgUl clearfix bottle1" style="display: none;">
+					<ul class="imgUl clearfix bottle1">
 						<li class="fl"> <img src="images/customall/bottle_03.png" width="28px" height="58px"> </li>
 						<li class="fl"> <img src="images/customall/bottle_06.png" width="28px" height="58px"> </li>
 						<li class="fl"> <img src="images/customall/bottle_08.png" width="28px" height="58px"> </li>
-						<li class="fl"><p>￥158</p></li>
+						<!--<li class="fl"><p>￥158</p></li>-->
 					</ul>
 					<ul class="imgUl clearfix bottle2" style="display: none;">
 						<li class="fl active wineBottle"> <img src="images/customall/bottle_03.png" width="28px" height="58px"> </li>
-						<li class="fl whiteBottlePrice"><p>￥288</p></li>
+						<!--<li class="fl whiteBottlePrice"><p>￥288</p></li>-->
 					</ul>
 					<ul class="imgUl clearfix bottle3" style="display: none;" >
 						<li class="fl active wineBottle"> <img src="images/customall/yellowBottle_03.png" width="28px" height="58px"> </li>
-						<li class="fl whiteBottlePrice"><p>￥388</p></li>
+						<!--<li class="fl whiteBottlePrice"><p>￥388</p></li>-->
 					</ul>
 				</div>
 			</section>

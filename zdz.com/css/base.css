@@ -19,7 +19,9 @@ button{list-style:none; border:0px;}
 /*表格*/
 table{ width:400px; border-collapse:collapse;}
 th, td{border:1px solid #eee; padding:0px;}
-/*表格*/
+::-webkit-scrollbar{
+display: none;
+}
 .fontSize15{
 	font-size: 15px;
 }

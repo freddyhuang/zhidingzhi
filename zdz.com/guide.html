@@ -16,19 +16,7 @@
 		<div class="content">
 			<div class="bg">
 				<div class="bottleImg">
-					<img src="images/guide/OpalChina.png" class="whiteBottle" width="80%" height="100%" />
-					<img src="images/guide/13-02_03.png" class="scenery" />
-					<div class="sharBox">
-						<div class="shareBtn">
-							<div class="left">
-								<img src="images/guide/sharebtn.png"  width="104px" height="64px"/>
-								<span></span>
-							</div>
-							<div class="right">
-								<img src="images/guide/bugme.png" width="104px" height="64px"/>
-								<span></span>
-							</div>
-						</div>
+					<div class="sharBox">		
 					</div>
 			   </div>
 			</div>
@@ -38,9 +26,42 @@
 				<img src="images/guide/share_icon3.png"  width="87px" height="88px"/>
 			</div>
 		</div>
+		<footer>
+			<div class="shareBtn">
+				<div class="left">
+					<img src="images/guide/sharebtn.png"  width="104px" height="64px"/>
+					<span>秀一秀</span>
+				</div>
+				<div class="right">
+					<img src="images/guide/bugme.png" width="104px" height="64px"/>
+					<span>订这瓶</span>
+				</div>
+			</div>
+		</footer>
+		<!--
+            	登录部分
+            -->
+		<section id="loginForm">
+			<div class="loginTopBg">
+				<div class="loginBox">
+					<div class="phone">
+						<input type="text" placeholder="请填写你的手机号码" name="phoneNum" class="phoneNum" id="phoneNum" maxlength="11"/>		
+					</div>
+					<div class="codeBox">
+						<input type="text" name="code" class="code" id="code" maxlength="6" placeholder="短信验证码"/>	
+						<div class="grtCodeBtn">重新获取</div>
+					</div>
+					<div class="picCodeBox"> 
+						<input type="text" placeholder="输入图形验证码" name="code" class="picCode" id="picCode" maxlength="6"/>	
+						<div class="picture">
+							<img src="images/picBode.png" width="72px" height="40px" />
+						</div>
+					</div>
+					<input type="submit" value="登录" id="login_form"/>
+				</div>
+			</div>
+		</section>
 		<script src="js/jquery-3.1.0.min.js"></script>
-		<script src="js/swiper.jquery.min.js"></script>
-		<script src="js/base.js"></script>
 		<script src="js/guide.js?v=2"></script>
 	</body>
 </html>

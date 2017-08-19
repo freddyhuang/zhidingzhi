@@ -1,19 +1,5 @@
 /*头部str*/
-header{
-	width: 100%;
-	height: 40px;
-	line-height: 40px;
-	background: #984B99;
-}
-.header{
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-justify-content: space-around;
-	justify-content: space-around;
-	color: #fff;
-	font-family: "楷体";
-}
+
 /*尾部str*/
 footer{
 	width: 100%;
@@ -37,26 +23,14 @@ footer{
 	font-size: 15px;
 }
 .active{
-	background-color: #DCC4DE!important;
+	background-color: #903991!important;
+	font-weight: bolder;
 }
-.firstFloor .footerImg{
-	display: -webkit-flex;
-	align-items: center;
-	flex: 1;
-	padding: 0px 10px;
-	height: 40px;
-	line-height: 40px;
-}
-
 .borderW{
 	display: -webkit-flex;
 	-webkit-justify-content: space-around;
 }
 
-.uploadimg{
-	width: 110px;
-	font-size: 12px;
-}
 .imgUl{
 	width: 100%;
 	height: 100px;
@@ -67,37 +41,30 @@ footer{
 	display: -webkit-flex;
 	flex-wrap: nowrap;
 }
-.footerImg span{
-	font-size: 18px;
-	text-align: center;
-}
-
 .borderB,.borderW,.borderJ{
-	border-top: 2px solid #E8D5E8;
-	border-bottom: 2px solid #E8D5E8;
 	display: -webkit-flex;
 	justify-content: space-between;
+	height: 45px;
+	line-height: 45px;
+	background-color: #a859a9;
+	color: #fff;
+	font-family: "微软雅黑";
+}
+.uploadingImg{
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #fb803d;
+	padding: 0 5px;
 }
 .borderJ{
+	justify-content: flex-start!important;
 	justify-content: initial;
 }
-.borderB .footerImg{
-  width: 100px;
-  height: 30px;
-  line-height: 30px;
+.borderB .footerImg,.borderW .footerImg,.borderJ .footerImg{
   text-align: center;
-}
-.borderW .footerImg{
-	height: 30px;
-  	line-height: 30px;
-	text-align: center;
-}
-
-.borderJ .footerImg{
-	 width: 75px;
-	height: 30px;
-  	line-height: 30px;
-	text-align: center;
+  display: -webkit-flex;
+  align-items: center;
+  padding: 0 20px;
 }
 
 .imgList ul li img{
@@ -117,6 +84,31 @@ footer{
 	padding: 10px;
 	border: none;
 	outline: none;
+}
+.TextAreaBox .fontf,.TextAreaBox .fontsize,.TextAreaBox .fontColor{
+	height: 100%;
+	-webkit-align-items: center;
+	align-items: center;
+	overflow: hidden;
+	overflow-x:scroll;
+	white-space: nowrap;
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: nowrap;
+}
+.TextAreaBox .fontf p,.TextAreaBox .fontsize p,.TextAreaBox .fontColor p{
+	width: 130px;
+	margin: 0  15px;
+	padding: 0 10px;
+	height: 42px;
+	line-height: 42px;
+	border: 1px solid #D7D7D7;
+	text-align: center;
+	color: #666;
+}
+.TextAreaBox .fontColor p{
+	color: #fff;
+	border: none;
 }
 .TextArea::-webkit-input-placeholder{
 	font-size: 16px;
@@ -256,4 +248,14 @@ footer{
 .stepF a{
 	bottom: 156px;
     left: 209px;
+}
+/*适应不同的屏幕*/
+/*iphone5*/
+@media only screen
+and (min-device-width : 320px)
+
+and (max-device-height : 568px){
+	.borderB .footerImg,.borderW .footerImg{
+		
+	padding: 0 5px;
 }
